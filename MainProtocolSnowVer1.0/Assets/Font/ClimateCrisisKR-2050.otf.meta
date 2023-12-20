@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: e3b0ae53f037d704b9273315246c44ff
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Climate Crisis KR
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 30dbe07439da1854caf9f1efe7b5f719, type: 3}
+  - {fileID: 12800000, guid: 90ad96a2bc272e043b272fba5b16fbea, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
