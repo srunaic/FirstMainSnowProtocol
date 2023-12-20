@@ -50,7 +50,7 @@ public class FbsControler : MonoBehaviour
 
         Vector3 moveDirection = (cameraForward * verticalInput + Camera.main.transform.right * horizontalInput).normalized;
         //캠이 보는 방향과 플레이어 방향을 초기화 해주는 방정식.
-
+        //Vector3 moveDirection = new Vector3(horizontalInput,0f,verticalInput);
         Vector3 movement = moveDirection * moveSpeed;
 
         if (moveDirection != Vector3.zero) //벡터 초기화 방식.
@@ -72,8 +72,14 @@ public class FbsControler : MonoBehaviour
             transform.rotation = rotMove;
 
             transform.rotation = Quaternion.Lerp(transform.rotation, rotMove, rotLookSpeed * Time.deltaTime);//서서히 바라보도록.
+
+            Vector3 playerPos = Vector3.Scale(camTransform.transform.forward, new Vector3(1, 0, 1));
+
+            transform.rotation = Quaternion.Slerp(transform.rotation,Quaternion.LookRotation(playerPos),Time.deltaTime);
+            //캐릭터가 바라보는 방향 대각선 계산.
+            Debug.Log("플레이어 움직임" + playerPos);
         }
-       
+
         // 캐릭터의 점프 처리
         if (isGrounded && Input.GetButtonDown("Jump"))
         {

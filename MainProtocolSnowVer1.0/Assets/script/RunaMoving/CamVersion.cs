@@ -9,9 +9,13 @@ public class CamVersion : MonoBehaviour
     [SerializeField]
     private GameObject Camera2;
 
+    public bool CameraZoom = false;
+
+    public Transform PlayerPos;
+
     public Transform follow; //photon µû¶ó´Ù´Ò °´Ã¼
     [SerializeField] float m_Speed;
-    [SerializeField] float m_MaxRayDist = 1;
+    [SerializeField] float m_MaxRayDist = 1f;
     [SerializeField] float m_Zoom = 3f;
     RaycastHit m_Hit;
 
@@ -19,21 +23,23 @@ public class CamVersion : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Camera2.SetActive(true);
+            Camera2.SetActive(true);   
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             Camera2.SetActive(false);
+         
         }
-
         Zoom();
-
     }
-    void Zoom() //Ä³¸¯ÅÍ ¾À ÁÜ.
+    public void Zoom() //Ä³¸¯ÅÍ ¾À ÁÜ.
     {
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         if (scroll != 0)
         {
+            Vector3 TrPos = PlayerPos.position.normalized;
+            TrPos = Vector3.zero; //ÃÊ±âÈ­.
+
             Transform cam = Camera.main.transform;
             if (CheckRay(cam, scroll))
             {
@@ -49,7 +55,7 @@ public class CamVersion : MonoBehaviour
     {
         if (Physics.Raycast(cam.position, transform.forward, out m_Hit, m_MaxRayDist))
         {
-            //Debug.Log("hit point : " + m_Hit.point + ", distance : " + m_Hit.distance + ", name : " + m_Hit.collider.name);
+            Debug.Log("hit point : " + m_Hit.point + ", distance : " + m_Hit.distance + ", name : " + m_Hit.collider.name);
             Debug.DrawRay(cam.position, transform.forward * m_Hit.distance, Color.red);
             cam.position += new Vector3(m_Hit.point.x, 0, m_Hit.point.z);
             return false;
