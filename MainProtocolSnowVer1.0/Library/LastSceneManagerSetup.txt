@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scene/waterMap.unity
+- path: Assets/Scene/RunaMap.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
