@@ -59,177 +59,205 @@
     <Compile Include="Assets\script\OPtionCanvas\SceneChange.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
     <Compile Include="Assets\script\Enemy\EnemyNav.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\Scripts\TDControl.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\Scripts\TDControl.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\Seat.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
     <Compile Include="Assets\script\ScoreCanvas\ScoreTxt.cs" />
     <Compile Include="Assets\script\OPtionCanvas\OPtionSetActive.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\VignetteComponent.cs" />
     <Compile Include="Assets\script\bakhoMoving\CameraViewChange.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
     <Compile Include="Assets\script\SunAndNight\sunNight.cs" />
     <Compile Include="Assets\script\bakhoMoving\SmoothFollow.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingContext.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\VignetteModel.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\Script\GameManager.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\FogModel.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingContext.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\VignetteModel.cs" />
+    <Compile Include="Assets\Terrain Map\Script\GameManager.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\FogModel.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
     <Compile Include="Assets\script\BlockMoving\MoveDirectObj.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\Script\DayandNight.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingModel.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+    <Compile Include="Assets\Terrain Map\Script\DayandNight.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingModel.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
     <Compile Include="Assets\script\OPtionCanvas\MainScene.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
-    <Compile Include="Assets\script\RunaMoving\RunaMoving.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\#NVJOB Assets\Dynamic Sky (For Demo)\DynamicSkyForDemo.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\#NVJOB Assets\Dynamic Sky (For Demo)\DynamicSkyForDemo.cs" />
     <Compile Include="Assets\music\CamController.cs" />
     <Compile Include="Assets\script\OPtionCanvas\ReTry.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\TaaComponent.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\SoundEffect.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+    <Compile Include="Assets\Terrain Map\Script\BackhoController.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\TaaComponent.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\InterManager.cs" />
     <Compile Include="Assets\script\OPtionCanvas\volume.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
-    <Compile Include="Assets\script\Portal\Portal.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\UserLutModel.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\#NVJOB Water Shaders V2\NVWaterShaders.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\UserLutModel.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\#NVJOB Water Shaders V2\NVWaterShaders.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\FxaaComponent.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingProfile.cs" />
-    <Compile Include="Assets\script\GameRoomScript\LiftMoving.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingProfile.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\LiftMoving.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
     <Compile Include="Assets\script\photonScript\PhotonInit.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\DitheringModel.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\DitheringModel.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
     <Compile Include="Assets\script\bakhoMoving\bakhoBullet.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
     <Compile Include="Assets\script\bakhoMoving\bakhochanMove.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\BloomComponent.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\BloomComponent.cs" />
     <Compile Include="Assets\script\bakhoMoving\bakhoShooting.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\Scripts\Lighthouse.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\Scripts\Lighthouse.cs" />
     <Compile Include="Assets\script\Enemy\Enemybullet.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingComponent.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingComponent.cs" />
     <Compile Include="Assets\script\OPtionCanvas\AudioSource.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\Script\FlashOnOff.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\GrainComponent.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\FaidInOut.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\GrainComponent.cs" />
+    <Compile Include="Assets\Terrain Map\Script\FlashOnOff.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
     <Compile Include="Assets\script\SunAndNight\flashLight1.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\GrainModel.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\GrainModel.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\LiftDollCatch.cs" />
     <Compile Include="Assets\script\UltimatePlayerMove\UltimatePlayer.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\UserLutComponent.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\DitheringComponent.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\Script\FbsControler.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\FbsControler.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\script\timeSquare\timeSquare.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\Script\CameraRotation.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\FogComponent.cs" />
+    <Compile Include="Assets\Terrain Map\Script\CameraRotation.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\Script\Water.cs" />
+    <Compile Include="Assets\Terrain Map\Script\Water.cs" />
     <Compile Include="Assets\script\bakhoMoving\Explosion.cs" />
     <Compile Include="Assets\script\ScoreCanvas\GoalWin.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
-    <Compile Include="Assets\script\RunaMoving\RunaCam.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\RunaCam.cs" />
     <Compile Include="Assets\script\Enemy\EnemyExplosion.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\BloomModel.cs" />
-    <Compile Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\BloomModel.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
     <Compile Include="Assets\script\OPtionCanvas\CancleOption.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
-    <Compile Include="Assets\script\RunaMoving\CamVersion.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\CamVersion.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\Doll.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\#NVJOB Water Shaders V2\Water Specular.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\GrainGen.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\#NVJOB Water Shaders V2\Water Specular.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\GrainGen.shader" />
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\FXAA3.cginc" />
     <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\#NVJOB Assets\Dynamic Sky (For Demo)\Dynamic Sky (For Demo).shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\#NVJOB Assets\Dynamic Sky (For Demo)\Dynamic Sky (For Demo).shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
     <None Include="Assets\Simple Toon\Shaders\STOutline.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
-    <None Include="Assets\Backhofbx\ResourcesPrefab\ShaderMeterialGroup\SkyBox\Readme.txt" />
-    <None Include="Assets\RunaCharacter\Runauv\Simple Toon\Shaders\STDefault.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\Palm Trees\Materials\Standard 2-Sided.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
+    <None Include="Assets\ResourcesPrefab\ShaderMeterialGroup\SkyBox\Readme.txt" />
+    <None Include="Assets\RunaCharacter\RunaPrefabs\Simple Toon\Shaders\STDefault.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\Palm Trees\Materials\Standard 2-Sided.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll" />
-    <None Include="Assets\RunaCharacter\Runauv\Simple Toon\Shaders\STCore.cginc" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Uber.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Common.cginc" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Fog.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\MotionBlur.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\license_unity.txt" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Bloom.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\license_nvjob.txt" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Blit.shader" />
+    <None Include="Assets\RunaCharacter\RunaPrefabs\Simple Toon\Shaders\STCore.cginc" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Uber.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Common.cginc" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Fog.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\license_unity.txt" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Bloom.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\license_nvjob.txt" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Blit.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\Simple Toon\Shaders\STTransparent.shader" />
-    <None Include="Assets\RunaCharacter\Runauv\Simple Toon\Shaders\STFunctions.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\RunaCharacter\RunaPrefabs\Simple Toon\Shaders\STFunctions.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\DepthOfField.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\Flag\Materials\Flag.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\Flag\Materials\Flag.shader" />
     <None Include="Assets\Simple Toon\Shaders\STCore.cginc" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\UI\Trackball.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\UI\Trackball.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
-    <None Include="Assets\RunaCharacter\Runauv\Simple Toon\Shaders\STTransparent.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+    <None Include="Assets\RunaCharacter\RunaPrefabs\Simple Toon\Shaders\STTransparent.shader" />
     <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.dll" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\#NVJOB Water Shaders V2\Water Surface.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Bloom.cginc" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\Rainbow\Materials\No Fog.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\LutGen.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\#NVJOB Water Shaders V2\Water Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\Bloom.cginc" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\Rainbow\Materials\No Fog.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\LutGen.shader" />
     <None Include="Assets\Photon\PhotonLibs\Metro\Photon3Unity3D.dll" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\TAA.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
+    <None Include="Assets\Samples\Polybrush\1.0.2\Shader Examples (Standard)\Shader\StandardVertexColor.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\TAA.shader" />
     <None Include="Assets\Simple Toon\Shaders\STDefault.shader" />
-    <None Include="Assets\terrain\Terrain Map\_Bad_Raccoon\_3D Realistic Terrain Free\README FIRST.txt" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\TAA.cginc" />
+    <None Include="Assets\Terrain Map\_Bad_Raccoon\_3D Realistic Terrain Free\README FIRST.txt" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\TAA.cginc" />
     <None Include="Assets\MYcustomParticle\ParticleGroup\Shaders\FireSphere.shader" />
     <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Simple Toon\Shaders\STFunctions.cginc" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
-    <None Include="Assets\RunaCharacter\Runauv\Simple Toon\Shaders\STOutline.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\ACES.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+    <None Include="Assets\RunaCharacter\RunaPrefabs\Simple Toon\Shaders\STOutline.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\ACES.cginc" />
     <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\FXAA.shader" />
-    <None Include="Assets\terrain\Terrain Map\#NVJOB Water Shaders V2\#NVJOB Water Shaders V2\NvWaters.cginc" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Resources\Shaders\FXAA.shader" />
+    <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\#NVJOB Water Shaders V2\NvWaters.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\Samples\Polybrush\1.0.2\Shader Examples (Standard)\Shader\StandardTextureBlend.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -805,11 +833,17 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Recorder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Base">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
@@ -819,6 +853,9 @@
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -831,6 +868,12 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -847,6 +890,12 @@
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Polybrush.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Polybrush.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Polybrush">
+      <HintPath>Library\ScriptAssemblies\Unity.Polybrush.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
@@ -855,6 +904,9 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
@@ -870,6 +922,9 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
