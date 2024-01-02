@@ -143,23 +143,23 @@
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\script\timeSquare\timeSquare.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
-    <Compile Include="Assets\Terrain Map\Script\CameraRotation.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\CameraRotation.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\Doll.cs" />
     <Compile Include="Assets\Terrain Map\Script\Water.cs" />
     <Compile Include="Assets\script\bakhoMoving\Explosion.cs" />
     <Compile Include="Assets\script\ScoreCanvas\GoalWin.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\RunaCam.cs" />
     <Compile Include="Assets\script\Enemy\EnemyExplosion.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\BloomModel.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
     <Compile Include="Assets\script\OPtionCanvas\CancleOption.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\CamVersion.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\Doll.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\MainSound.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />

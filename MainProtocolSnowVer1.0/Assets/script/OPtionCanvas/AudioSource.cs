@@ -7,6 +7,7 @@ public class AudioSource : MonoBehaviour
 {
     GameObject BackgroundMusic;
     AudioSource backmusic;
+    internal AudioClip clip;
 
     void Start()
     {
