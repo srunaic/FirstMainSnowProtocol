@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class FbsControler : MonoBehaviour
 {
-    [Header("움직임관리")]
+    [Header("싱글 비동기적 움직임관리")]
     public float moveSpeed = 20f; // 이동 속도 조절 변수
     public float jumpHeight = 2f; // 점프 힘 조절 변수
     public float feetHeight = 1f; // 발 높이 설정 변수
@@ -58,33 +58,37 @@ public class FbsControler : MonoBehaviour
     }
     private void Update()
     {
-        if (onMoveable)//움직이는 상태인가?.
-        {
-            Move(); //움직임.
-        }
-        else
-            rb.velocity = Vector3.zero + Vector3.up * VelocityY;
 
-        //경사각인데 플레이어가 땅위를 밟고 있다면 실행.
-        if (isGrounded)
-        {
-            SlopeGrounded();
-        }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            StartCoroutine(CheckPose());
-        }
+            if (onMoveable)//움직이는 상태인가?.
+            {
+                Move(); //움직임.
+            }
+            else
+                rb.velocity = Vector3.zero + Vector3.up * VelocityY;
 
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            RunaAnim.SetTrigger("Hi");
-        }
+            //경사각인데 플레이어가 땅위를 밟고 있다면 실행.
+            if (isGrounded)
+            {
+                SlopeGrounded();
+            }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                StartCoroutine(CheckPose());
+            }
+
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                RunaAnim.SetTrigger("Hi");
+            }
+  
     }
-    IEnumerator CheckPose() //춤 스피드
+
+    public IEnumerator CheckPose() //춤 스피드
     {
         yield return new WaitForSeconds(1f);
         onMoveable = false;
-        RunaAnim.SetTrigger("isPose");
+        //RunaAnim.SetTrigger("isPose");
+        RunaAnim.SetTrigger("RunaDance");
         yield return new WaitForSeconds(6.7f);
         onMoveable = true;
     }

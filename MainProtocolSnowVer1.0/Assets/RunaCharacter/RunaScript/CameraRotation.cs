@@ -29,17 +29,19 @@ public class CameraRotation : MonoBehaviour
     public float sensitivity = 2.0f; // 마우스 감도 조절 변수
 
     private void Start()
-    {
-        transform.position = 
-            followTarget.position + followTarget.rotation * followOffset;//카메라가 y축으로 얼마만큼 회전했나?
-            
-        angleY = 0;
-        angleZ = 0;
+    {   
+        
+          followTarget = GameObject.Find("CamPivot").GetComponent<Transform>();
+          lookTarget = GameObject.Find("CamPivot").GetComponent<Transform>();
+
+          transform.position =
+          followTarget.position + followTarget.rotation * followOffset;//카메라가 y축으로 얼마만큼 회전했나?
+
+          angleY = 0;
+          angleZ = 0;
+      
     }
 
-    private void LateUpdate()//늦은 업데이트 모든 업데이트가 끝나고 실행됨.
-    { 
-    }
     private void FixedUpdate()//고정된 주기마다 업데이트(물리주기 ,훨씬 늦게 반복.0.02)
     {
         if (followTarget != null) //타겟이 있다면, 따라가라.

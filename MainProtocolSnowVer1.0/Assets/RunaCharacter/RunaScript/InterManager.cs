@@ -1,4 +1,3 @@
-using Photon.Realtime;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -6,22 +5,28 @@ using UnityEngine;
 using UnityEngine.ProBuilder.MeshOperations;
 using UnityEngine.UI;
 
+public enum KindBuilding
+{
+  NoneBuild,
+  GameBuild
+}
 public enum GameJoy 
 {
   None,
   DollGame,
-  ShootingGame,
+  SongGame,
+  ShootingGame
 }
-
 public class InterManager : MonoBehaviour
 {
     [Header("게임기 종류")]
-  
+    public KindBuilding _ContactBuild;
     public GameJoy _JoyGame;
 
     public FbsControler player;
     public Seat nearSeat;//가까이에 있는 의자를 접근.
     public LiftMoving DollGameObj;//인형게임기에 접근을 했다면,
+    public BuildingInterActive _building;
 
     [Header("페이드 인 아웃")]
     [SerializeField]
@@ -34,13 +39,15 @@ public class InterManager : MonoBehaviour
 
     void Start()
     {
-        TimeGames = 0;
+          TimeGames = 0;
         _TimeTxt.text = "0:20";//시간 초
 
+        _ContactBuild = KindBuilding.NoneBuild;
         _JoyGame = GameJoy.None;//쓰는 게임기 종류 없음
+
         player = FindObjectOfType<FbsControler>();
         FadeInOut = FindObjectOfType<FaidInOut>();
-
+        _building = FindObjectOfType<BuildingInterActive>();
     }
 
     void FixedUpdate()
@@ -68,10 +75,11 @@ public class InterManager : MonoBehaviour
         else if (_JoyGame == GameJoy.None && DollGameObj !=null
             && Input.GetKeyDown(KeyCode.Z))
         {
-           _JoyGame = GameJoy.DollGame;//사용중인 게임기 변환.
+            _JoyGame = GameJoy.DollGame;//사용중인 게임기 변환.
            StartCoroutine(DollGame());
         }
     }
+
     IEnumerator SetSit()//앉기
     {
         player.onMoveable = false;
@@ -126,7 +134,8 @@ public class InterManager : MonoBehaviour
         }
  
     }
-    //의자 감지.
+
+    //상호작용 객체 감지.
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent<Seat>(out Seat findSeat))
@@ -136,7 +145,20 @@ public class InterManager : MonoBehaviour
         else if (other.TryGetComponent<LiftMoving>(out LiftMoving findDollGame))
         {
             DollGameObj = findDollGame;
-            Debug.Log("게임기랑 접촉"+ findDollGame);
+            Debug.Log("게임기랑 접촉" + findDollGame);
+        }
+        else if (other.TryGetComponent<BuildingInterActive>(out BuildingInterActive _buildActive))
+        {
+            _building = _buildActive;
+            Debug.Log("빌딩이랑 접촉" + _buildActive);
+
+            _ContactBuild = KindBuilding.GameBuild;
+            if(_ContactBuild == KindBuilding.GameBuild) 
+            {
+                _building.BuildAnim.SetTrigger("RightDoor");
+                _building.BuildAnim.SetTrigger("LeftDoor");
+                _building.col.isTrigger = true;
+            }
         }
     }
     private void OnTriggerExit(Collider other)
@@ -155,11 +177,30 @@ public class InterManager : MonoBehaviour
                 DollGameObj = null;
             }
         }
+        //빌딩이랑 상호작용.
+        else if (other.TryGetComponent<BuildingInterActive>(out BuildingInterActive _buildActive))
+        {
+            StartCoroutine(DoorAnim(2f)); //DistanceDoor 닫히는 타이밍과 속도값.
+            _ContactBuild = KindBuilding.NoneBuild;
+        }
     }
     IEnumerator NoneGame(float RateGameTime)//게임초기화.
     {
         _JoyGame = GameJoy.None;
         yield return new WaitForSeconds(RateGameTime);
     
+    }
+    //문이 열리는 타이밍과 충돌체의 타이밍 리스트
+    IEnumerator DoorAnim(float DisatanceDoor)
+    {
+         if (_ContactBuild == KindBuilding.NoneBuild)
+         {
+                yield return new WaitForSeconds(DisatanceDoor);
+                _building.BuildAnim.SetTrigger("CloseRightDoor");
+                _building.BuildAnim.SetTrigger("CloseLeftDoor");
+                _building.col.isTrigger = false;
+
+         }
+        
     }
 }

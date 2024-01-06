@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DayandNight : MonoBehaviour
 {
+    private bool isNight;
+
     [SerializeField] private float secondPerRealTimeSecond; // 게임 세계에서의 100초 = 현실 세계의 1초
 
 
@@ -23,11 +25,11 @@ public class DayandNight : MonoBehaviour
         transform.Rotate(Vector3.right, 0.1f * secondPerRealTimeSecond * Time.deltaTime);
 
         if (transform.eulerAngles.x >= 170) // x 축 회전값 170 이상이면 밤이라고 하겠음
-            GameManager.isNight = true;
+           isNight = true;
         else if (transform.eulerAngles.x <= 10)  // x 축 회전값 10 이하면 낮이라고 하겠음
-            GameManager.isNight = false;
+            isNight = false;
 
-        if (GameManager.isNight)
+        if (isNight)
         {
             if (currentFogDensity <= nightFogDensity)
             {
