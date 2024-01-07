@@ -35,8 +35,6 @@ public class bakhoShooting : MonoBehaviour
 
         }
 
-
-
         IEnumerator CoolTime(float cool)
         {
             while (cool > 1.0f)
@@ -49,8 +47,6 @@ public class bakhoShooting : MonoBehaviour
             }
 
         }
-
-
 
     }
     

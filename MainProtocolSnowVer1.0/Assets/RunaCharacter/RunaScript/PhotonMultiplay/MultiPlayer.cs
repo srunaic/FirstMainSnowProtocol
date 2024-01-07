@@ -2,9 +2,14 @@ using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MultiPlayer : MonoBehaviour,IPunObservable
 {
+    [Header("포톤 Text 정보 들고오기")]
+    public Text PlayerTxt;
+    public NetworkManager networkManger; 
+
     [Header("싱글 비동기적 움직임관리")]
     public float moveSpeed = 20f; // 이동 속도 조절 변수
     public float jumpHeight = 2f; // 점프 힘 조절 변수
@@ -52,12 +57,17 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
         _PlayerTr = GetComponent<Transform>();
         RunaAnim = GetComponent<Animator>();
 
+        networkManger = FindObjectOfType<NetworkManager>();
+
+        //게임 시작할때,플레이어 카메라 위치 정보를 동기화 해줌.
         if (pv.IsMine)
         {
-            Camera.main.GetComponent<FollowCam>().SetPlayer(transform,transform);
+            PhotonNetwork.LocalPlayer.NickName = networkManger.NickNameInput.text; //포톤 UI에 입력한 정보 닉네임 받아오기.
+            PlayerTxt.text = PhotonNetwork.LocalPlayer.NickName;
+            Camera.main.GetComponent<FollowCam>().SetPlayer(transform, transform);
         }
-
     }
+ 
     private void FixedUpdate()
     {
         if (rb.velocity.y < 0)
@@ -71,22 +81,7 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
         if (pv.IsMine)
         {
             ProcessPlayerMovement();
-
-            // Photon을 이용하여 플레이어의 위치와 회전 정보를 송신
-            if (PhotonNetwork.IsConnected)
-            {
-                pv.RPC("SyncPlayerState", RpcTarget.OthersBuffered, _PlayerTr.position, _PlayerTr.rotation);
-            }
         }
-
-    }
-
-    [PunRPC]
-    private void SyncPlayerState(Vector3 position, Quaternion rotation)
-    {
-        // 플레이어의 위치와 회전 정보를 수신하고 조절
-        _PlayerTr.position = position;
-        _PlayerTr.rotation = rotation;
     }
 
     void ProcessPlayerMovement()
@@ -99,69 +94,87 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
         {
             rb.velocity = Vector3.zero + Vector3.up * VelocityY;
         }
-
+        
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            StartCoroutine(CheckPose());
+            pv.RPC("TriggerDanceAnimation", RpcTarget.All);//Trigger 애니메이션을 포톤 값에 넘겨주는방법.
         }
 
         if (Input.GetKeyDown(KeyCode.T))
         {
-            RunaAnim.SetTrigger("Hi");
+            pv.RPC("TriggerHiAnimation", RpcTarget.All);
         }
     }
 
-
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    //포톤에서 유저의 정보를 이 함수로 전달해줌. 그래야 상대측도 보인다.
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) //원격 전송방식.
     {
-
         if (stream.IsWriting)
         {
             stream.SendNext(_PlayerTr.position);
             stream.SendNext(_PlayerTr.rotation);
+            stream.SendNext(PhotonNetwork.LocalPlayer.NickName); // 닉네임을 전송
+            stream.SendNext(RunaAnim.GetBool("isRun"));//bool값 애니메이션의 전송방법.
         }
         else
         {
-     
             currPos = (Vector3)stream.ReceiveNext();
             currRot = (Quaternion)stream.ReceiveNext();
+            PlayerTxt.text = (string)stream.ReceiveNext(); // 받은 닉네임을 텍스트로 업데이트
+            RunaAnim.SetBool("isRun", (bool)stream.ReceiveNext());
         }
     }
 
+    [PunRPC] //원격 전송 시스템.
+    void TriggerDanceAnimation()
+    {
+        StartCoroutine(CheckPose());
+    }
+
+    [PunRPC]
+    void TriggerJumpAnimation()
+    {
+        RunaAnim.SetTrigger("Jump");
+    }
+    [PunRPC]
+
+    void TriggerHiAnimation()
+    {
+        RunaAnim.SetTrigger("Hi");
+    }
 
     public IEnumerator CheckPose() //춤 스피드
     {
         yield return new WaitForSeconds(1f);
         onMoveable = false;
-        //RunaAnim.SetTrigger("isPose");
-        RunaAnim.SetTrigger("RunaDance");
+        RunaAnim.SetTrigger("isPose");
+
         yield return new WaitForSeconds(6.7f);
         onMoveable = true;
     }
-    
+
     public void Move()
     {
         // 키보드 입력을 받아 이동 및 점프 제어
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
        
-        /// 뒤로 가는 것을 방지
-        /*if (verticalInput < 0)
+        // 뒤로 가는 것을 방지
+        if (verticalInput < 0)
         {
             verticalInput = 0;
-        }*/
+        }
 
         //기본 움직임 값.
         Vector3 MovePlayer = new Vector3(horizontalInput, verticalInput);
 
-        //Vector3 cameraForward = Camera.main.transform.forward;//카메라 방향 앞으로
-        //cameraForward.y = 0f; // y 축 방향은 고려하지 않음
+        Vector3 cameraForward = Camera.main.transform.forward;//카메라 방향 앞으로
+        cameraForward.y = 0f; // y 축 방향은 고려하지 않음
 
-        //Vector3 moveDirection = (cameraForward * verticalInput + Camera.main.transform.right * horizontalInput).normalized;
+        Vector3 moveDirection = (cameraForward * verticalInput + Camera.main.transform.right * horizontalInput).normalized;
         //캠이 보는 방향과 플레이어 방향을 초기화 해주는 방정식.
 
-        Vector3 moveDirection = new Vector3(horizontalInput,0f,verticalInput);
-
+       
         Vector3 movement = moveDirection * moveSpeed; //기본속력
 
         //애니메이션 실행.
@@ -194,13 +207,13 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
             transform.rotation = Quaternion.Lerp(transform.rotation, rotMove, rotLookSpeed * Time.deltaTime);
 
             // Camera는 오직 수평 축 회전만 적용
-            Camera.main.transform.rotation = Quaternion.Euler(0, rotMove.eulerAngles.y, 0);
+           // Camera.main.transform.rotation = Quaternion.Euler(0, rotMove.eulerAngles.y, 0);
         }
 
         // 캐릭터의 점프 처리
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
-            RunaAnim.SetTrigger("Jump");
+            pv.RPC("TriggerJumpAnimation",RpcTarget.All);//점프 애니메이션 포톤에 넘겨주기.
             float jumpSpeed = Mathf.Sqrt(2 * Mathf.Abs(gravity) * jumpHeight);
 
             rb.velocity = movement + Vector3.up * jumpSpeed * 1f;
@@ -222,6 +235,5 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
        
     }
 
-   
-
+  
 }

@@ -1,10 +1,26 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BuildingInterActive
+    - CamVersion
+    - CameraRotation
+    - DayandNight
+    - Doll
+    - FaidInOut
+    - FbsControler
+    - FlashOnOff
     - FollowCam
     - GameManager
-    - LobbyPhotonManager
+    - InterManager
+    - LiftDollCatch
+    - LiftMoving
+    - LoadingScene
+    - ManagerStarter
     - MultiPlayer
+    - NetworkManager
+    - NextPortal
+    - Seat
+    - SongRoom
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
     - Photon.Pun.Demo.Asteroids.Bullet
@@ -59,11 +75,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -78,6 +97,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
     - UnityEngine.UI.ScrollRect
@@ -97,9 +117,159 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1772}
+    - Class: 114
+      Script: {instanceID: 1776}
+    - Class: 114
+      Script: {instanceID: 1778}
+    - Class: 114
+      Script: {instanceID: 1780}
+    - Class: 114
+      Script: {instanceID: 2896}
+    - Class: 114
+      Script: {instanceID: 2938}
+    - Class: 114
+      Script: {instanceID: 3194}
+    - Class: 114
+      Script: {instanceID: 3364}
+    - Class: 114
+      Script: {instanceID: 3466}
+    - Class: 114
+      Script: {instanceID: 3640}
+    - Class: 114
+      Script: {instanceID: 3920}
+    - Class: 114
+      Script: {instanceID: 4308}
+    - Class: 114
+      Script: {instanceID: 6064}
+    - Class: 114
+      Script: {instanceID: 6386}
+    - Class: 114
+      Script: {instanceID: 6914}
+    - Class: 114
+      Script: {instanceID: 6918}
+    - Class: 114
+      Script: {instanceID: 7408}
+    - Class: 114
+      Script: {instanceID: 8146}
+    - Class: 114
+      Script: {instanceID: 8584}
+    - Class: 114
+      Script: {instanceID: 34698}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 154
+      Script: {instanceID: 0}
+    - Class: 156
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 218
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 1953259897
+      Script: {instanceID: 0}
+    Assets/RunaCharacter/RunaScene/RunaLoadingScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1772}
+    - Class: 114
+      Script: {instanceID: 1778}
+    - Class: 114
+      Script: {instanceID: 1780}
+    - Class: 114
+      Script: {instanceID: 2938}
+    - Class: 114
+      Script: {instanceID: 6386}
+    - Class: 114
+      Script: {instanceID: 7382}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/RunaCharacter/RunaScene/RunaMapChoiSeongHyo.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
     - Class: 23
       Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 29
       Script: {instanceID: 0}
     - Class: 33
       Script: {instanceID: 0}
@@ -110,6 +280,8 @@ ScriptsOnlyBuild:
     - Class: 49
       Script: {instanceID: 0}
     - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
@@ -148,15 +320,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2042}
     - Class: 114
+      Script: {instanceID: 2390}
+    - Class: 114
       Script: {instanceID: 2408}
     - Class: 114
       Script: {instanceID: 2590}
+    - Class: 114
+      Script: {instanceID: 2606}
     - Class: 114
       Script: {instanceID: 2684}
     - Class: 114
       Script: {instanceID: 2896}
     - Class: 114
       Script: {instanceID: 2938}
+    - Class: 114
+      Script: {instanceID: 3194}
     - Class: 114
       Script: {instanceID: 3364}
     - Class: 114
@@ -170,9 +348,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3840}
     - Class: 114
-      Script: {instanceID: 3920}
-    - Class: 114
       Script: {instanceID: 3962}
+    - Class: 114
+      Script: {instanceID: 3984}
     - Class: 114
       Script: {instanceID: 4254}
     - Class: 114
@@ -190,9 +368,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4866}
     - Class: 114
+      Script: {instanceID: 5242}
+    - Class: 114
       Script: {instanceID: 5628}
     - Class: 114
       Script: {instanceID: 5642}
+    - Class: 114
+      Script: {instanceID: 5654}
     - Class: 114
       Script: {instanceID: 5660}
     - Class: 114
@@ -208,8 +390,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5964}
     - Class: 114
-      Script: {instanceID: 6064}
-    - Class: 114
       Script: {instanceID: 6114}
     - Class: 114
       Script: {instanceID: 6158}
@@ -220,7 +400,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6538}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 6546}
     - Class: 114
       Script: {instanceID: 6622}
     - Class: 114
@@ -236,29 +416,51 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6918}
     - Class: 114
+      Script: {instanceID: 6978}
+    - Class: 114
       Script: {instanceID: 7032}
+    - Class: 114
+      Script: {instanceID: 7058}
     - Class: 114
       Script: {instanceID: 7200}
     - Class: 114
+      Script: {instanceID: 7256}
+    - Class: 114
       Script: {instanceID: 7344}
     - Class: 114
-      Script: {instanceID: 7406}
+      Script: {instanceID: 7408}
     - Class: 114
-      Script: {instanceID: 7582}
+      Script: {instanceID: 7482}
     - Class: 114
-      Script: {instanceID: 8142}
+      Script: {instanceID: 7584}
+    - Class: 114
+      Script: {instanceID: 7962}
     - Class: 114
       Script: {instanceID: 8144}
     - Class: 114
-      Script: {instanceID: 8496}
+      Script: {instanceID: 8146}
     - Class: 114
-      Script: {instanceID: 8580}
+      Script: {instanceID: 8242}
     - Class: 114
-      Script: {instanceID: 8714}
+      Script: {instanceID: 8370}
     - Class: 114
-      Script: {instanceID: 8768}
+      Script: {instanceID: 8500}
     - Class: 114
-      Script: {instanceID: 9030}
+      Script: {instanceID: 8584}
+    - Class: 114
+      Script: {instanceID: 8718}
+    - Class: 114
+      Script: {instanceID: 8772}
+    - Class: 114
+      Script: {instanceID: 8906}
+    - Class: 114
+      Script: {instanceID: 8928}
+    - Class: 114
+      Script: {instanceID: 9036}
+    - Class: 114
+      Script: {instanceID: 9068}
+    - Class: 114
+      Script: {instanceID: 34698}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -294,6 +496,10 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 225
+      Script: {instanceID: 0}
+    - Class: 363
+      Script: {instanceID: 0}
+    - Class: 850595691
       Script: {instanceID: 0}
     - Class: 1953259897
       Script: {instanceID: 0}
@@ -630,7 +836,7 @@ ScriptsOnlyBuild:
     className: CountdownTimer
   - hash:
       serializedVersion: 2
-      Hash: 995853a760a7a26aab551b83861a55f1
+      Hash: db7fc2e61ff1a1889df404c218009d18
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MultiPlayer
@@ -912,7 +1118,7 @@ ScriptsOnlyBuild:
     className: TextMeshPro
   - hash:
       serializedVersion: 2
-      Hash: e4fa0f637ff2b1a3dce40e47b9db97ff
+      Hash: f3b6eb0725b72aff3271929cc8cf7ee9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FollowCam
@@ -1284,7 +1490,7 @@ ScriptsOnlyBuild:
     className: BackhoController
   - hash:
       serializedVersion: 2
-      Hash: ebd14d298765b7028acab864fdfea272
+      Hash: b6ab21a526d74c4ea5c9f70ef5ec41ff
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InterManager
@@ -1668,12 +1874,6 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LobbyPhotonManager
-  - hash:
-      serializedVersion: 2
       Hash: a8e4bc52348c9279d138a27b5a850d5b
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -1920,6 +2120,12 @@ ScriptsOnlyBuild:
     className: OnClickDestroy
   - hash:
       serializedVersion: 2
+      Hash: 8d8a91705e739c0a1183ae8b10693cb4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoadingScene
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -2160,6 +2366,12 @@ ScriptsOnlyBuild:
     className: ZoomOverride
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ManagerStarter
+  - hash:
+      serializedVersion: 2
       Hash: 8ae3331b163cc121825eeed3975d6c4d
     assemblyName: Assembly-CSharp.dll
     namespaceName: Photon.Chat.Demo
@@ -2334,7 +2546,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: c17c9b6c7c7d02b73eb3e2e0f0740b6d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SongRoom
@@ -2344,6 +2556,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NavAI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NextPortal
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2392,7 +2610,15 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CamVersion
+  - hash:
+      serializedVersion: 2
+      Hash: 93bb6f91dbe644bb4674adfcb2f15493
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NetworkManager
   platform: 19
   scenePathNames:
+  - Assets/RunaCharacter/RunaScene/RunaMapChoiSeongHyo.unity
+  - Assets/RunaCharacter/RunaScene/RunaLoadingScene.unity
   - Assets/RunaCharacter/RunaScene/PingPongGame.unity
   playerPath: "C:/Users/USER/Desktop/\uAC8C\uC784/WhiteSnow.exe"

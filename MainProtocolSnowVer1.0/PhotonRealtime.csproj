@@ -65,6 +65,7 @@
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Room.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\RoomInfo.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Player.cs" />
+    <Compile Include="Assets\Photon\PhotonRealtime\Code\SystemConnectionSummary.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Unity\Editor\PhotonEditorUtils.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\LoadBalancingClient.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Region.cs" />
@@ -75,7 +76,6 @@
     <Compile Include="Assets\Photon\PhotonRealtime\Code\PhotonPing.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\ConnectionHandler.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\CustomTypesUnity.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\SystemConnectionSummary.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Photon\PhotonRealtime\Code\changes-realtime.txt" />

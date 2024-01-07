@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-
 public class FollowCam : MonoBehaviour
 {
-    private float CamMoveSpeed = 5f;
+    private float CamMoveSpeed = 1f;
     private float angleY = 0;
-    private float rotateSpeedX = 10f;
+    private float rotateSpeedX = 3f;
 
     private bool CursorVisible = true;
     public float sensitivity = 2.0f; // 마우스 감도 제어 변수
@@ -26,23 +25,28 @@ public class FollowCam : MonoBehaviour
     private float angleZ = 0;
     private float rotSpeedY = 10f;
 
+    //플레이어에게 이 값을 넘겨주고 받아온다. 
+    public void SetPlayer(Transform newPlayer, Transform Target)
+    {
+        player = newPlayer;
+        followTarget = Target;
+
+        transform.position =
+        followTarget.position + followTarget.rotation * followOffset;//카메라가 y축으로 얼마만큼 회전했나?
+
+        angleY = 0;
+        angleZ = 0;
+    }
+
     private void FixedUpdate()//고정된 주기마다 업데이트(물리주기 ,훨씬 늦게 반복.0.02)
     {
-        if (followTarget != null)
-        {//타겟이 있다면, 따라가라.
-                Quaternion camRot = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
-
-                Vector3 lookPos = followTarget.position + camRot * offset;
-                // 플레이어를 바라보도록 회전 설정
-                transform.LookAt(lookPos);
-        }
-        if (player != null)
+        if (followTarget != null)    //타겟이 있다면, 따라가라.
         {
-            transform.position = player.position + offset;
-            transform.rotation = Quaternion.Euler(0, player.eulerAngles.y, 0);
+            CamLook();
         }
 
     }
+
     void Update()
     {
         Cursors();
@@ -56,32 +60,14 @@ public class FollowCam : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, player.eulerAngles.y, 0);
         }
     }
-
-    //플레이어에게 이 값을 넘겨주고 받아온다. 
-    public void SetPlayer(Transform newPlayer,Transform Target)
+   
+    public void CamLook()
     {
-        player = newPlayer;
-        followTarget = Target;
+        Quaternion camRot = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
 
-        transform.position = followTarget.position + followTarget.rotation * followOffset;
-
-        transform.LookAt(followTarget.position);
-    }
-    public void CamFollow()
-    {
-        float mInputX = Input.GetAxis("Mouse X");//마우스가 움직일때,
-        float mInputY = Input.GetAxis("Mouse Y");
-
-        angleY += mInputX * rotateSpeedX; //y축 앵글 바뀜.
-        angleZ += mInputY * rotSpeedY;
-
-        Quaternion rotX = Quaternion.Euler(0, angleY, angleZ);
-
-        Vector3 followPos =
-            player.position + rotX * offset; //앵글이 바뀌었을때,
-
-        transform.position =
-            Vector3.Lerp(transform.position, followPos, Time.deltaTime * CamMoveSpeed); //돌아가는 함수.
+        Vector3 lookPos = followTarget.position + camRot * offset;
+        // 플레이어를 바라보도록 회전 설정
+        transform.LookAt(lookPos);
     }
     private void Cursors()
     {

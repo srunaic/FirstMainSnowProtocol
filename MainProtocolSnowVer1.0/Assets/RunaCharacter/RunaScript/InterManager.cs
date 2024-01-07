@@ -27,6 +27,7 @@ public class InterManager : MonoBehaviour
     public Seat nearSeat;//가까이에 있는 의자를 접근.
     public LiftMoving DollGameObj;//인형게임기에 접근을 했다면,
     public BuildingInterActive _building;
+    public SongRoom _songActivity;
 
     [Header("페이드 인 아웃")]
     [SerializeField]
@@ -48,6 +49,7 @@ public class InterManager : MonoBehaviour
         player = FindObjectOfType<FbsControler>();
         FadeInOut = FindObjectOfType<FaidInOut>();
         _building = FindObjectOfType<BuildingInterActive>();
+        _songActivity = FindObjectOfType<SongRoom>();
     }
 
     void FixedUpdate()
@@ -153,11 +155,22 @@ public class InterManager : MonoBehaviour
             Debug.Log("빌딩이랑 접촉" + _buildActive);
 
             _ContactBuild = KindBuilding.GameBuild;
-            if(_ContactBuild == KindBuilding.GameBuild) 
+            if (_ContactBuild == KindBuilding.GameBuild)
             {
-                _building.BuildAnim.SetTrigger("RightDoor");
-                _building.BuildAnim.SetTrigger("LeftDoor");
+                _building.BuildAnim.SetTrigger("RightDoor"); //왼쪽문 열림
+                _building.BuildAnim.SetTrigger("LeftDoor"); //오른쪽문 열림.
                 _building.col.isTrigger = true;
+            }
+        }
+        else if(other.TryGetComponent<SongRoom>(out SongRoom _songActive))
+        {
+            _songActivity = _songActive;
+            _JoyGame = GameJoy.SongGame;
+
+            if (_JoyGame == GameJoy.SongGame)
+            {
+                _songActivity._Songanim.SetTrigger("OpenSongDoor");
+                _songActivity.col.isTrigger = true;
             }
         }
     }
@@ -167,7 +180,7 @@ public class InterManager : MonoBehaviour
         {
             if (nearSeat == findSeat)
             {
-               nearSeat = null;
+                nearSeat = null;
             }
         }
         else if (other.TryGetComponent<LiftMoving>(out LiftMoving findDollGame))
@@ -182,6 +195,10 @@ public class InterManager : MonoBehaviour
         {
             StartCoroutine(DoorAnim(2f)); //DistanceDoor 닫히는 타이밍과 속도값.
             _ContactBuild = KindBuilding.NoneBuild;
+        }
+        else if (other.TryGetComponent<SongRoom>(out SongRoom __songActive))
+        {
+            _JoyGame = GameJoy.None;        
         }
     }
     IEnumerator NoneGame(float RateGameTime)//게임초기화.

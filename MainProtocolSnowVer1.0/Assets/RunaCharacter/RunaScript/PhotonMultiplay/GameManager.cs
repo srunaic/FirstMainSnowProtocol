@@ -7,8 +7,8 @@ public class GameManager : MonoBehaviour
 {
     [Header("게임 인스턴스화 씬이 넘어가더도 파괴 안됨.")]
     public static GameManager instance = null;
-    public bool isConnect = false;
-    public Transform[] spawnPoints;
+    public  bool isConnect = false;
+    public  Transform[] spawnPoints;
 
     private void Awake()
     {
@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(CreatePlayer());
     }
 
-    IEnumerator CreatePlayer()
+    public IEnumerator CreatePlayer()
     {
         yield return new WaitUntil(() => isConnect);//연결 될때까지 대기 아니면 실행하지마
 

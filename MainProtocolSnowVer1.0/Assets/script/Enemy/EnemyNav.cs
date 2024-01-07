@@ -47,10 +47,4 @@ public class EnemyNav : MonoBehaviour
 
     }
 
-
-
-
-
-
-
 }
