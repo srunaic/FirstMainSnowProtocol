@@ -5,6 +5,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using SeonghyoGameManagerGroup; //게임매니저
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
@@ -84,7 +85,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         MyListRenewal();
     }
 
-
     void Awake() => Screen.SetResolution(1920, 1080, false);
 
     void Update()
@@ -108,7 +108,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         myList.Clear();
     }
-
     public void Disconnect() => PhotonNetwork.Disconnect();
 
     public override void OnDisconnected(DisconnectCause cause)

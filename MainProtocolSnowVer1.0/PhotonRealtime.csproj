@@ -60,12 +60,11 @@
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Unity\Editor\AccountService.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Extensions.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\WebRpc.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\LoadBalancingPeer.cs" />
+    <Compile Include="Assets\Photon\PhotonRealtime\Code\LoadbalancingPeer.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\PhotonPingClasses.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Room.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\RoomInfo.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Player.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\SystemConnectionSummary.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Unity\Editor\PhotonEditorUtils.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\LoadBalancingClient.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Region.cs" />

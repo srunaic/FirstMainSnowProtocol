@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using SeonghyoGameManagerGroup;//그룹화
 
 public class MultiPlayer : MonoBehaviour,IPunObservable
 {
@@ -78,7 +79,7 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
     }
     private void Update()
     {
-        if (pv.IsMine)
+        if(pv.IsMine)
         {
             ProcessPlayerMovement();
         }
