@@ -3,13 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using SeonghyoGameManagerGroup;//그룹화
 
-public class MultiPlayer : MonoBehaviour,IPunObservable
+public enum CheckState 
 {
+    None,
+    DollGames
+
+}
+public class MultiPlayer : MonoBehaviour, IPunObservable
+{
+    public CheckState _checkstate = CheckState.None;
+
     [Header("포톤 Text 정보 들고오기")]
     public Text PlayerTxt;
-    public NetworkManager networkManger; 
+    public NetworkManager networkManger;
 
     [Header("싱글 비동기적 움직임관리")]
     public float moveSpeed = 20f; // 이동 속도 조절 변수
@@ -35,8 +42,6 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
     [Header("캐릭터 애니메이션 bool값 저장")]
     public bool isMove = false;
 
-    public bool onMoveable = true;
-
     public bool OnSit = false;
 
     private float RunSpeed = 4f;
@@ -49,9 +54,12 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
     private Vector3 currPos = Vector3.zero;
     private Quaternion currRot = Quaternion.identity;
 
-    
+    public bool onMoveable = true;
+
     void Start()
     {
+        _checkstate = CheckState.None;
+
         gravity = -Physics.gravity.y;
         rb = GetComponent<Rigidbody>();
         pv = GetComponent<PhotonView>();
@@ -65,10 +73,11 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
         {
             PhotonNetwork.LocalPlayer.NickName = networkManger.NickNameInput.text; //포톤 UI에 입력한 정보 닉네임 받아오기.
             PlayerTxt.text = PhotonNetwork.LocalPlayer.NickName;
+
             Camera.main.GetComponent<FollowCam>().SetPlayer(transform, transform);
         }
     }
- 
+
     private void FixedUpdate()
     {
         if (rb.velocity.y < 0)
@@ -79,23 +88,33 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
     }
     private void Update()
     {
-        if(pv.IsMine)
+        if (pv.IsMine)
         {
             ProcessPlayerMovement();
         }
-    }
 
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            _checkstate = CheckState.None;
+
+            if (_checkstate == CheckState.None)
+            {
+                 onMoveable = true;
+            }
+            
+        }
+
+    }
     void ProcessPlayerMovement()
     {
         if (onMoveable)
         {
-            Move(); // 움직임 처리.
+            Move(); // 움직임 처리.   
         }
         else
         {
             rb.velocity = Vector3.zero + Vector3.up * VelocityY;
         }
-        
         if (Input.GetKeyDown(KeyCode.Q))
         {
             pv.RPC("TriggerDanceAnimation", RpcTarget.All);//Trigger 애니메이션을 포톤 값에 넘겨주는방법.
@@ -106,7 +125,6 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
             pv.RPC("TriggerHiAnimation", RpcTarget.All);
         }
     }
-
     //포톤에서 유저의 정보를 이 함수로 전달해줌. 그래야 상대측도 보인다.
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) //원격 전송방식.
     {
@@ -144,14 +162,28 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
         RunaAnim.SetTrigger("Hi");
     }
 
+    public void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("DollGaming")) //인형뽑기 기계
+        {
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                _checkstate = CheckState.DollGames;
+            }
+            else if (_checkstate == CheckState.DollGames)
+            {
+                    onMoveable = false;
+            }
+            
+        }
+
+    }
     public IEnumerator CheckPose() //춤 스피드
     {
         yield return new WaitForSeconds(1f);
-        onMoveable = false;
         RunaAnim.SetTrigger("isPose");
 
         yield return new WaitForSeconds(6.7f);
-        onMoveable = true;
     }
 
     public void Move()
@@ -159,7 +191,7 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
         // 키보드 입력을 받아 이동 및 점프 제어
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
-       
+
         // 뒤로 가는 것을 방지
         if (verticalInput < 0)
         {
@@ -175,7 +207,6 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
         Vector3 moveDirection = (cameraForward * verticalInput + Camera.main.transform.right * horizontalInput).normalized;
         //캠이 보는 방향과 플레이어 방향을 초기화 해주는 방정식.
 
-       
         Vector3 movement = moveDirection * moveSpeed; //기본속력
 
         //애니메이션 실행.
@@ -189,7 +220,6 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
             }
 
         }
-
         //처음 움직임 초기화 시킴. 레프트 쉬프트 누를시에 달림.
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
@@ -202,19 +232,16 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
             moveSpeed = BaseSpeed;
         }
 
-        if (horizontalInput != 0 || verticalInput != 0)//When the key is input,
+        if (horizontalInput != 0 || verticalInput != 0)
         {
             Quaternion rotMove = Quaternion.LookRotation(moveDirection); // 이동 방향으로 회전
             transform.rotation = Quaternion.Lerp(transform.rotation, rotMove, rotLookSpeed * Time.deltaTime);
 
-            // Camera는 오직 수평 축 회전만 적용
-           // Camera.main.transform.rotation = Quaternion.Euler(0, rotMove.eulerAngles.y, 0);
         }
-
         // 캐릭터의 점프 처리
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
-            pv.RPC("TriggerJumpAnimation",RpcTarget.All);//점프 애니메이션 포톤에 넘겨주기.
+            pv.RPC("TriggerJumpAnimation", RpcTarget.All);//점프 애니메이션 포톤에 넘겨주기.
             float jumpSpeed = Mathf.Sqrt(2 * Mathf.Abs(gravity) * jumpHeight);
 
             rb.velocity = movement + Vector3.up * jumpSpeed * 1f;
@@ -233,8 +260,7 @@ public class MultiPlayer : MonoBehaviour,IPunObservable
                 //이 코드에 따라 무중력과 중력으로 바뀜.
             }
         }
-       
+
     }
 
-  
 }
