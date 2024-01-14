@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-public class FollowCam : MonoBehaviour
+using Photon.Pun;
+public class FollowCam : MonoBehaviour, IPunObservable
 {
     private float CamMoveSpeed = 1f;
     private float angleY = 0;
     private float rotateSpeedX = 3f;
 
     private bool CursorVisible = true;
-    public float sensitivity = 2.0f; // 마우스 감도 제어 변수
-   
+
     public Vector3 followOffset;
    
     [Header("Follow")]
@@ -25,47 +25,61 @@ public class FollowCam : MonoBehaviour
     private float angleZ = 0;
     private float rotSpeedY = 10f;
 
-    //플레이어에게 이 값을 넘겨주고 받아온다. 
-    public void SetPlayer(Transform newPlayer, Transform Target)
+    private Vector3 currPos = Vector3.zero;
+    private Quaternion currRot = Quaternion.identity;
+
+    void Start()
     {
-        player = newPlayer;
-        followTarget = Target;
-
-        transform.position =
-        followTarget.position + followTarget.rotation * followOffset;//카메라가 y축으로 얼마만큼 회전했나?
-
         angleY = 0;
         angleZ = 0;
+       
     }
-
-    private void FixedUpdate()//고정된 주기마다 업데이트(물리주기 ,훨씬 늦게 반복.0.02)
+    //플레이어에게 이 값을 넘겨주고 받아온다. 
+    public void SetPlayer(Transform Target)
     {
-        if (followTarget != null)    //타겟이 있다면, 따라가라.
-        {
-            CamLook();
-        }
+        followTarget = Target;
 
+        transform.position = followTarget.position + followOffset; // 카메라가 y축으로 얼마만큼 회전했나?
     }
 
     void Update()
     {
+ 
         Cursors();
 
-        if (player != null)
+  
+        if (followTarget != null)
         {
+            CamLook();
+
             // 플레이어의 위치를 따라가도록 카메라의 위치를 업데이트
-            transform.position = player.position + offset;
+            transform.position = followTarget.position + followOffset;
+            // 마우스의 X 및 Y 각도를 사용하여 카메라 회전
+           
+            float mouseX = Input.GetAxis("Mouse X") ;
+            float mouseY = Input.GetAxis("Mouse Y") ;  // Y 각도는 반전시킴
+
+            angleY += mouseX * rotateSpeedX;
+            angleZ += mouseY * rotateSpeedX;
+
+            // Y 각도를 제한하여 오버헤드 및 땅을 바라보지 않도록 함
+            angleZ = Mathf.Clamp(angleZ, -80f, 80f);
+
+            Quaternion camRotY = Quaternion.Euler(0, angleY, 0);
+            Quaternion camRotZ = Quaternion.Euler(-angleZ, 0, 0);
+            transform.rotation = camRotY * camRotZ;
 
             // 플레이어를 바라보도록 카메라의 회전을 업데이트 (수직 회전을 원하지 않을 경우 Quaternion.identity 사용)
-            transform.rotation = Quaternion.Euler(0, player.eulerAngles.y, 0);
+            //Quaternion camRot = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
+            //transform.rotation = Quaternion.Slerp(transform.rotation, camRot, Time.deltaTime * rotateSpeedX);
         }
     }
    
     public void CamLook()
     {
-        Quaternion camRot = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
+        Quaternion camRot = Quaternion.Euler(0, followTarget.transform.eulerAngles.y, 0);
 
-        Vector3 lookPos = followTarget.position + camRot * offset;
+        Vector3 lookPos = followTarget.position + camRot * followOffset;
         // 플레이어를 바라보도록 회전 설정
         transform.LookAt(lookPos);
     }
@@ -88,5 +102,21 @@ public class FollowCam : MonoBehaviour
 
         }
 
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            stream.SendNext(Camera.main.transform.position);
+            stream.SendNext(Camera.main.transform.rotation);
+
+        }
+        else
+        {
+            currPos = (Vector3)stream.ReceiveNext();
+            currRot = (Quaternion)stream.ReceiveNext();
+     
+        }
     }
 }

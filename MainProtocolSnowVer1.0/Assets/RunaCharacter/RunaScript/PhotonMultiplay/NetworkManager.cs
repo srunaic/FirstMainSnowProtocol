@@ -9,6 +9,11 @@ using SeonghyoGameManagerGroup; //게임매니저
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
+    private static NetworkManager instance;//싱글톤
+
+    /*[Header("아이템 생성기")]
+    public GameObject ItemSpawn;*/
+
     [Header("DisconnectPanel")]
     public GameObject MainUI;
     public GameObject DisConnectPanel;
@@ -34,12 +39,14 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public Text StatusText;
     public PhotonView PV;
 
-    List<RoomInfo> myList = new List<RoomInfo>();
+    List<RoomInfo> myList = new List<RoomInfo>();//자료구조.
     int currentPage = 1, maxPage, multiple;
 
+    //게임시작을 하면,네트워크 연결됨.
     public void LoadingScene()
     {
         GameManager.instance.isConnect = true;
+        //ItemSpawn.SetActive(true);
         MainUI.SetActive(false);
     }
     // ◀버튼 -2 , ▶버튼 -1 , 셀 숫자
@@ -85,8 +92,18 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         MyListRenewal();
     }
 
-    void Awake() => Screen.SetResolution(1920, 1080, false);
-
+    void Awake()
+    {
+        if (instance != null)
+        {
+            instance = this;
+        }
+        else
+        {
+            DontDestroyOnLoad(this);
+        }
+        Screen.SetResolution(1920, 1080, false);
+    }
     void Update()
     {
         StatusText.text = PhotonNetwork.NetworkClientState.ToString(); //현재 접속 상태.
@@ -103,6 +120,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         DisConnectPanel.SetActive(false);
         LobbyPanel.SetActive(true);
         RoomPanel.SetActive(false);
+
+        //포톤 닉네임 입력된 값 받아오기.
         PhotonNetwork.LocalPlayer.NickName = NickNameInput.text;//게임을 참여했을때, 닉네임을 들고옴.
         WelcomeText.text = PhotonNetwork.LocalPlayer.NickName + "님 환영합니다"; //닉네임 입력했음.
 
@@ -153,7 +172,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         ListText.text = "";
         for (int i = 0; i < PhotonNetwork.PlayerList.Length; i++)
             ListText.text += PhotonNetwork.PlayerList[i].NickName + ((i + 1 == PhotonNetwork.PlayerList.Length) ? "" : ", ");
-        RoomInfoText.text = PhotonNetwork.CurrentRoom.Name + " / " + PhotonNetwork.CurrentRoom.PlayerCount + "명 / " + PhotonNetwork.CurrentRoom.MaxPlayers + "최대";
+        RoomInfoText.text = "방이름:" + PhotonNetwork.CurrentRoom.Name +"       "+PhotonNetwork.CurrentRoom.PlayerCount + "명" + "       "+
+             PhotonNetwork.CurrentRoom.MaxPlayers + "최대인원";
     }
 
     public void Send() //채팅 메시지 보내기.

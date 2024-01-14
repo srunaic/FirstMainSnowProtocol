@@ -58,14 +58,17 @@
   <ItemGroup>
     <Compile Include="Assets\script\OPtionCanvas\SceneChange.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\MultiLiftCatch.cs" />
     <Compile Include="Assets\script\Enemy\EnemyNav.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\Scripts\TDControl.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\Item\InterActiveInterface.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\Seat.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\Building\BuildingInterActive.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\Item\ItemSpawner.cs" />
     <Compile Include="Assets\script\ScoreCanvas\ScoreTxt.cs" />
     <Compile Include="Assets\script\OPtionCanvas\OPtionSetActive.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\VignetteComponent.cs" />
@@ -111,12 +114,14 @@
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingProfile.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\DollGameScript\LiftMoving.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\LiftMultiDoll.cs" />
     <Compile Include="Assets\Addressables\1.18.19\Addressables Utility\AddressablesUtility.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\NetworkManager.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\GameManager.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\DitheringModel.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\MultiDoll.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
     <Compile Include="Assets\script\bakhoMoving\bakhoBullet.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
@@ -130,7 +135,6 @@
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\Scripts\Lighthouse.cs" />
     <Compile Include="Assets\script\Enemy\Enemybullet.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingComponent.cs" />
-    <Compile Include="Assets\script\OPtionCanvas\AudioSource.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\FaidInOut.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\GrainComponent.cs" />
     <Compile Include="Assets\Terrain Map\Script\FlashOnOff.cs" />
@@ -147,6 +151,7 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\FbsControler.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\MobileRuna\NpcMov.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\Item\ScoreItem.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\script\timeSquare\timeSquare.cs" />
@@ -170,10 +175,10 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\SongRoomScript\SongRoom.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\MobileRuna\NavAI.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\LoadingScene\NextPortal.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\UserCamTransparent.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\CamVersion.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\LiftMultiDoll.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\MultiLiftCatch.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\MultiDoll.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\AudioSource\AudioManager.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\FirstPersonCam.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />

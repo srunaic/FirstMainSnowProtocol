@@ -7,11 +7,6 @@ public class MultiDoll : MonoBehaviour
     [SerializeField]
     private MultiLiftCatch _LiftDoll;
 
-    private void Start()
-    {
-        _LiftDoll = FindObjectOfType<MultiLiftCatch>();
-    }
-
     /*private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("CheckDollCol"))

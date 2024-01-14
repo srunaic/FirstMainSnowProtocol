@@ -71,7 +71,7 @@
             {
                 "type": "UnityEngine.Polybrush.BrushMirror, Unity.Polybrush, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "Brush.MirrorAxis",
-                "value": "{\"m_Value\":3}"
+                "value": "{\"m_Value\":0}"
             },
             {
                 "type": "UnityEngine.Polybrush.MirrorCoordinateSpace, Unity.Polybrush, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -116,12 +116,12 @@
             {
                 "type": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "ScatteringEditor.PreviewThumSize",
-                "value": "{\"m_Value\":60}"
+                "value": "{\"m_Value\":62}"
             },
             {
                 "type": "UnityEditor.Polybrush.PrefabLoadout, Unity.Polybrush.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ScatteringEditor.userLoadout",
-                "value": "{\"m_Value\":{\"infos\":[]}}"
+                "value": "{\"m_Value\":{\"infos\":[{\"palette\":{\"fileID\":11400000,\"guid\":\"c6ba856ec62d93849b93376d02e5cd7f\",\"type\":2},\"prefab\":{\"fileID\":1615244783788446,\"guid\":\"2dec588a435420f4589914de23d120f5\",\"type\":3}},{\"palette\":{\"fileID\":11400000,\"guid\":\"c6ba856ec62d93849b93376d02e5cd7f\",\"type\":2},\"prefab\":{\"fileID\":100000,\"guid\":\"0bd72e5f4b05a474496b3d6e952adbf8\",\"type\":3}},{\"palette\":{\"fileID\":11400000,\"guid\":\"c6ba856ec62d93849b93376d02e5cd7f\",\"type\":2},\"prefab\":{\"fileID\":1127789175704916,\"guid\":\"234f6fb2a7141ac4babed013ec52d294\",\"type\":3}},{\"palette\":{\"fileID\":11400000,\"guid\":\"c6ba856ec62d93849b93376d02e5cd7f\",\"type\":2},\"prefab\":{\"fileID\":1199139577487362,\"guid\":\"f8244925291293049a4f9db693e9e395\",\"type\":3}},{\"palette\":{\"fileID\":11400000,\"guid\":\"c6ba856ec62d93849b93376d02e5cd7f\",\"type\":2},\"prefab\":{\"fileID\":1275040304669678,\"guid\":\"cc73d15ad10bfb04bb62d40a852cec0a\",\"type\":3}},{\"palette\":{\"fileID\":11400000,\"guid\":\"c6ba856ec62d93849b93376d02e5cd7f\",\"type\":2},\"prefab\":{\"fileID\":100000,\"guid\":\"04deee917b1259f4c9bf0e61653d9539\",\"type\":3}}]}}"
             }
         ]
     }

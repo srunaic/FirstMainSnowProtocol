@@ -3,16 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using SeonghyoGameManagerGroup; //게임매니저
 
-public enum CheckState 
+public enum CheckState //포톤 상의 플레이어 상태값.
 {
     None,
     DollGames
-
 }
 public class MultiPlayer : MonoBehaviour, IPunObservable
 {
+    [Header("플레이어의 현재 상태줄표시")]
     public CheckState _checkstate = CheckState.None;
+    public int score = 0;//인터페이스 플레이어가 받을 점수.
+    public Text ScoreText;
 
     [Header("포톤 Text 정보 들고오기")]
     public Text PlayerTxt;
@@ -41,23 +44,23 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
 
     [Header("캐릭터 애니메이션 bool값 저장")]
     public bool isMove = false;
-
     public bool OnSit = false;
 
     private float RunSpeed = 4f;
     private float BaseSpeed = 2f;
 
     [Header("포톤에서 실행되는 캐릭터")]
-    private PhotonView pv;
+    public PhotonView pv;
     private Transform _PlayerTr;
 
     private Vector3 currPos = Vector3.zero;
     private Quaternion currRot = Quaternion.identity;
 
     public bool onMoveable = true;
-
     void Start()
     {
+        ScoreText.text = ""+ score;//점수 초기화.
+
         _checkstate = CheckState.None;
 
         gravity = -Physics.gravity.y;
@@ -74,13 +77,13 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
             PhotonNetwork.LocalPlayer.NickName = networkManger.NickNameInput.text; //포톤 UI에 입력한 정보 닉네임 받아오기.
             PlayerTxt.text = PhotonNetwork.LocalPlayer.NickName;
 
-            Camera.main.GetComponent<FollowCam>().SetPlayer(transform, transform);
+            Camera.main.GetComponent<FollowCam>().SetPlayer(transform);
         }
     }
 
     private void FixedUpdate()
     {
-        if (rb.velocity.y < 0)
+        if(rb.velocity.y < 0)
         {
             // 캐릭터가 땅에 닿아 있는지 검사
             isGrounded = Physics.Raycast(transform.position, Vector3.down, feetHeight + checkHeight);
@@ -88,7 +91,7 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
     }
     private void Update()
     {
-        if (pv.IsMine)
+        if(pv.IsMine)
         {
             ProcessPlayerMovement();
         }
@@ -103,7 +106,6 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
             }
             
         }
-
     }
     void ProcessPlayerMovement()
     {
@@ -156,10 +158,34 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
         RunaAnim.SetTrigger("Jump");
     }
     [PunRPC]
-
     void TriggerHiAnimation()
     {
         RunaAnim.SetTrigger("Hi");
+    }
+
+    //인터페이스 적용 아이템 참조.
+    public void OnTriggerEnter(Collider other)
+    {
+        //멀티플레이 중이고 마스터가 아니면 
+        if (GameManager.instance.isConnect == true //게임 접속하기 상태라면,,
+            && !PhotonNetwork.IsMasterClient)
+            return; //아래코드 스킵
+
+        if (other.TryGetComponent<iItem>(out iItem item))
+        {
+            item.Use(this);
+            Debug.Log("이 아이템 오브젝트 사라짐"+item);
+            //멀티플레이 중이고 마스터가 아니면 
+            
+        }
+    }
+    //인터페이스 ScoreItem 에 쓰일 함수.
+   
+    [PunRPC]
+    public void AddScore(int num)
+    {
+        score += num;
+        ScoreText.text = "" + score;
     }
 
     public void OnTriggerStay(Collider other)
@@ -176,7 +202,6 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
             }
             
         }
-
     }
     public IEnumerator CheckPose() //춤 스피드
     {
@@ -192,11 +217,11 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        // 뒤로 가는 것을 방지
+        /*// 뒤로 가는 것을 방지
         if (verticalInput < 0)
         {
             verticalInput = 0;
-        }
+        }*/
 
         //기본 움직임 값.
         Vector3 MovePlayer = new Vector3(horizontalInput, verticalInput);

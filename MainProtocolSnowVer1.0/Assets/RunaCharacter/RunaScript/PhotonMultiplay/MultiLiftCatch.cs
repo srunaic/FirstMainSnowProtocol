@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Photon.Pun;
-
 public class MultiLiftCatch : MonoBehaviour, IPunObservable
 {
     [Header("집게가 인형을 잡았을때 판정.")]
     bool IsTongsHoldingDoll = false;
-    public LiftMultiDoll _LiftMove;
+    public LiftMultiDoll _LiftMove; //기계 본체 접촉.
 
     [Header("인형 컨트롤")]
     private Rigidbody dollRigidbody;//인형의 리지드 바디.
@@ -27,7 +26,6 @@ public class MultiLiftCatch : MonoBehaviour, IPunObservable
     private void Start()
     {
         _LiftArmTr = GetComponent<Transform>();
-        _LiftMove = FindObjectOfType<LiftMultiDoll>();
         dollRigidbody = _LiftMove._Doll.GetComponent<Rigidbody>();
         dollCollider = _LiftMove._Doll.GetComponent<Collider>();
         legDollPos2Collider = _LiftMove._LegDollPos2.GetComponent<Collider>();
@@ -48,7 +46,6 @@ public class MultiLiftCatch : MonoBehaviour, IPunObservable
             currRot = (Quaternion)stream.ReceiveNext();
         }
     }
-
 
     private void OnTriggerEnter(Collider other)
     {
@@ -87,9 +84,7 @@ public class MultiLiftCatch : MonoBehaviour, IPunObservable
         dollRigidbody.isKinematic = false;
         dollCollider.enabled = true;
         LiftAnim.SetTrigger("PutZile");
-        StartCoroutine(DisableColliderForDuration(2f));
-
-      
+        StartCoroutine(DisableColliderForDuration(2f)); 
     }
 
     private IEnumerator DisableColliderForDuration(float duration)
