@@ -13,12 +13,14 @@ public class CamVersion : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Camera2.SetActive(true);
+            Camera1.SetActive(true);
+            Camera2.SetActive(false);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            Camera2.SetActive(false);
+            Camera1.SetActive(false);
+            Camera2.SetActive(true);
         }
     }
-  
+
 }

@@ -12,7 +12,7 @@ public class FollowCam : MonoBehaviour, IPunObservable
     private bool CursorVisible = true;
 
     public Vector3 followOffset;
-   
+  
     [Header("Follow")]
     private Transform followTarget;
    
@@ -28,8 +28,11 @@ public class FollowCam : MonoBehaviour, IPunObservable
     private Vector3 currPos = Vector3.zero;
     private Quaternion currRot = Quaternion.identity;
 
+    public PhotonView pv;
+ 
     void Start()
     {
+        pv = GetComponent<PhotonView>();
         angleY = 0;
         angleZ = 0;
        
@@ -44,10 +47,8 @@ public class FollowCam : MonoBehaviour, IPunObservable
 
     void Update()
     {
- 
         Cursors();
 
-  
         if (followTarget != null)
         {
             CamLook();
@@ -55,9 +56,9 @@ public class FollowCam : MonoBehaviour, IPunObservable
             // 플레이어의 위치를 따라가도록 카메라의 위치를 업데이트
             transform.position = followTarget.position + followOffset;
             // 마우스의 X 및 Y 각도를 사용하여 카메라 회전
-           
-            float mouseX = Input.GetAxis("Mouse X") ;
-            float mouseY = Input.GetAxis("Mouse Y") ;  // Y 각도는 반전시킴
+
+            float mouseX = Input.GetAxis("Mouse X");
+            float mouseY = Input.GetAxis("Mouse Y");  // Y 각도는 반전시킴
 
             angleY += mouseX * rotateSpeedX;
             angleZ += mouseY * rotateSpeedX;
@@ -69,19 +70,18 @@ public class FollowCam : MonoBehaviour, IPunObservable
             Quaternion camRotZ = Quaternion.Euler(-angleZ, 0, 0);
             transform.rotation = camRotY * camRotZ;
 
-            // 플레이어를 바라보도록 카메라의 회전을 업데이트 (수직 회전을 원하지 않을 경우 Quaternion.identity 사용)
-            //Quaternion camRot = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
-            //transform.rotation = Quaternion.Slerp(transform.rotation, camRot, Time.deltaTime * rotateSpeedX);
         }
     }
    
     public void CamLook()
     {
+        
         Quaternion camRot = Quaternion.Euler(0, followTarget.transform.eulerAngles.y, 0);
 
-        Vector3 lookPos = followTarget.position + camRot * followOffset;
-        // 플레이어를 바라보도록 회전 설정
-        transform.LookAt(lookPos);
+          Vector3 lookPos = followTarget.position + camRot * followOffset;
+            // 플레이어를 바라보도록 회전 설정
+          transform.LookAt(lookPos);
+        
     }
     private void Cursors()
     {

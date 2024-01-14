@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using AudioSeonghyo;
+
 public enum GameKinded
 {
     None,
@@ -41,11 +41,11 @@ public class LiftMultiDoll : MonoBehaviourPunCallbacks
 
     private PhotonView pv;
 
-    public AudioManager _audioManager;
+    public AudioGameManage _audioManager;
 
     private void Start()
     {
-        _audioManager = FindObjectOfType<AudioManager>();
+        _audioManager = FindObjectOfType<AudioGameManage>();
         pv = GetComponent<PhotonView>();
          TimeGames = 0;//인형뽑기 시간 초기화.
         _TimeTxt.text = "0:20";//시간 초
@@ -119,7 +119,7 @@ public class LiftMultiDoll : MonoBehaviourPunCallbacks
     {
         if (_playerpos.CompareTag("Player"))//플레이어와 접근했다면,
         {
-            if (Input.GetKey(KeyCode.Z))
+            if (Input.GetKeyDown(KeyCode.Z))
             {
                 StartCoroutine(_DollGameFadeTiming());
                 _gameKind = GameKinded.DollGame;   //계속해서 true가 

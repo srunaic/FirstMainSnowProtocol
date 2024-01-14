@@ -9,7 +9,7 @@ using SeonghyoGameManagerGroup; //∞‘¿”∏≈¥œ¿˙
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
-    private static NetworkManager instance;//ΩÃ±€≈Ê
+    //private static NetworkManager instance;//ΩÃ±€≈Ê
 
     /*[Header("æ∆¿Ã≈€ ª˝º∫±‚")]
     public GameObject ItemSpawn;*/
@@ -94,14 +94,14 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     void Awake()
     {
-        if (instance != null)
+        /*if (instance != null)
         {
             instance = this;
         }
         else
         {
             DontDestroyOnLoad(this);
-        }
+        }*/
         Screen.SetResolution(1920, 1080, false);
     }
     void Update()

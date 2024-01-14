@@ -8,6 +8,7 @@ public class LoadingScene : MonoBehaviour
 {
     [Header("비동기식 씬 넘기기.")]
     public static string nextScene;
+    public static string nextShotScene;
     [SerializeField] Image progressBar;
     private void Start()
     {
@@ -16,6 +17,11 @@ public class LoadingScene : MonoBehaviour
     public static void LoadScene(string sceneName)
     {
         nextScene = sceneName;
+        SceneManager.LoadScene("RunaLoadingScene");
+    }
+    public static void LoadShotScene(string ShotName)
+    {
+        nextShotScene = ShotName;
         SceneManager.LoadScene("RunaLoadingScene");
     }
 

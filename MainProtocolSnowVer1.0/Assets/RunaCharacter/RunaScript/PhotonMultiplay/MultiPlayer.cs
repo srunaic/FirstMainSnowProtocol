@@ -8,14 +8,21 @@ using SeonghyoGameManagerGroup; //게임매니저
 public enum CheckState //포톤 상의 플레이어 상태값.
 {
     None,
-    DollGames
+    Sitting,
+    DollGames,
+    ShotGames
 }
 public class MultiPlayer : MonoBehaviour, IPunObservable
 {
     [Header("플레이어의 현재 상태줄표시")]
     public CheckState _checkstate = CheckState.None;
+
+
+    [Header("인터페이스 상호작용")]
     public int score = 0;//인터페이스 플레이어가 받을 점수.
     public Text ScoreText;
+    public MulltiSeat nearSeat;
+    public ShootingInterAct nearShooting;
 
     [Header("포톤 Text 정보 들고오기")]
     public Text PlayerTxt;
@@ -72,15 +79,15 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
         networkManger = FindObjectOfType<NetworkManager>();
 
         //게임 시작할때,플레이어 카메라 위치 정보를 동기화 해줌.
-        if (pv.IsMine)
+        if (pv.IsMine && GameManager.instance.isConnect == true)
         {
             PhotonNetwork.LocalPlayer.NickName = networkManger.NickNameInput.text; //포톤 UI에 입력한 정보 닉네임 받아오기.
             PlayerTxt.text = PhotonNetwork.LocalPlayer.NickName;
 
             Camera.main.GetComponent<FollowCam>().SetPlayer(transform);
+            nearSeat = FindObjectOfType<MulltiSeat>();
         }
     }
-
     private void FixedUpdate()
     {
         if(rb.velocity.y < 0)
@@ -122,9 +129,33 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
             pv.RPC("TriggerDanceAnimation", RpcTarget.All);//Trigger 애니메이션을 포톤 값에 넘겨주는방법.
         }
 
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             pv.RPC("TriggerHiAnimation", RpcTarget.All);
+        }
+        if (_checkstate == CheckState.Sitting)
+        {
+            if (nearSeat != null && Input.GetKeyDown(KeyCode.Z))//앉을때 동작.
+            {
+
+                nearSeat.SetSeat(this);
+            }
+        }
+        else if (OnSit && Input.GetKeyDown(KeyCode.C))//일어날때 동작.
+        {
+            _checkstate = CheckState.None;
+
+            if (_checkstate == CheckState.None)
+            {
+                nearSeat.OffSeat(this);
+            }
+        }
+       else if (nearShooting != null && _checkstate == CheckState.ShotGames)
+        {
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                nearShooting.SetShotGame(this);
+            }
         }
     }
     //포톤에서 유저의 정보를 이 함수로 전달해줌. 그래야 상대측도 보인다.
@@ -163,6 +194,35 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
         RunaAnim.SetTrigger("Hi");
     }
 
+    [PunRPC]
+    public void SetSit()//앉기
+    {
+        if (nearSeat != null)
+        {
+            onMoveable = false;
+
+            transform.rotation = nearSeat.sitPos.rotation;
+            Debug.Log("의자 동기화" + nearSeat);
+            RunaAnim.SetTrigger("Sit");
+
+            OnSit = true;
+        }
+    }
+
+    [PunRPC]
+    public void OffSit()//앉는키 해제
+    {
+        if (OnSit)
+        {
+            RunaAnim.SetTrigger("Stend");
+
+            onMoveable = true;
+            OnSit = false;
+            //애니메이션 추가.
+
+        }
+    }
+
     //인터페이스 적용 아이템 참조.
     public void OnTriggerEnter(Collider other)
     {
@@ -174,13 +234,26 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
         if (other.TryGetComponent<iItem>(out iItem item))
         {
             item.Use(this);
-            Debug.Log("이 아이템 오브젝트 사라짐"+item);
-            //멀티플레이 중이고 마스터가 아니면 
-            
+            //Debug.Log("이 아이템 오브젝트 사라짐"+item);
+            //멀티플레이 중이고 마스터가 아니면   
+        }
+
+        else if (other.TryGetComponent<MulltiSeat>(out MulltiSeat findSeat))
+        {
+            _checkstate = CheckState.Sitting;
+            nearSeat = findSeat;
+        }
+        else if (other.TryGetComponent<ShootingInterAct>(out ShootingInterAct findShot))
+        {
+            nearShooting = findShot;
+            if(nearShooting != null) 
+            {
+                _checkstate = CheckState.ShotGames;
+            }
         }
     }
+
     //인터페이스 ScoreItem 에 쓰일 함수.
-   
     [PunRPC]
     public void AddScore(int num)
     {
@@ -198,11 +271,12 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
             }
             else if (_checkstate == CheckState.DollGames)
             {
-                    onMoveable = false;
-            }
-            
+                onMoveable = false;
+            } 
         }
     }
+
+
     public IEnumerator CheckPose() //춤 스피드
     {
         yield return new WaitForSeconds(1f);
