@@ -60,11 +60,12 @@
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Unity\Editor\AccountService.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Extensions.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\WebRpc.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\LoadBalancingPeer.cs" />
+    <Compile Include="Assets\Photon\PhotonRealtime\Code\LoadbalancingPeer.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\PhotonPingClasses.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Room.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\RoomInfo.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Player.cs" />
+    <Compile Include="Assets\Photon\PhotonRealtime\Code\SystemConnectionSummary.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Unity\Editor\PhotonEditorUtils.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\LoadBalancingClient.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\Region.cs" />
@@ -75,7 +76,6 @@
     <Compile Include="Assets\Photon\PhotonRealtime\Code\PhotonPing.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\ConnectionHandler.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Code\CustomTypesUnity.cs" />
-    <Compile Include="Assets\Photon\PhotonRealtime\Code\SystemConnectionSummary.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Photon\PhotonRealtime\Code\changes-realtime.txt" />
@@ -306,9 +306,6 @@
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>

@@ -58,10 +58,13 @@
   <ItemGroup>
     <Compile Include="Assets\script\OPtionCanvas\SceneChange.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Enemy\EnemyMove.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\MultiLiftCatch.cs" />
     <Compile Include="Assets\script\Enemy\EnemyNav.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Enemy\Boss.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\Scripts\TDControl.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\Item\InterActiveInterface.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Enemy\BossMove.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\Seat.cs" />
@@ -76,11 +79,14 @@
     <Compile Include="Assets\script\bakhoMoving\CameraViewChange.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
     <Compile Include="Assets\script\SunAndNight\sunNight.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Map\MapScroll.cs" />
     <Compile Include="Assets\script\bakhoMoving\SmoothFollow.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\HpBar\HealthBar.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingContext.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Manager\GameManager.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\VignetteModel.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\FogModel.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
@@ -96,6 +102,8 @@
     <Compile Include="Assets\script\OPtionCanvas\MainScene.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\AudioSource\AudioGameManage.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Enemy\EnemySpawn.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Manager\PauseManager.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\#NVJOB Assets\Dynamic Sky (For Demo)\DynamicSkyForDemo.cs" />
     <Compile Include="Assets\RunaCharacter\music\CamController.cs" />
     <Compile Include="Assets\Addressables\1.18.19\Prefab Spawner\PrefabSpawnerSample.cs" />
@@ -106,6 +114,7 @@
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\TaaComponent.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\InterManager.cs" />
     <Compile Include="Assets\script\OPtionCanvas\volume.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\SaveLobbyData\LobbyManager.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\UserLutModel.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\#NVJOB Water Shaders V2\NVWaterShaders.cs" />
@@ -117,6 +126,7 @@
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\LiftMultiDoll.cs" />
     <Compile Include="Assets\Addressables\1.18.19\Addressables Utility\AddressablesUtility.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Player\PlayerMove.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\NetworkManager.cs" />
@@ -132,10 +142,14 @@
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\BloomComponent.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\MobileRuna\MobileCamRotRuna.cs" />
     <Compile Include="Assets\script\bakhoMoving\bakhoShooting.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Item\Potion.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\Item\MulltiSeat.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\Scripts\Lighthouse.cs" />
     <Compile Include="Assets\script\Enemy\Enemybullet.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingComponent.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Bullet\UltimateBullet.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Item\BackgroundItem.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\FaidInOut.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\GrainComponent.cs" />
     <Compile Include="Assets\Terrain Map\Script\FlashOnOff.cs" />
@@ -150,20 +164,25 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\LoadingScene\LoadingScene.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\DitheringComponent.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\FbsControler.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Item\ItemRotation.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\MobileRuna\NpcMov.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\Item\ScoreItem.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\script\timeSquare\timeSquare.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingInterAct.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Particle\DestroyParticle.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\CameraRotation.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\MobileRuna\MobileInputManager.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\AudioManager.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\LoadingScene\ManagerStarter.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\DollGameScript\Doll.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Enemy\BossShooting.cs" />
     <Compile Include="Assets\script\bakhoMoving\Explosion.cs" />
     <Compile Include="Assets\script\ScoreCanvas\GoalWin.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
@@ -176,28 +195,9 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\SongRoomScript\SongRoom.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\MobileRuna\NavAI.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\LoadingScene\NextPortal.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Bullet\Bullet.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\UserCamTransparent.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\CamVersion.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\Item\MulltiSeat.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Enemy\EnemyMove.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Player\PlayerMove.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Particle\DestroyParticle.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Item\BackgroundItem.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Bullet\Bullet.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Manager\GameManager.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Bullet\UltimateBullet.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Enemy\BossShooting.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Map\MapScroll.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Item\ItemRotation.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Enemy\BossMove.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\AudioManager.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\HpBar\HealthBar.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\SaveLobbyData\LobbyManager.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Item\Potion.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Enemy\EnemySpawn.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Manager\PauseManager.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Enemy\Boss.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingInterAct.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
@@ -985,9 +985,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="PhotonChat.csproj">
+      <Project>{EBE989B2-2512-75FE-425B-5A60D6401963}</Project>
+      <Name>PhotonChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
+      <Project>{7C6C5CA2-BF55-86BD-8F0A-E50E2BA141A3}</Project>
+      <Name>PhotonUnityNetworking.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
+      <Project>{1F263AA3-0F31-0864-2C46-D12FFC969521}</Project>
+      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonRealtime.csproj">
+      <Project>{B93EB28D-9173-8243-CC1E-CD8D86BABD57}</Project>
+      <Name>PhotonRealtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
+      <Project>{8FE75209-867B-2D75-2DF6-A206AABB5DC6}</Project>
+      <Name>PunDemos.DemoHubEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
+      <Project>{06EF19B0-6E20-C048-09B2-B58ED2D84C18}</Project>
+      <Name>PhotonUnityNetworking.Utilities</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
       <Project>{90AD2D12-0118-E533-09E3-0CCAEF80FFF6}</Project>
       <Name>PhotonUnityNetworking</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
+      <Project>{C03411FD-412D-33EB-B110-6CE780B77D24}</Project>
+      <Name>PhotonUnityNetworking.Demos</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
       <Project>{C4038CF1-864E-8D43-ECC3-19A3B50C081E}</Project>
@@ -996,34 +1024,6 @@
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
       <Project>{95FB1A1A-7362-2781-C89B-7BBCEF84C2EB}</Project>
       <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{06EF19B0-6E20-C048-09B2-B58ED2D84C18}</Project>
-      <Name>PhotonUnityNetworking.Utilities</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
-      <Project>{C03411FD-412D-33EB-B110-6CE780B77D24}</Project>
-      <Name>PhotonUnityNetworking.Demos</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonChat.csproj">
-      <Project>{EBE989B2-2512-75FE-425B-5A60D6401963}</Project>
-      <Name>PhotonChat</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
-      <Project>{1F263AA3-0F31-0864-2C46-D12FFC969521}</Project>
-      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{7C6C5CA2-BF55-86BD-8F0A-E50E2BA141A3}</Project>
-      <Name>PhotonUnityNetworking.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
-      <Project>{8FE75209-867B-2D75-2DF6-A206AABB5DC6}</Project>
-      <Name>PunDemos.DemoHubEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{B93EB28D-9173-8243-CC1E-CD8D86BABD57}</Project>
-      <Name>PhotonRealtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
