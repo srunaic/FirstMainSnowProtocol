@@ -17,7 +17,6 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
     [Header("플레이어의 현재 상태줄표시")]
     public CheckState _checkstate = CheckState.None;
 
-
     [Header("인터페이스 상호작용")]
     public int score = 0;//인터페이스 플레이어가 받을 점수.
     public Text ScoreText;
@@ -165,9 +164,17 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
         {
             stream.SendNext(_PlayerTr.position);
             stream.SendNext(_PlayerTr.rotation);
+            stream.SendNext(currPos);
+            stream.SendNext(currRot);
             stream.SendNext(PhotonNetwork.LocalPlayer.NickName); // 닉네임을 전송
             stream.SendNext(RunaAnim.GetBool("isRun"));//bool값 애니메이션의 전송방법.
+           // stream.SendNext(score);
         }
+        /*else if(stream.IsReading)
+        {
+            score = (int)stream.ReceiveNext();//점수도 네트워크에 보내겠다.
+            ScoreText.text = "" + score;
+        }*/
         else
         {
             currPos = (Vector3)stream.ReceiveNext();
@@ -175,6 +182,14 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
             PlayerTxt.text = (string)stream.ReceiveNext(); // 받은 닉네임을 텍스트로 업데이트
             RunaAnim.SetBool("isRun", (bool)stream.ReceiveNext());
         }
+    }
+
+    //인터페이스 ScoreItem 에 쓰일 함수.
+    [PunRPC]
+    public void AddScore(int num)
+    {
+        score += num;
+        ScoreText.text = "" + score;
     }
 
     [PunRPC] //원격 전송 시스템.
@@ -251,14 +266,6 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
                 _checkstate = CheckState.ShotGames;
             }
         }
-    }
-
-    //인터페이스 ScoreItem 에 쓰일 함수.
-    [PunRPC]
-    public void AddScore(int num)
-    {
-        score += num;
-        ScoreText.text = "" + score;
     }
 
     public void OnTriggerStay(Collider other)

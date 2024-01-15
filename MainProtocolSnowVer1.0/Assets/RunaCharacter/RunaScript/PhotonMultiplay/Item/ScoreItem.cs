@@ -10,16 +10,15 @@ public class ScoreItem : MonoBehaviourPunCallbacks, iItem
     {
         if(GameManager.instance.isConnect == true)//멀티일때,연결.
         {
+            player.pv.RPC("AddScore", RpcTarget.All, 1);
             Destroy(gameObject);
-            Debug.Log("점수추가 및 아이템 삭제"+ player);
         }
-        else//로컬일때도 적용되라.
-        {
-            if(player != null)
-            {
-                Destroy(gameObject);
-            }
+        else
+        {//로컬일때,
+            player.AddScore(1);
+            Destroy(gameObject);
         }
     }
 
 }
+

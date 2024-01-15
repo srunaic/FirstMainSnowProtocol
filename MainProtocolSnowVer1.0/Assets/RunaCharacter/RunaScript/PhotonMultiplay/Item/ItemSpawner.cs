@@ -39,7 +39,18 @@ public class ItemSpawner : MonoBehaviourPunCallbacks
     [PunRPC]
     public void SpawnItemAct(Vector3 _spawnPos)
     {
-        Instantiate(itemPrefab, _spawnPos, Quaternion.identity);
+        if (GameManager.instance.isConnect == true)
+        {
+            //PhotonNetwork.Instantiate(itemPrefab.name, _spawnPos, Quaternion.identity, 0);
+            //기본적으로 PhotonNetwork.Instantiate로 생성한 경우
+            //주인이 나가면 사라지는 생성코드
+            PhotonNetwork.InstantiateRoomObject(itemPrefab.name, _spawnPos, Quaternion.identity, 0);
+            //주인이 나가도 사라지지 않는 생성코드 다음 방장이 주인이 된다.
+        }
+        else
+        {
+            Instantiate(itemPrefab, _spawnPos, Quaternion.identity);
+        }
     }
 
 }

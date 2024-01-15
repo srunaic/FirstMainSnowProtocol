@@ -10,7 +10,6 @@ using SeonghyoGameManagerGroup; //게임매니저
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
     //private static NetworkManager instance;//싱글톤
-
     /*[Header("아이템 생성기")]
     public GameObject ItemSpawn;*/
 
@@ -39,6 +38,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public Text StatusText;
     public PhotonView PV;
 
+    private int onClick = 0;
+
     List<RoomInfo> myList = new List<RoomInfo>();//자료구조.
     int currentPage = 1, maxPage, multiple;
 
@@ -47,7 +48,26 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         GameManager.instance.isConnect = true;
         //ItemSpawn.SetActive(true);
-        MainUI.SetActive(false);
+        RoomPanel.SetActive(false);
+        StatusText.enabled = false;
+    }
+    public void OnChatRoom()
+    {
+        if (onClick <= 0) //메시지
+        {
+       
+              RoomPanel.SetActive(true);
+              onClick = 1;
+              Time.timeScale = 0;//채팅중엔 게임 정지
+        }
+        else if (onClick <= 1)
+        {
+           
+              RoomPanel.SetActive(false);
+              Time.timeScale = 1;//채팅해제시 게임 도중시작
+              onClick = 0; //0으로 초기화.
+          
+        }
     }
     // ◀버튼 -2 , ▶버튼 -1 , 셀 숫자
     public void MyListClick(int num) //방 버튼 OnClick
@@ -108,9 +128,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         StatusText.text = PhotonNetwork.NetworkClientState.ToString(); //현재 접속 상태.
         LobbyInfoText.text = (PhotonNetwork.CountOfPlayers - PhotonNetwork.CountOfPlayersInRooms) + "로비 / " + PhotonNetwork.CountOfPlayers + "접속";
-    
     }
-
     public void Connect() => PhotonNetwork.ConnectUsingSettings();//접속하기
 
     public override void OnConnectedToMaster() => PhotonNetwork.JoinLobby();
@@ -127,8 +145,11 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         myList.Clear();
     }
-    public void Disconnect() => PhotonNetwork.Disconnect();
-
+    public void Disconnect()//접속종료시 발생.
+    {
+        StatusText.enabled = true;//현재 상태바 다시 볼수 있도록 세팅
+        PhotonNetwork.Disconnect();
+    }
     public override void OnDisconnected(DisconnectCause cause)
     {
         DisConnectPanel.SetActive(true);

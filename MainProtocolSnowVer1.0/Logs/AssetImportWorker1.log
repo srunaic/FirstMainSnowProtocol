@@ -1,0 +1,2431 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ko' Physical Memory: 16251 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/FirstMainSnowProtocol/MainProtocolSnowVer1.0
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+50434
+Successfully changed project path to: D:/FirstMainSnowProtocol/MainProtocolSnowVer1.0
+D:/FirstMainSnowProtocol/MainProtocolSnowVer1.0
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 59.10 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/FirstMainSnowProtocol/MainProtocolSnowVer1.0/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   31.0.15.3623
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001003 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 54.59 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.384 seconds
+Domain Reload Profiling:
+	ReloadAssembly (384ms)
+		BeginReloadAssembly (39ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (301ms)
+			LoadAssemblies (37ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (89ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (17ms)
+			SetupLoadedEditorAssemblies (135ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (55ms)
+				BeforeProcessingInitializeOnLoad (10ms)
+				ProcessInitializeOnLoadAttributes (51ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002241 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 70.31 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.915 seconds
+Domain Reload Profiling:
+	ReloadAssembly (916ms)
+		BeginReloadAssembly (94ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (782ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (248ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (339ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (70ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (177ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.70 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4244 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 202.2 MB.
+System memory in use after: 202.3 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 4678.
+Total: 2.544000 ms (FindLiveObjects: 0.236400 ms CreateObjectMapping: 0.109000 ms MarkObjects: 2.081400 ms  DeleteObjects: 0.116500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/Terrain/Road (3).prefab
+  artifactKey: Guid(ea02c0b5ef2b30345a23996181499830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/Terrain/Road (3).prefab using Guid(ea02c0b5ef2b30345a23996181499830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '485f2e05d172c081d3e0291dd0a92a54') in 0.053073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.599944 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter
+  artifactKey: Guid(e24f2a8bfdd9e244e9b4864ddc0350d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter using Guid(e24f2a8bfdd9e244e9b4864ddc0350d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae26586fc82600e947b3e1920daf507e') in 0.006059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.922469 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding
+  artifactKey: Guid(29bf649228fee7745821515d6c232dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding using Guid(29bf649228fee7745821515d6c232dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4321e8261a186c18d6c346e9ca312e2') in 0.006380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.053802 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/02 - Default_Base_color.png
+  artifactKey: Guid(36cd62e2eefe83245a982b1b11db2ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/02 - Default_Base_color.png using Guid(36cd62e2eefe83245a982b1b11db2ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a475e44b6c1a7ee0df7103b079c8a12b') in 0.061720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1.mat
+  artifactKey: Guid(3f61b22732230ef44a8c8963dcb9774c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1.mat using Guid(3f61b22732230ef44a8c8963dcb9774c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd970bbcdd5f2b1ebd2041cfaf9631494') in 0.070871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1_Height.png
+  artifactKey: Guid(cd9decf9a9c791d41a5e2adc58785a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1_Height.png using Guid(cd9decf9a9c791d41a5e2adc58785a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c8118f273fb3dd9fa4dcbd58326fa0d') in 0.010268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2_Height.png
+  artifactKey: Guid(df5aa661163ffc84e809e8e27c08d6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2_Height.png using Guid(df5aa661163ffc84e809e8e27c08d6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ecf43dc85597c4a432633d105db66f') in 0.009006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2_Normal.png
+  artifactKey: Guid(42808c55b24804a45bec3532ca0869af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2_Normal.png using Guid(42808c55b24804a45bec3532ca0869af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6db77151a81c8276096e8d18a111b95b') in 0.010487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/02 - Default_Height.png
+  artifactKey: Guid(d07778f0b8b8653478980d2cc07fa468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/02 - Default_Height.png using Guid(d07778f0b8b8653478980d2cc07fa468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78799471b1e3fbffd803105361108de6') in 0.008935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1_Base_color.png
+  artifactKey: Guid(d036c553d09ee7543879440b82949e62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1_Base_color.png using Guid(d036c553d09ee7543879440b82949e62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '209cd98ddac134fcd8f34562b755a5af') in 0.009681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1_Metallic.png
+  artifactKey: Guid(441c3ed72f2e90543ac2da35dba970d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1_Metallic.png using Guid(441c3ed72f2e90543ac2da35dba970d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '917562a790be05f94ad0f23fb1ffb598') in 0.009464 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1 1.mat
+  artifactKey: Guid(6943e8b74d3807546926db7dbdccda6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1 1.mat using Guid(6943e8b74d3807546926db7dbdccda6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e292e18b173ebca27c7d9dd9527560') in 0.011058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/02 - Default_Normal.png
+  artifactKey: Guid(017aaadef2f916e4aa0a9f4ebaa38075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/02 - Default_Normal.png using Guid(017aaadef2f916e4aa0a9f4ebaa38075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6fbad2ce0ec24e4944c1315c0f62348') in 0.010705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1_Normal.png
+  artifactKey: Guid(d6ba3c2ae122fbd419db267856acdcaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1_Normal.png using Guid(d6ba3c2ae122fbd419db267856acdcaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b4a38b12ed8b525542fe42fe3f9bd91') in 0.009809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1_Roughness.png
+  artifactKey: Guid(889d21337a69c91488e4c938a55306e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1_Roughness.png using Guid(889d21337a69c91488e4c938a55306e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d354a745a33f70ca4dcc3046eb13fe4') in 0.008715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/02 - Default_Normal_OpenGL.png
+  artifactKey: Guid(1b8e4347b3a5b7a40a4070ab6e231a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/02 - Default_Normal_OpenGL.png using Guid(1b8e4347b3a5b7a40a4070ab6e231a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bd5b12eba7af63038305e1f6bed4d9e') in 0.009994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1_Mixed_AO.png
+  artifactKey: Guid(2775265e892d267468ea3b3adcccfbfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1_Mixed_AO.png using Guid(2775265e892d267468ea3b3adcccfbfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3abc0641ec0a14edb5edaf7ceacebd63') in 0.008710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/02 - Default_Roughness.png
+  artifactKey: Guid(4c44ece548c3f9f499b5584c7bf808e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/02 - Default_Roughness.png using Guid(4c44ece548c3f9f499b5584c7bf808e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba686ae90d4515d434de82049c85d677') in 0.009574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2.mat
+  artifactKey: Guid(a90d8ee627a70aa4e9670c8cda6ed8c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2.mat using Guid(a90d8ee627a70aa4e9670c8cda6ed8c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa97897b5b1771b5936d651b8b31a5c2') in 0.012507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1_Normal_DirectX.png
+  artifactKey: Guid(d1b7ecc50ee75d048a2acbbd9bdb926a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor1_Normal_DirectX.png using Guid(d1b7ecc50ee75d048a2acbbd9bdb926a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d0201ac61272563e527fd3cf5df1a3') in 0.009971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2 1.mat
+  artifactKey: Guid(2a306b2a507596149b176a1f9e1d4203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2 1.mat using Guid(2a306b2a507596149b176a1f9e1d4203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67917e8bed880ca3a95fef008df5dc31') in 0.010869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2_Mixed_AO.png
+  artifactKey: Guid(492490f47687fc4429892a53c7dfc8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2_Mixed_AO.png using Guid(492490f47687fc4429892a53c7dfc8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '405ff85b6963ce1a248d49e7bb619857') in 0.010484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2_Base_color.png
+  artifactKey: Guid(07609c6b03704a64d85efc2f083739fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2_Base_color.png using Guid(07609c6b03704a64d85efc2f083739fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f75585219bc686e0c8bbf50fc9588a9') in 0.009375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/02 - Default_Mixed_AO.png
+  artifactKey: Guid(9ff0434f10def024c90c93aeb35cd055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/02 - Default_Mixed_AO.png using Guid(9ff0434f10def024c90c93aeb35cd055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ec8e69e35f94379e98f814868c0670') in 0.009297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2_Metallic.png
+  artifactKey: Guid(655d15de176628340b61ff937ad0bf0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2_Metallic.png using Guid(655d15de176628340b61ff937ad0bf0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782681d31d967b01ec5abe4643a36115') in 0.009303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/02 - Default_Metallic.png
+  artifactKey: Guid(5b1493322fe60294f841dbdabd8d6359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/02 - Default_Metallic.png using Guid(5b1493322fe60294f841dbdabd8d6359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a9862f73963f310d1ca6cdc1ae19607') in 0.008937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 432.994982 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/PP_Grass_11.prefab
+  artifactKey: Guid(330b5042ede34a549bf08f695f397232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/PP_Grass_11.prefab using Guid(330b5042ede34a549bf08f695f397232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2641d77f067afc12bc06f491ec52bea2') in 0.032069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/PP_Grass_15.prefab
+  artifactKey: Guid(055c8a1fcfc37684282dd97ee8cb32d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/PP_Grass_15.prefab using Guid(055c8a1fcfc37684282dd97ee8cb32d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a7d9a79e10e0d2de94c49990423a2d3') in 0.024143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.711078 seconds.
+  path: Assets/ResourcesPrefab/ShaderMeterialGroup/SkyBox/Scenes/Brush_Grass_01.png
+  artifactKey: Guid(e3970f24555e12a46b75cdf5140ff23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ResourcesPrefab/ShaderMeterialGroup/SkyBox/Scenes/Brush_Grass_01.png using Guid(e3970f24555e12a46b75cdf5140ff23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '852eeb12261ac4a9230310ece4b78a4d') in 0.037382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/RunaCharacter/Stylized Nature Environment/Nature/grass02.PSD
+  artifactKey: Guid(3cb61207a9bdaf9478ba2bf776f28693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Stylized Nature Environment/Nature/grass02.PSD using Guid(3cb61207a9bdaf9478ba2bf776f28693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa649a29930439fabb3e5048453fdd32') in 0.031144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/RunaCharacter/Stylized Nature Environment/Nature/grass03.PSD
+  artifactKey: Guid(231de24365ebaa94babdcd1ee8b1ce1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Stylized Nature Environment/Nature/grass03.PSD using Guid(231de24365ebaa94babdcd1ee8b1ce1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c22439e1029714edb2515aae70493831') in 0.012481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/Materials/grass.mat
+  artifactKey: Guid(ba3bddb608259184783916ac7915d5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/Materials/grass.mat using Guid(ba3bddb608259184783916ac7915d5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '616c2920f9866dbc2e9e0e9c16832183') in 0.010427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileModelings/PP_Grass_15.fbx
+  artifactKey: Guid(ac41480a091ee2446a41d386b366ae44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileModelings/PP_Grass_15.fbx using Guid(ac41480a091ee2446a41d386b366ae44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71420d225be413e2c62b7514da418bba') in 0.025037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/ResourcesPrefab/ShaderMeterialGroup/SkyBox/Scenes/Texture_Grass_Diffuse.png
+  artifactKey: Guid(5e1acf362611957488060eee4178b3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ResourcesPrefab/ShaderMeterialGroup/SkyBox/Scenes/Texture_Grass_Diffuse.png using Guid(5e1acf362611957488060eee4178b3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3f6c33abbccb94bbadef57cbd35fa3b') in 0.010948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/ResourcesPrefab/ShaderMeterialGroup/SkyBox/Scenes/Texture_Grass_Normal.png
+  artifactKey: Guid(69e10fcec9984ba4f839a5693383c57e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ResourcesPrefab/ShaderMeterialGroup/SkyBox/Scenes/Texture_Grass_Normal.png using Guid(69e10fcec9984ba4f839a5693383c57e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b71082b8b2eea3b2991cd3543b5593') in 0.012234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/RunaCharacter/Stylized Nature Environment/Nature/grass01.PSD
+  artifactKey: Guid(98f1bb9bb34e89c4b86b5c20db33d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Stylized Nature Environment/Nature/grass01.PSD using Guid(98f1bb9bb34e89c4b86b5c20db33d56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b5bca0b91c9971132d55ffa1ba534be') in 0.012239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileModelings/PP_Grass_11.fbx
+  artifactKey: Guid(b50dd34feb8fa1b4fa5aa0a7d2271066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileModelings/PP_Grass_11.fbx using Guid(b50dd34feb8fa1b4fa5aa0a7d2271066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3883706451f9b184b3598d92a2ea69b') in 0.012854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/ResourcesPrefab/ShaderMeterialGroup/SkyBox/Scenes/Brush_Grass_02.png
+  artifactKey: Guid(5d4b367f0702b4b46a16ba3b67281419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ResourcesPrefab/ShaderMeterialGroup/SkyBox/Scenes/Brush_Grass_02.png using Guid(5d4b367f0702b4b46a16ba3b67281419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf3b3b290b720bfaff185a9022ed47d') in 0.011823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/ResourcesPrefab/ShaderMeterialGroup/SkyBox/Scenes/TerrainGrass.terrainlayer
+  artifactKey: Guid(adb6478a7f24de14eb356d6dc3d0c502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ResourcesPrefab/ShaderMeterialGroup/SkyBox/Scenes/TerrainGrass.terrainlayer using Guid(adb6478a7f24de14eb356d6dc3d0c502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '202100f22920579896340b26766f440d') in 0.021194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Terrain Map/_Bad_Raccoon/_3D Realistic Terrain Free/Textures/Grass_Sprite_01.psd
+  artifactKey: Guid(003130d2c67e6e34ea2cb4755e0df65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain Map/_Bad_Raccoon/_3D Realistic Terrain Free/Textures/Grass_Sprite_01.psd using Guid(003130d2c67e6e34ea2cb4755e0df65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c497033981dea7aaecd7691db10284a') in 0.012194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 57.356067 seconds.
+  path: Assets/RunaCharacter/Ground/Materials/grass.mat
+  artifactKey: Guid(7f0206527a7e1534aaa4f1ceb2c390f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Ground/Materials/grass.mat using Guid(7f0206527a7e1534aaa4f1ceb2c390f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63fcd65f85b1e2c72602c12ed6714387') in 0.016694 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002304 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.702 seconds
+Domain Reload Profiling:
+	ReloadAssembly (702ms)
+		BeginReloadAssembly (88ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (576ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (200ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (204ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (127ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.79 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.9 MB.
+System memory in use after: 192.1 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 4730.
+Total: 2.962800 ms (FindLiveObjects: 0.251600 ms CreateObjectMapping: 0.130000 ms MarkObjects: 2.479600 ms  DeleteObjects: 0.100700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 145.361020 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/Doll.prefab
+  artifactKey: Guid(eed6fe9e5941d8746bf5526cbe90d1b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/Doll.prefab using Guid(eed6fe9e5941d8746bf5526cbe90d1b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eedfdabc42f24347914a0485e77ff6c') in 0.054456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 인형뽑기.prefab
+  artifactKey: Guid(94f88bb0707258946a8ad36451281809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 인형뽑기.prefab using Guid(94f88bb0707258946a8ad36451281809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a396b6ab6bd6b56758ebcad9645d5c2c') in 0.076852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/DollMeterial.mat
+  artifactKey: Guid(302bde591a304e840913120286f7fad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/DollMeterial.mat using Guid(302bde591a304e840913120286f7fad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1fdef894e26797929e39f8180e9e9d0') in 0.029066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/TimeLine.mat
+  artifactKey: Guid(b598868ea1fde684cb1b6c5318fd10e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/TimeLine.mat using Guid(b598868ea1fde684cb1b6c5318fd10e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ccc886a90f6dd9561ff27b2f805ea2b') in 0.022603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계_부속품_BaseMap.png
+  artifactKey: Guid(0a8e06e750f1be54e87b3cbf2088c768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계_부속품_BaseMap.png using Guid(0a8e06e750f1be54e87b3cbf2088c768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e01be3d713f8007c2feb61a9d48b83e') in 0.014376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/Metatal오락실 1.mat
+  artifactKey: Guid(bcd513f60c3c9944aa7233d02ce6e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/Metatal오락실 1.mat using Guid(bcd513f60c3c9944aa7233d02ce6e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90c9d733d677c36e7b2f58a3ccd1816b') in 0.015478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계 게임기 베이스.mat
+  artifactKey: Guid(0c10ba88488644045998fceffcdf189e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계 게임기 베이스.mat using Guid(0c10ba88488644045998fceffcdf189e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16d097a5b4dff280e3ce5587be95073b') in 0.023112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계_문_BaseMap.png
+  artifactKey: Guid(cedc1a6e8657b22459bd65b4422fdcf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계_문_BaseMap.png using Guid(cedc1a6e8657b22459bd65b4422fdcf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '861d4bdbd49135f685d779b5e223fca3') in 0.020929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계_베이스_BaseMap.png
+  artifactKey: Guid(15e126d133db5e846b24dedec5963955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계_베이스_BaseMap.png using Guid(15e126d133db5e846b24dedec5963955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c39a6d1ab800f3676882fa4289d8b422') in 0.011163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 인형뽑기.fbx
+  artifactKey: Guid(73de37ba6d613c64f98c7f613f512208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 인형뽑기.fbx using Guid(73de37ba6d613c64f98c7f613f512208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dedaacc971d86b0e88870da88c0442d3') in 0.206073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/Usachan_Rigged1_1.fbx
+  artifactKey: Guid(75c4a0d9beb89af4c82eff5b4ee739f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/Usachan_Rigged1_1.fbx using Guid(75c4a0d9beb89af4c82eff5b4ee739f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '926de43e5b2e796fcd068225a4f8baa5') in 0.020178 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계_탑베이스_BaseMap.png
+  artifactKey: Guid(34289c1d10f8f4e4681441409eade780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계_탑베이스_BaseMap.png using Guid(34289c1d10f8f4e4681441409eade780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aa5138ef0684c9a368a0f1de6aedd50') in 0.011082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/fur.jpg
+  artifactKey: Guid(9255ed86550157845892171edcc615a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/fur.jpg using Guid(9255ed86550157845892171edcc615a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca054f8abcc0d34350ddc74498306119') in 0.013123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/Metatal오락실.mat
+  artifactKey: Guid(100a10292bda63a40b0464737add30c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/Metatal오락실.mat using Guid(100a10292bda63a40b0464737add30c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf1c2641da78026ea8e475791295ded2') in 0.010227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/Metatal오락실 3.mat
+  artifactKey: Guid(606b066da64bf764883014a3a06344a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/Metatal오락실 3.mat using Guid(606b066da64bf764883014a3a06344a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a17ced1c11eeeccafd6153e9529b125') in 0.009527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계_게임기 베이스_BaseMap.png
+  artifactKey: Guid(dc18cbd29a364cf4ab137da60a0321c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계_게임기 베이스_BaseMap.png using Guid(dc18cbd29a364cf4ab137da60a0321c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01d839eb2b4a25df617e2c14fcd9b3ef') in 0.010629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/인형뽑기 창문.mat
+  artifactKey: Guid(3d779fc482c668149bac5f5a895442de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/인형뽑기 창문.mat using Guid(3d779fc482c668149bac5f5a895442de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cea51c25d2a51f7a3fd5c82d7363be1') in 0.009570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/기계 탑베이스.mat
+  artifactKey: Guid(933ff0900680eac40bd02eaa85738b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/기계 탑베이스.mat using Guid(933ff0900680eac40bd02eaa85738b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7254cbb0ff92856fb1976700091cd38f') in 0.014016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/Metatal오락실 2.mat
+  artifactKey: Guid(7b6b72e6062ffcb45a979ce1c4144c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/Metatal오락실 2.mat using Guid(7b6b72e6062ffcb45a979ce1c4144c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de0f9e60892fdffbb594f1105d473a3f') in 0.010352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계_탑베이스_Normal.png
+  artifactKey: Guid(da0bb75c9af21d643a813e4810c77817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계_탑베이스_Normal.png using Guid(da0bb75c9af21d643a813e4810c77817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aac7aa82ac3249d1d7448c8b3bb89bb') in 0.012145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계_베이스_Normal.png
+  artifactKey: Guid(8d13b6ce7aefd9846a59ed869027ab0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/오락실 기계_베이스_Normal.png using Guid(8d13b6ce7aefd9846a59ed869027ab0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '424406c2bd3fb88cc5a0ee8682ddf27a') in 0.013175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/기계 베이스.mat
+  artifactKey: Guid(6af5b6db239ac764f95d80c0f30aae47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/DollGame/기계 베이스.mat using Guid(6af5b6db239ac764f95d80c0f30aae47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d9a6f094b1b6f91da45edf8982f08b2') in 0.014481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.608165 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/SongRoomBackFace.mat
+  artifactKey: Guid(f4226304a4b67ce45a55b2b7d4c68b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/SongRoomBackFace.mat using Guid(f4226304a4b67ce45a55b2b7d4c68b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22d62a95ae4a5b9c813ebe34868196de') in 0.026211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_Base_BaseMap.png
+  artifactKey: Guid(82771f3b534c9954bae8cc856fdfc117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_Base_BaseMap.png using Guid(82771f3b534c9954bae8cc856fdfc117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '842cfa96cb0ef01e8d3f36b0d4b95203') in 0.011410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/SongRoomTVmap.mat
+  artifactKey: Guid(592a485926f3c0b44ae1da65f3f1bd8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/SongRoomTVmap.mat using Guid(592a485926f3c0b44ae1da65f3f1bd8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda315e0b30a8d6f1b0ac6c113b2e0c4') in 0.016365 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_chair_BaseMap.png
+  artifactKey: Guid(e2e2205062d042d4e82d93d20e63d186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_chair_BaseMap.png using Guid(e2e2205062d042d4e82d93d20e63d186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b5e5212120092768e42664a4c191eb2') in 0.011449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/SongRoomChair.mat
+  artifactKey: Guid(0780ababa42313348ac61d30663aea1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/SongRoomChair.mat using Guid(0780ababa42313348ac61d30663aea1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '213c4b698fec0fc86920c8bb8eff887f') in 0.016271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_chair_Normal.png
+  artifactKey: Guid(afab7646eaf80fe45a53c1fd5c109ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_chair_Normal.png using Guid(afab7646eaf80fe45a53c1fd5c109ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2ac0ec5d498de8b037995d7008a3baa') in 0.011543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/SongRoomBase.mat
+  artifactKey: Guid(ef5e3b77406a5b84693bb45e686a4695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/SongRoomBase.mat using Guid(ef5e3b77406a5b84693bb45e686a4695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c75275cfd1e0e08491106bd1ebf7d85') in 0.016265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_BACKFACE_Normal.png
+  artifactKey: Guid(471c46eb178efce47ad391dd8e079b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_BACKFACE_Normal.png using Guid(471c46eb178efce47ad391dd8e079b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '675cdbb51e77b39236e6716bbccbea7a') in 0.011478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_chair_MaskMap.png
+  artifactKey: Guid(5b7ff877a87eb6040a829055983c84e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_chair_MaskMap.png using Guid(5b7ff877a87eb6040a829055983c84e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21bdebfcc294f90404c520667d8a81bc') in 0.012000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_Tv_MaskMap.png
+  artifactKey: Guid(cf7fc7811ef7a7449855de0b0d0bee14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_Tv_MaskMap.png using Guid(cf7fc7811ef7a7449855de0b0d0bee14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c8fed2834f991cdf953828a25e97b17') in 0.012158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_Base_MaskMap.png
+  artifactKey: Guid(b697f623ef6c9344c880d2a37eea37db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_Base_MaskMap.png using Guid(b697f623ef6c9344c880d2a37eea37db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '148eebd6417ae5470b2461ec45ac49bb') in 0.012782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방.fbx
+  artifactKey: Guid(7f404b157879f2b4cb85e63d32e4dd42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방.fbx using Guid(7f404b157879f2b4cb85e63d32e4dd42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b55fff68185c14a6bb7edd14a6ac7eb') in 0.061669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/SongRoomWindow.mat
+  artifactKey: Guid(3a1efb7bd259424439bd099f97ca0e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/SongRoomWindow.mat using Guid(3a1efb7bd259424439bd099f97ca0e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6190e6711246fad9754cc2ae9ba14a7') in 0.010978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_BACKFACE_BaseMap.png
+  artifactKey: Guid(1b275fc3dca158444ad75b240192b9dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_BACKFACE_BaseMap.png using Guid(1b275fc3dca158444ad75b240192b9dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6767c0ce67d9150763fa478ae1b32c7') in 0.010873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_Tv_BaseMap.png
+  artifactKey: Guid(abdb7e5966274c04d963d2bbe10cc29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_Tv_BaseMap.png using Guid(abdb7e5966274c04d963d2bbe10cc29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1852f47bee5f2b52099e808d30e22198') in 0.011904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_BACKFACE_MaskMap.png
+  artifactKey: Guid(30c5e395b14863b4b9a72cf58395b4c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_BACKFACE_MaskMap.png using Guid(30c5e395b14863b4b9a72cf58395b4c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d298daadd72b9e274c07f8970427f56') in 0.011414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_Base_Normal.png
+  artifactKey: Guid(0619b5d55e440174497282a31881ac83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_Base_Normal.png using Guid(0619b5d55e440174497282a31881ac83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffc0efb518b11c8bc8173e965d4f7349') in 0.012655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_Tv_Normal.png
+  artifactKey: Guid(829ec013fc8c8604e87ebf4dcc789533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방_Tv_Normal.png using Guid(829ec013fc8c8604e87ebf4dcc789533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ad72e6517ceb249d55d6021375e72b3') in 0.012872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방.prefab
+  artifactKey: Guid(e3591f19087e42b4db1af26fff945f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameRoom/SongRoom/서페 노래방.prefab using Guid(e3591f19087e42b4db1af26fff945f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '832cfe8bd2046c6b1061f47183afb52b') in 0.041818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.737061 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2_Normal_DirectX.png
+  artifactKey: Guid(1b55e1971bec85a45bdf9741a654a7ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2_Normal_DirectX.png using Guid(1b55e1971bec85a45bdf9741a654a7ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e93514606f0d062e282d13c314dbb21b') in 0.025782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3 1.mat
+  artifactKey: Guid(2fd2c5ab636688643a90132a2cc791cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3 1.mat using Guid(2fd2c5ab636688643a90132a2cc791cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd684dc5f0b7dfc656db6e6d3215426d2') in 0.015846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2_Roughness.png
+  artifactKey: Guid(1223ce86d5456b9438bee4c7e98ab5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor2_Roughness.png using Guid(1223ce86d5456b9438bee4c7e98ab5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '491b54d7fef89a3c922c500f9abd7958') in 0.010889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3.mat
+  artifactKey: Guid(6e8f2411188dd9649bb01c879fea5004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3.mat using Guid(6e8f2411188dd9649bb01c879fea5004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a961a0d1aeaafd30344d4b25e01f8379') in 0.019420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3_Base_color.png
+  artifactKey: Guid(1d226e1797da66146b1f3195592273cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3_Base_color.png using Guid(1d226e1797da66146b1f3195592273cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aeca25be60ca2b906f8a966fef7ba9d') in 0.017248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3_Height.png
+  artifactKey: Guid(722778daff601764fb8228ebb5a72ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3_Height.png using Guid(722778daff601764fb8228ebb5a72ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67e1c8f6b0070ff33f4c24ef7f86f4bb') in 0.019420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.081631 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3_Metallic.png
+  artifactKey: Guid(f63ae7bb5f554f5489bb3aab028cbef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3_Metallic.png using Guid(f63ae7bb5f554f5489bb3aab028cbef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ff2148e059eaa4c0b375c4387b11d0') in 0.009754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3_Mixed_AO.png
+  artifactKey: Guid(54775679a38ff7b4096759f0fdf0dc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3_Mixed_AO.png using Guid(54775679a38ff7b4096759f0fdf0dc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e04444e3a5da11e6ec1f311cb4bc81cc') in 0.010244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3_Normal_DirectX.png
+  artifactKey: Guid(a87a4d34e3d4c504fa950104fd4c13e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3_Normal_DirectX.png using Guid(a87a4d34e3d4c504fa950104fd4c13e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '373612990cb4399b95564ad99cc92de3') in 0.010163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room.mat
+  artifactKey: Guid(bc5258d8a0d4b994581998d2f22c3ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room.mat using Guid(bc5258d8a0d4b994581998d2f22c3ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a97015e183ef674c2c45a8fbfd3d05a9') in 0.012855 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room_Base_color.png
+  artifactKey: Guid(59f5436e69dd43d44b104e6b1db4a10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room_Base_color.png using Guid(59f5436e69dd43d44b104e6b1db4a10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c33a269c24bb54ce050119583afc4ecb') in 0.009869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3_Roughness.png
+  artifactKey: Guid(6d5ada1adc624bf41b4969654826e2ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3_Roughness.png using Guid(6d5ada1adc624bf41b4969654826e2ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2890734efd188834dd3ac3e43d64dac2') in 0.009718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3_Normal.png
+  artifactKey: Guid(534ea02236f74af448a13763e4a44d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3_Normal.png using Guid(534ea02236f74af448a13763e4a44d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '876d8a6fcb5490ab23df09caff10070d') in 0.011571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room 1.mat
+  artifactKey: Guid(bc9cc970c37924442b0a272c58897145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room 1.mat using Guid(bc9cc970c37924442b0a272c58897145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdcfd116443037ad564cbbeecfa9a63a') in 0.010529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.725924 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room_Height.png
+  artifactKey: Guid(3f6b77c321de23a40b86b85239673afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room_Height.png using Guid(3f6b77c321de23a40b86b85239673afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b085fd843b65750d9663409a03ae5d69') in 0.009787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room_Metallic.png
+  artifactKey: Guid(14301000d5c209d46b86c86a1628bfab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room_Metallic.png using Guid(14301000d5c209d46b86c86a1628bfab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb7095175aa3f489bb51741de0e6d100') in 0.015456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall.mat
+  artifactKey: Guid(51e326189db43c94c95a7f7191d194b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall.mat using Guid(51e326189db43c94c95a7f7191d194b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a4a4c21ad9807dcb1a9b7cd38b5529') in 0.012916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room 1.mat
+  artifactKey: Guid(5f96675428799f94396ae6ed4db6d251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room 1.mat using Guid(5f96675428799f94396ae6ed4db6d251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '540990d11840fa999b2641b049051a76') in 0.010479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room_Metallic.png
+  artifactKey: Guid(268ee25eef6a51c4eb9ec6b95a036797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room_Metallic.png using Guid(268ee25eef6a51c4eb9ec6b95a036797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2b9800ab0d8903453950e8f74932c94') in 0.010645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room_Roughness.png
+  artifactKey: Guid(7d9562ee8eafdbe4d82baa4896d95a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room_Roughness.png using Guid(7d9562ee8eafdbe4d82baa4896d95a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b47390f3916c31cb4f94294e9e9157') in 0.009386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top_Base_color.png
+  artifactKey: Guid(2893aca9e589e1c4190782adff29588d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top_Base_color.png using Guid(2893aca9e589e1c4190782adff29588d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f024037c6f119dd127fb3ab5dd9375a') in 0.009624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen_Mixed_AO.png
+  artifactKey: Guid(c38930afa2c605c40968bc88bc2c9258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen_Mixed_AO.png using Guid(c38930afa2c605c40968bc88bc2c9258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5795f0457190820ef995d699415fa0ae') in 0.009259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen_Metallic.png
+  artifactKey: Guid(4748e85bca1fc6f4da3cd969d9a1176b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen_Metallic.png using Guid(4748e85bca1fc6f4da3cd969d9a1176b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c303eea780b8f3a91502598133d8a2de') in 0.009894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top_Metallic.png
+  artifactKey: Guid(435d2f231e014ec409a0a64a612d1053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top_Metallic.png using Guid(435d2f231e014ec409a0a64a612d1053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a095d3f7beb595d9b91ed34c239a0023') in 0.005064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room_Base_color.png
+  artifactKey: Guid(91f9a2f5bbf6487448754b06dba5d1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room_Base_color.png using Guid(91f9a2f5bbf6487448754b06dba5d1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c3f6af42ac11162513c6c7d85a04b0') in 0.009739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall_Mixed_AO.png
+  artifactKey: Guid(febe6a32978d635428cb0c2e1b414b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall_Mixed_AO.png using Guid(febe6a32978d635428cb0c2e1b414b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa94b435afca2ce3d205cff70f08170f') in 0.009462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen_Height.png
+  artifactKey: Guid(bd0b2dd90e954a143a0b59c27aef8a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen_Height.png using Guid(bd0b2dd90e954a143a0b59c27aef8a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bdcf067477191081f9e4a68efd1c496') in 0.009801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall_Height.png
+  artifactKey: Guid(161347ec69e473f499afd5f963149e80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall_Height.png using Guid(161347ec69e473f499afd5f963149e80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87c1fdf6228a121d9fe70a9e9bee6b2f') in 0.010310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall_Normal.png
+  artifactKey: Guid(07c002e73904ab84eade6bea5321c611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall_Normal.png using Guid(07c002e73904ab84eade6bea5321c611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a623ca8c36bc2b246c9f3091737bc0d1') in 0.010420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/상단_Normal_OpenGL.png
+  artifactKey: Guid(1114f48c8d69f584cbfb0dd6ad671a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/상단_Normal_OpenGL.png using Guid(1114f48c8d69f584cbfb0dd6ad671a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4d747271a8c775d7888d4ac30d22726') in 0.010560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room_Normal.png
+  artifactKey: Guid(c0b64799ae002f84d953fa4c484a7e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room_Normal.png using Guid(c0b64799ae002f84d953fa4c484a7e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '221a51f23ded4869520fd89e1dcc10a6') in 0.011022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen_Normal_DirectX.png
+  artifactKey: Guid(c1972a7eaa8a4f647ac5e52ff061f07d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen_Normal_DirectX.png using Guid(c1972a7eaa8a4f647ac5e52ff061f07d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaf303494bf5bdd33a5b82a5f2dfd528') in 0.009475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top_Normal.png
+  artifactKey: Guid(682a057ee91745948baa1959580d9cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top_Normal.png using Guid(682a057ee91745948baa1959580d9cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '731cc7a0d0f6ab62c0e270a458342198') in 0.010466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen_Roughness.png
+  artifactKey: Guid(68b17703009c8d34c93e148abca53a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen_Roughness.png using Guid(68b17703009c8d34c93e148abca53a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b0f2d68a1e16f4a7b526d929e566303') in 0.009530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair_Mixed_AO.png
+  artifactKey: Guid(8a84c12e70f44d847b616f76688b55ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair_Mixed_AO.png using Guid(8a84c12e70f44d847b616f76688b55ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9d8e9f8b727a1c211cbaff32ebd6100') in 0.009741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall_Roughness.png
+  artifactKey: Guid(c179c2c55ad215e479b91797598984a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall_Roughness.png using Guid(c179c2c55ad215e479b91797598984a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee6aae9471e4d272a74885f9c6b1c9ed') in 0.010981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair_Normal_DirectX.png
+  artifactKey: Guid(fc6b95c5d2e59ba4690c6ed71da9e42b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair_Normal_DirectX.png using Guid(fc6b95c5d2e59ba4690c6ed71da9e42b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98a0ae36864c5e983e20c8ffb018a1d2') in 0.009893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room.mat
+  artifactKey: Guid(19c59a74479f8ad448940911a5047ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room.mat using Guid(19c59a74479f8ad448940911a5047ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '283dadf89435dd5870afbcdaf13af95f') in 0.013357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall 1.mat
+  artifactKey: Guid(2d2dbbb77c0b4c44a9c3cbe42ddc95fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall 1.mat using Guid(2d2dbbb77c0b4c44a9c3cbe42ddc95fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25b7461454cd5ebfd4f12afdcac54741') in 0.010616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair.mat
+  artifactKey: Guid(6f7cfe776b5e4e949b42437ffa36c715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair.mat using Guid(6f7cfe776b5e4e949b42437ffa36c715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b05b6e149b02771ac312f776a73183e') in 0.012956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall_Height.png
+  artifactKey: Guid(28936deef72160943b85e6997d5959ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall_Height.png using Guid(28936deef72160943b85e6997d5959ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '667a81d980d5f880e908f767c0d23686') in 0.009662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen 1.mat
+  artifactKey: Guid(d81b3ae4b156c524d9aad0bbc250bcb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen 1.mat using Guid(d81b3ae4b156c524d9aad0bbc250bcb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e77334c8a43ad64c23512aa4d3be7bd') in 0.011408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/상단_Metallic.png
+  artifactKey: Guid(fa2aad10fd78e6d478abfac2d3a7a5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/상단_Metallic.png using Guid(fa2aad10fd78e6d478abfac2d3a7a5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fef068c6b9e38ba4a2f24915f3d881d') in 0.009935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen_Normal.png
+  artifactKey: Guid(ec8d712d881e27b48ab656fb33120477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen_Normal.png using Guid(ec8d712d881e27b48ab656fb33120477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb90e5d71aa7a2a9bb6e3fd6e703593c') in 0.010430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair_Metallic.png
+  artifactKey: Guid(88313a6eb3818f44ba47d644a8babace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair_Metallic.png using Guid(88313a6eb3818f44ba47d644a8babace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e70016710b46c699b8c76076ff9b4c1') in 0.009757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen.mat
+  artifactKey: Guid(75c4514dec8ca1648b040c30710864e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen.mat using Guid(75c4514dec8ca1648b040c30710864e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f131c39fb0b1613ce499e8de35a5ba') in 0.012530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room_Height.png
+  artifactKey: Guid(340c86f0dc2c76e48947c99e5bcb104c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room_Height.png using Guid(340c86f0dc2c76e48947c99e5bcb104c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18fbd22c0e08eaded26e0f97d75bae0f') in 0.009931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair 1.mat
+  artifactKey: Guid(b6355ce71687eb544bfbf6502ec2ba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair 1.mat using Guid(b6355ce71687eb544bfbf6502ec2ba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b27904964bdf088b31f7ffd2bb1ee4') in 0.011113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top_Height.png
+  artifactKey: Guid(9cd40f1672575b3459f87b92bd9e2731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top_Height.png using Guid(9cd40f1672575b3459f87b92bd9e2731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e3c5c7661dbf3d74c2f24635c9828c4') in 0.009489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/상단_Normal.png
+  artifactKey: Guid(18cb6314f0722fd4b85a002f20e74456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/상단_Normal.png using Guid(18cb6314f0722fd4b85a002f20e74456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dac59896c3a284f16b51229edf76e2c3') in 0.009559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall_Normal.png
+  artifactKey: Guid(381efc52e78b486408b63191d2c2d97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall_Normal.png using Guid(381efc52e78b486408b63191d2c2d97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e301e0833a8dc433343278d8db04c9') in 0.010484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall_Mixed_AO.png
+  artifactKey: Guid(b39cb43ef4d5c634aa3875a5d1ed0c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall_Mixed_AO.png using Guid(b39cb43ef4d5c634aa3875a5d1ed0c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de6684fe200a02dfe5db891fa131761b') in 0.009864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top 1.mat
+  artifactKey: Guid(b2398027446163f4b823ed3de3b3f5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top 1.mat using Guid(b2398027446163f4b823ed3de3b3f5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a79357a5b554831ea6be8eda1d1a845') in 0.011080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room_Mixed_AO.png
+  artifactKey: Guid(07cce4ec946a3034185efd2170fc9c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room_Mixed_AO.png using Guid(07cce4ec946a3034185efd2170fc9c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cca7537bb93a7e2d8d6e2d401922a43e') in 0.008909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top_Roughness.png
+  artifactKey: Guid(14435efffcff2194f9fa8dcafc0dc65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top_Roughness.png using Guid(14435efffcff2194f9fa8dcafc0dc65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c8b10e2b1263452682a1f7c6e710a14') in 0.011164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair_Normal.png
+  artifactKey: Guid(42626570bac7fdd4bbacec709cfa3b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair_Normal.png using Guid(42626570bac7fdd4bbacec709cfa3b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42cfe045f882892d5f23b1c3abc61ebc') in 0.009760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall_Normal_DirectX.png
+  artifactKey: Guid(7343106e896e95f48bfb6bcae4441cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall_Normal_DirectX.png using Guid(7343106e896e95f48bfb6bcae4441cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c19932c388ace698f2202b23ae1484') in 0.009943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top.mat
+  artifactKey: Guid(51778ffbfd67d4847aa0387cf1a83758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top.mat using Guid(51778ffbfd67d4847aa0387cf1a83758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30db1f00055cda004db0a5697c558216') in 0.012874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall_Roughness.png
+  artifactKey: Guid(7132e575227cd9342b0ff21ebd236c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall_Roughness.png using Guid(7132e575227cd9342b0ff21ebd236c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a160de8652128dac3275c4082173891') in 0.009861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top_Normal_DirectX.png
+  artifactKey: Guid(618de82171af2a04da70dd61149f9e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top_Normal_DirectX.png using Guid(618de82171af2a04da70dd61149f9e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01f09d6a75e9983563cf3f6c2d866a76') in 0.009685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall_Normal_DirectX.png
+  artifactKey: Guid(d92d590cf2d9dcb4680d5ef9ecff7ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall_Normal_DirectX.png using Guid(d92d590cf2d9dcb4680d5ef9ecff7ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd08d41a7ed02955fc5cec9cdb575a7fe') in 0.010012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall_Metallic.png
+  artifactKey: Guid(2ec410af621ec404bbd18a2abac65430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall_Metallic.png using Guid(2ec410af621ec404bbd18a2abac65430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a1973aea85328f438e89c61ba4f23d') in 0.009804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/상단_Height.png
+  artifactKey: Guid(177a5f6a7119fa846aab79bb140ea396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/상단_Height.png using Guid(177a5f6a7119fa846aab79bb140ea396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '154567bb36a6ac3b0580d9819825e8c5') in 0.010889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall.mat
+  artifactKey: Guid(24af9cc5158d8be4bb7cfeea2bb7db74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall.mat using Guid(24af9cc5158d8be4bb7cfeea2bb7db74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a61cec8b42e690a8dc15e2c6dc7117') in 0.012559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall 1.mat
+  artifactKey: Guid(16ef1e62918ff694d91bba7e1af11221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall 1.mat using Guid(16ef1e62918ff694d91bba7e1af11221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '459332c72944b1a817ccf43f421526cd') in 0.010962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall_Base_color.png
+  artifactKey: Guid(f2ab113270aa7ed4e9fe721c7c81c0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/OuterWall_Base_color.png using Guid(f2ab113270aa7ed4e9fe721c7c81c0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e3e5d26e0e7aec44242b505496b2aa') in 0.009537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room_Normal_DirectX.png
+  artifactKey: Guid(5e502350c9644194b805f33b947b7bbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room_Normal_DirectX.png using Guid(5e502350c9644194b805f33b947b7bbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6967d72471c1544664b525a3ef9603c2') in 0.010132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/상단_Base_color.png
+  artifactKey: Guid(9229410f046c2fc47808109e1991716a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/상단_Base_color.png using Guid(9229410f046c2fc47808109e1991716a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '025c91d794c34d5fa15a592bbbb88cbf') in 0.009738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall_Metallic.png
+  artifactKey: Guid(679d7619e71e7e44cbdf69427865b07b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall_Metallic.png using Guid(679d7619e71e7e44cbdf69427865b07b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff71051a533666b75a07d733efe3e495') in 0.009931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair_Base_color.png
+  artifactKey: Guid(1b4afb72658fc114ebc7a9f1eb34dcea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair_Base_color.png using Guid(1b4afb72658fc114ebc7a9f1eb34dcea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb31a82ac61a07d9e6c556f9a8aa6b54') in 0.009672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair_Height.png
+  artifactKey: Guid(a035caf00159e2741affa801fd087913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair_Height.png using Guid(a035caf00159e2741affa801fd087913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1962d55ccf4d269cca6b665c0bf50aa1') in 0.010294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall_Base_color.png
+  artifactKey: Guid(fe6d38b585a4fc74d8fbc8a7f11a598f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/SideWall_Base_color.png using Guid(fe6d38b585a4fc74d8fbc8a7f11a598f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '144ffa8a28c7610bb25259b05df4a0fd') in 0.009787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair_Roughness.png
+  artifactKey: Guid(77b7225313fa3aa479da9a3dc3f0f0ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Stair_Roughness.png using Guid(77b7225313fa3aa479da9a3dc3f0f0ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e0a5cbd7dce0e06c332cafdae422c30') in 0.010135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top_Mixed_AO.png
+  artifactKey: Guid(f81eccf91f0373645b572eeb4cd88c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Top_Mixed_AO.png using Guid(f81eccf91f0373645b572eeb4cd88c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08556e41a2d44934c932d465344ea279') in 0.009668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room_Roughness.png
+  artifactKey: Guid(3dfba2ad1787fdc46accee5a26fb2a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room_Roughness.png using Guid(3dfba2ad1787fdc46accee5a26fb2a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d9965459004c6c306b8f166cf9146c') in 0.011148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen_Base_color.png
+  artifactKey: Guid(ca0686c3f1291a04d8cf26fd2f13351a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/screen_Base_color.png using Guid(ca0686c3f1291a04d8cf26fd2f13351a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2255f330d2f0ae13599005c8c126834c') in 0.009142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room_Mixed_AO.png
+  artifactKey: Guid(81ed010f88e1781448f4b540626fc0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room_Mixed_AO.png using Guid(81ed010f88e1781448f4b540626fc0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f766cceb1933dcd71d6664604ad5b80') in 0.011774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/상단_Roughness.png
+  artifactKey: Guid(f7aed0d2c0637554ab83ed4e577a2402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/상단_Roughness.png using Guid(f7aed0d2c0637554ab83ed4e577a2402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6c36e890e763edbf2e976c1257180b') in 0.011557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room_Normal.png
+  artifactKey: Guid(3d162c9ae61304e448095bb335c5f30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Room_Normal.png using Guid(3d162c9ae61304e448095bb335c5f30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ad6abeee4bb055a3038ea4c33c062ef') in 0.011405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room_Normal_DirectX.png
+  artifactKey: Guid(cf260a8413ef39647986f1fd34128e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/UvBuilding/Floor3Room_Normal_DirectX.png using Guid(cf260a8413ef39647986f1fd34128e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0501b82fd236c0505a7baca885f393ca') in 0.009663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.089191 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_belt_BaseMap.png
+  artifactKey: Guid(eebef39232ec1ce4f8f0a2e58bc231b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_belt_BaseMap.png using Guid(eebef39232ec1ce4f8f0a2e58bc231b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98fdb13f19a6d1521bbd926b85d1b1c2') in 0.017733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_hair_Normal.png
+  artifactKey: Guid(3fb2cb1b269444945a368be2e651810c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_hair_Normal.png using Guid(3fb2cb1b269444945a368be2e651810c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5213e5c5d82cc3512331e30e0681e57') in 0.015516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_clothes_Normal.png
+  artifactKey: Guid(5149466645726b44ea61b820fb1e74b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_clothes_Normal.png using Guid(5149466645726b44ea61b820fb1e74b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a40c0e18f35310f51d5bf025f03cd9e8') in 0.011564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_foot_BaseMap.png
+  artifactKey: Guid(f84edb22d268e3147964148d12e5d771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_foot_BaseMap.png using Guid(f84edb22d268e3147964148d12e5d771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f2b40e497cada0d4288ccc6b08b5b6') in 0.012029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_hair_MetallicSmoothness.png
+  artifactKey: Guid(fb7224abf7ce3ec49b4b2bba01e618fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_hair_MetallicSmoothness.png using Guid(fb7224abf7ce3ec49b4b2bba01e618fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0330ec40b2f35b805bfd4c9d05136d12') in 0.012207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_eye_AlbedoTransparency.png
+  artifactKey: Guid(fc84dc6e5d4f4f04e96a2ac6e598770a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_eye_AlbedoTransparency.png using Guid(fc84dc6e5d4f4f04e96a2ac6e598770a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e37ecd9f956e272a50d5cab7e174687') in 0.010854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_pants_MaskMap.png
+  artifactKey: Guid(ac15f712460824c4f8109c98beafea34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_pants_MaskMap.png using Guid(ac15f712460824c4f8109c98beafea34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6505a08dff4b9f68eb7de5c6264648d5') in 0.012125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_pants_Normal.png
+  artifactKey: Guid(773b2e8c75001ab4493b94b83c68b630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_pants_Normal.png using Guid(773b2e8c75001ab4493b94b83c68b630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a024db2b9b2fa67cb533a1226805c1b') in 0.011041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_pants_BaseMap.png
+  artifactKey: Guid(ebb8baa4eb28bd94598b0223b0b03172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_pants_BaseMap.png using Guid(ebb8baa4eb28bd94598b0223b0b03172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '625d7d99c6ab7bcc97bc2e961b4af8fd') in 0.011108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_clothes_BaseMap.png
+  artifactKey: Guid(00f6572e8c034874db46db8eda511e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_clothes_BaseMap.png using Guid(00f6572e8c034874db46db8eda511e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '286d7e53ab63beaba37f568c4a01fa11') in 0.012052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_foot_MaskMap.png
+  artifactKey: Guid(76a0a2bc240aeb142913c7b3cb4f9592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_foot_MaskMap.png using Guid(76a0a2bc240aeb142913c7b3cb4f9592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ec9547e9df5bf0a06581139770c221') in 0.012725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_belt_Normal.png
+  artifactKey: Guid(59206aadbb2e05c46bd4457dc7e11c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_belt_Normal.png using Guid(59206aadbb2e05c46bd4457dc7e11c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b02e8317c94150ddc57006a81b69e32') in 0.010856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_eye_MetallicSmoothness.png
+  artifactKey: Guid(880f4a695f9fcab4fa56802813e72bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_eye_MetallicSmoothness.png using Guid(880f4a695f9fcab4fa56802813e72bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f58ab14b39a9ea2e4776d8dfe3e49f') in 0.012247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/머플러 노말맵.png
+  artifactKey: Guid(77da57df1cefb254eb34f0545580e6ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/머플러 노말맵.png using Guid(77da57df1cefb254eb34f0545580e6ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '106813861a56635490a39a64fcfe86a8') in 0.012493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/머플러.png
+  artifactKey: Guid(a6a1f34f26969914081c200411e08ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/머플러.png using Guid(a6a1f34f26969914081c200411e08ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d4a06b92be2038189a6d52305180914') in 0.009765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_hair_AlbedoTransparency.png
+  artifactKey: Guid(9759014d2cfe2b140832356991926dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_hair_AlbedoTransparency.png using Guid(9759014d2cfe2b140832356991926dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2daa88c419cf48519d35077bd927c383') in 0.010544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_eye_Normal.png
+  artifactKey: Guid(beddcc56af56a14478b06a94b1654aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_eye_Normal.png using Guid(beddcc56af56a14478b06a94b1654aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e0a869ae7995302e5e11760532da466') in 0.010694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_body_Normal.png
+  artifactKey: Guid(0b7301b0ad0563b4c9af28e31b7ba5ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_body_Normal.png using Guid(0b7301b0ad0563b4c9af28e31b7ba5ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99952d02307de0bbe5f39025caf5c7fb') in 0.010646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_clothes_MaskMap.png
+  artifactKey: Guid(7ef1786419d7be2468c7ebb1ee89a076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_clothes_MaskMap.png using Guid(7ef1786419d7be2468c7ebb1ee89a076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b491a3518aab0a95229c68623f46bb0') in 0.012239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_body_AlbedoTransparency.png
+  artifactKey: Guid(4dd9abf8e712c124c8b79bf5b7ef500e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_body_AlbedoTransparency.png using Guid(4dd9abf8e712c124c8b79bf5b7ef500e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '047344a2dda84b274f67c6b0a021ab85') in 0.010848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_foot_Normal.png
+  artifactKey: Guid(d27ceafd6fcdcfb4d887daf9ab38bd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_foot_Normal.png using Guid(d27ceafd6fcdcfb4d887daf9ab38bd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cefe06620d618faa907f07565fb2e64') in 0.010967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_body_MetallicSmoothness.png
+  artifactKey: Guid(34cbc56b5b764064da5ad86a2f059bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling_body_MetallicSmoothness.png using Guid(34cbc56b5b764064da5ad86a2f059bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c37ee27c9a6fb1bba028d1a76bc2ad89') in 0.012040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/UIElements/Demo_Chat.jpeg
+  artifactKey: Guid(5b53c8165b9153c4da7a84c18cb5b50f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/UIElements/Demo_Chat.jpeg using Guid(5b53c8165b9153c4da7a84c18cb5b50f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1edf8f4941a2410177f51ed561cf48f9') in 0.011659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/UIElements/Demo_ChatTransparent.jpeg
+  artifactKey: Guid(203365ce32084a44e8a42f9ffdd9485d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/UIElements/Demo_ChatTransparent.jpeg using Guid(203365ce32084a44e8a42f9ffdd9485d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04267ff1e0a81db0b5486b104dd75e55') in 0.012089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/UIElements/Demo_Title.jpeg
+  artifactKey: Guid(0f1d6b37df5ab4b459cd4d6b5a218c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/UIElements/Demo_Title.jpeg using Guid(0f1d6b37df5ab4b459cd4d6b5a218c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ceefdaa0cd05e97ddd96bd930b43a3') in 0.009584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_belt_MaskMap.png
+  artifactKey: Guid(512588c74c6d77b4cb0822f197909bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/standardUv/womenModeling1_belt_MaskMap.png using Guid(512588c74c6d77b4cb0822f197909bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9214e99d19e0ec15b257c328027a948f') in 0.012422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 402.531142 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/GameRoomVer02.prefab
+  artifactKey: Guid(1bb75f466a54694469081b0385569c28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/GameCenter/GameRoomVer02.prefab using Guid(1bb75f466a54694469081b0385569c28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31113b2a0d0bd8e939d1cfe42fbd4d7f') in 0.042265 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002354 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.784 seconds
+Domain Reload Profiling:
+	ReloadAssembly (784ms)
+		BeginReloadAssembly (97ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (644ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (242ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (206ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (126ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.01 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.4 MB.
+System memory in use after: 192.6 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 4739.
+Total: 2.982100 ms (FindLiveObjects: 0.310200 ms CreateObjectMapping: 0.119900 ms MarkObjects: 2.440600 ms  DeleteObjects: 0.110300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002650 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.677 seconds
+Domain Reload Profiling:
+	ReloadAssembly (677ms)
+		BeginReloadAssembly (80ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (559ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (193ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (197ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (120ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.4 MB.
+System memory in use after: 192.6 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4742.
+Total: 2.483300 ms (FindLiveObjects: 0.219800 ms CreateObjectMapping: 0.115600 ms MarkObjects: 2.030400 ms  DeleteObjects: 0.116800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002271 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.721 seconds
+Domain Reload Profiling:
+	ReloadAssembly (721ms)
+		BeginReloadAssembly (82ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (601ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (211ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (209ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (131ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.84 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.4 MB.
+System memory in use after: 192.6 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4745.
+Total: 3.377000 ms (FindLiveObjects: 0.334000 ms CreateObjectMapping: 0.149600 ms MarkObjects: 2.742400 ms  DeleteObjects: 0.149700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1769.469789 seconds.
+  path: Assets/RunaCharacter/AudiioPrefabs/whitemainProtocol.mp3
+  artifactKey: Guid(2ed2d8d0577a5b14cbed983ad848f4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/AudiioPrefabs/whitemainProtocol.mp3 using Guid(2ed2d8d0577a5b14cbed983ad848f4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b58adf4224deec4bd4ce57b0b185fa23') in 0.067814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/RunaCharacter/AudiioPrefabs/오락실 bgm1.mp3
+  artifactKey: Guid(0e753fe30be10b2459c3ece575e3e8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/AudiioPrefabs/오락실 bgm1.mp3 using Guid(0e753fe30be10b2459c3ece575e3e8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e5ac378f3e000942bb0ae5b634cfa6') in 0.010131 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.501179 seconds.
+  path: Assets/RunaCharacter/Enviroment/BuildingTxture/BoxBone.mat
+  artifactKey: Guid(2686d4e06e17ac84197688d4f914471f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Enviroment/BuildingTxture/BoxBone.mat using Guid(2686d4e06e17ac84197688d4f914471f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ce8dd55c3b333428c34e0211fd0a1e') in 0.029379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/RunaCharacter/Enviroment/BuildingTxture/DoorWindow.mat
+  artifactKey: Guid(949b22acea5e82e4f92bdc7b3fded23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Enviroment/BuildingTxture/DoorWindow.mat using Guid(949b22acea5e82e4f92bdc7b3fded23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b369080d574726acd8c4fa45176adce') in 0.011928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.251005 seconds.
+  path: Assets/RunaCharacter/HiWaveMask 1.mask
+  artifactKey: Guid(62a6ce6e1822da9419beba77c337d4fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/HiWaveMask 1.mask using Guid(62a6ce6e1822da9419beba77c337d4fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b79b1eed78d7bee0bf71bb4e0961cf3c') in 0.007772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.898663 seconds.
+  path: Assets/RunaCharacter/Left Strafe Walk.fbx
+  artifactKey: Guid(14bd848bcc1a1244b922b50931814410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Left Strafe Walk.fbx using Guid(14bd848bcc1a1244b922b50931814410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61f01772673865482e2081a373c088c9') in 0.084802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/RunaCharacter/SittingHead.mask
+  artifactKey: Guid(222a8bfa1f2663c40a532337cdf36b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/SittingHead.mask using Guid(222a8bfa1f2663c40a532337cdf36b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ad584943e4571f9a0d586717fafb0c') in 0.006521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/RunaCharacter/Sit To Stand.fbx
+  artifactKey: Guid(7bca0b275c456db459967e19652c6b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Sit To Stand.fbx using Guid(7bca0b275c456db459967e19652c6b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86ce85c9fe27d1207376cd8f0611c63a') in 0.054704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/RunaCharacter/Right Strafe Walk.fbx
+  artifactKey: Guid(e7036280ed431f044936bc03ce488d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Right Strafe Walk.fbx using Guid(e7036280ed431f044936bc03ce488d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ab739335114fdff939dd975136761c') in 0.035275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/RunaCharacter/Sitting.fbx
+  artifactKey: Guid(e74e8e2902c611c47ae8d07068d71885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Sitting.fbx using Guid(e74e8e2902c611c47ae8d07068d71885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023e63b811d4a1c24417f80e524041b4') in 0.036437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 290.574498 seconds.
+  path: Assets/RunaCharacter/Walking.fbx
+  artifactKey: Guid(e4683fb3d3fccca49b1701f757b4cdd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Walking.fbx using Guid(e4683fb3d3fccca49b1701f757b4cdd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd38c1eb090d461333b1eace0524ef7d3') in 0.045346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Textures/FlyerPlayershipOcclusion.tif
+  artifactKey: Guid(34b19bc20b665b240af9c0fc9d0086f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Textures/FlyerPlayershipOcclusion.tif using Guid(34b19bc20b665b240af9c0fc9d0086f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d948fdae9b45fc773706ad6d4a1c22f') in 0.018545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Textures/FlyerPlayershipEmission.tif
+  artifactKey: Guid(88217866776ce4c49944ecb360a5c6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Textures/FlyerPlayershipEmission.tif using Guid(88217866776ce4c49944ecb360a5c6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77206b5ff6f353e2bcab3f5f9eb80641') in 0.009215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/RunaCharacter/Walking Backward.fbx
+  artifactKey: Guid(3c438122756a50c4eabcf81a66ac17d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Walking Backward.fbx using Guid(3c438122756a50c4eabcf81a66ac17d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55185b650a2071880a32939c5d7eec8f') in 0.042045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Textures/FlyerPlayershipAlbedo.tif
+  artifactKey: Guid(b28381ec2a3dce5459a8fd396a0eb560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Textures/FlyerPlayershipAlbedo.tif using Guid(b28381ec2a3dce5459a8fd396a0eb560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e39331b00db70d85bfd1aec4d5bf9d72') in 0.009375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Terrain Map/#NVJOB Water Shaders V2/Example Scenes/PostProcessing/TerrainResources/Shaders/EyeHistogram.compute
+  artifactKey: Guid(7a579569b6304a089413874406f62ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain Map/#NVJOB Water Shaders V2/Example Scenes/PostProcessing/TerrainResources/Shaders/EyeHistogram.compute using Guid(7a579569b6304a089413874406f62ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cae0d0e0fdd50411222e00a788b9378') in 0.007573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Materials/FlyerPlayership.mat
+  artifactKey: Guid(99fced4bc2985174cac8512dc765d2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Materials/FlyerPlayership.mat using Guid(99fced4bc2985174cac8512dc765d2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '391fe247c6c860e65dfd16ff2ac7224a') in 0.012912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.279282 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/HumanoidCrouch.fbx
+  artifactKey: Guid(d89ea37480b6d75458aa38843e9688dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/HumanoidCrouch.fbx using Guid(d89ea37480b6d75458aa38843e9688dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43acccc3dda0d2d01fa9b1334aff33b5') in 0.012577 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002392 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.706 seconds
+Domain Reload Profiling:
+	ReloadAssembly (706ms)
+		BeginReloadAssembly (85ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (585ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (201ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (204ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (125ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.72 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.7 MB.
+System memory in use after: 192.9 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4753.
+Total: 2.535900 ms (FindLiveObjects: 0.226300 ms CreateObjectMapping: 0.107900 ms MarkObjects: 2.105800 ms  DeleteObjects: 0.095300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002330 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.724 seconds
+Domain Reload Profiling:
+	ReloadAssembly (724ms)
+		BeginReloadAssembly (90ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (591ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (211ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (199ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (123ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.7 MB.
+System memory in use after: 192.9 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4756.
+Total: 2.552900 ms (FindLiveObjects: 0.256600 ms CreateObjectMapping: 0.115700 ms MarkObjects: 2.055000 ms  DeleteObjects: 0.125000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004223 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.678 seconds
+Domain Reload Profiling:
+	ReloadAssembly (678ms)
+		BeginReloadAssembly (77ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (564ms)
+			LoadAssemblies (62ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (193ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (201ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (121ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.77 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.7 MB.
+System memory in use after: 193.0 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4759.
+Total: 2.536800 ms (FindLiveObjects: 0.227200 ms CreateObjectMapping: 0.106800 ms MarkObjects: 2.103800 ms  DeleteObjects: 0.098200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 622.430444 seconds.
+  path: Assets/RunaCharacter/Enviroment/GameRoomVer02.prefab
+  artifactKey: Guid(d80c2f30997e9a0488605a877f116f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Enviroment/GameRoomVer02.prefab using Guid(d80c2f30997e9a0488605a877f116f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19fcecbf8c63f08fac117fb49a3a6293') in 0.093507 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002317 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.728 seconds
+Domain Reload Profiling:
+	ReloadAssembly (728ms)
+		BeginReloadAssembly (95ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (591ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (213ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (201ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (122ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.8 MB.
+System memory in use after: 193.0 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4763.
+Total: 2.599000 ms (FindLiveObjects: 0.252800 ms CreateObjectMapping: 0.113600 ms MarkObjects: 2.095600 ms  DeleteObjects: 0.136300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002287 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.744 seconds
+Domain Reload Profiling:
+	ReloadAssembly (745ms)
+		BeginReloadAssembly (85ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (617ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (233ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (208ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (124ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.8 MB.
+System memory in use after: 193.0 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4766.
+Total: 2.531500 ms (FindLiveObjects: 0.254900 ms CreateObjectMapping: 0.138700 ms MarkObjects: 2.025000 ms  DeleteObjects: 0.112300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002279 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.702 seconds
+Domain Reload Profiling:
+	ReloadAssembly (703ms)
+		BeginReloadAssembly (80ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (585ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (200ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (202ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (119ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.8 MB.
+System memory in use after: 193.0 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4769.
+Total: 2.630100 ms (FindLiveObjects: 0.237300 ms CreateObjectMapping: 0.128300 ms MarkObjects: 2.145000 ms  DeleteObjects: 0.118700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002676 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.723 seconds
+Domain Reload Profiling:
+	ReloadAssembly (723ms)
+		BeginReloadAssembly (78ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (610ms)
+			LoadAssemblies (61ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (199ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (230ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (142ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.8 MB.
+System memory in use after: 193.0 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4772.
+Total: 2.580400 ms (FindLiveObjects: 0.227300 ms CreateObjectMapping: 0.111700 ms MarkObjects: 2.141700 ms  DeleteObjects: 0.098900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002279 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.674 seconds
+Domain Reload Profiling:
+	ReloadAssembly (674ms)
+		BeginReloadAssembly (75ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (563ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (196ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (199ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (121ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.8 MB.
+System memory in use after: 193.0 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4775.
+Total: 2.474000 ms (FindLiveObjects: 0.221800 ms CreateObjectMapping: 0.106200 ms MarkObjects: 2.031400 ms  DeleteObjects: 0.113800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 800.148041 seconds.
+  path: Assets/RunaCharacter/_TerrainAutoUpgrade/layer_UnitTextureBluecc0f254a2c535401.terrainlayer
+  artifactKey: Guid(b763500abf178304d98f0bbad40191e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/_TerrainAutoUpgrade/layer_UnitTextureBluecc0f254a2c535401.terrainlayer using Guid(b763500abf178304d98f0bbad40191e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa6047775743fe402c44ca82fee7036') in 0.069134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/RunaCharacter/_TerrainAutoUpgrade/layer_UnitTextureRedcc0f254a2c535401.terrainlayer
+  artifactKey: Guid(6d9c1ae66857fb74eb8fe28e4624fc76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/_TerrainAutoUpgrade/layer_UnitTextureRedcc0f254a2c535401.terrainlayer using Guid(6d9c1ae66857fb74eb8fe28e4624fc76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da43c629088ec65c9332f9c20231512b') in 0.010770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 88.992754 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials
+  artifactKey: Guid(514bf94618eb6f6429d8d0fcb99d77d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials using Guid(514bf94618eb6f6429d8d0fcb99d77d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6cbbd64a7bf0185b42b5c5d0bd88085') in 0.012373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 111.187591 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileModelings
+  artifactKey: Guid(e15da5ce4577dd34792b40254b7a9f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileModelings using Guid(e15da5ce4577dd34792b40254b7a9f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '376c6f39a25b6e6fd1135dcd6d751b5a') in 0.007652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.186886 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/조이스틱UI_이미지
+  artifactKey: Guid(34fc46fe0990ee942b9ac688be2891d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/조이스틱UI_이미지 using Guid(34fc46fe0990ee942b9ac688be2891d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d5e1967bd38db3752ce20b1409618c3') in 0.006233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.547313 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileModelings/Grounds.fbx
+  artifactKey: Guid(cfe69f7f8f4325149a855eb381bea2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileModelings/Grounds.fbx using Guid(cfe69f7f8f4325149a855eb381bea2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '225a44c34ed1e47dcbc30e700aedafd4') in 0.081505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.358371 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Block1.mat
+  artifactKey: Guid(4043fec836234784aab7460bc067e016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Block1.mat using Guid(4043fec836234784aab7460bc067e016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8451e1963192288fb750984902567874') in 0.014833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Rock1.mat
+  artifactKey: Guid(2d07a79d6909cc14b9f0e9aacd9641cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Rock1.mat using Guid(2d07a79d6909cc14b9f0e9aacd9641cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '574bd0034231762a8b3eb706b9925782') in 0.011443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Land.mat
+  artifactKey: Guid(d3c3015ebdca07840952802f3b4c3e7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Land.mat using Guid(d3c3015ebdca07840952802f3b4c3e7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68c92f16747d0f67ddf964ae0dc1dc77') in 0.010991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Wood2.mat
+  artifactKey: Guid(6c15110a5b8a0194796645fa726b578a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Wood2.mat using Guid(6c15110a5b8a0194796645fa726b578a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beeef75e5044c8bd3f2b39ffd9aa0779') in 0.010332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Steal2.mat
+  artifactKey: Guid(5a8425df3fe3c6c4bbe6ff543f78a9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Steal2.mat using Guid(5a8425df3fe3c6c4bbe6ff543f78a9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dc546983759033bf44ccf29f12d7000') in 0.011139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/LineRenderer.mat
+  artifactKey: Guid(b440379a0ed0f81418f15c462918e2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/LineRenderer.mat using Guid(b440379a0ed0f81418f15c462918e2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5155b6f6ea92ac2d800257b9fce3e913') in 0.011088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Block2.mat
+  artifactKey: Guid(db7f52925426b1149b2175a2ac2a49bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Block2.mat using Guid(db7f52925426b1149b2175a2ac2a49bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ff5f9dc110c1f3a0446d70b18f06e83') in 0.011079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Rock2.mat
+  artifactKey: Guid(5c0a7c255c88c2e4cbf7be76a1947ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Rock2.mat using Guid(5c0a7c255c88c2e4cbf7be76a1947ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b24a12f4e86bd269bbcf2fbbda906754') in 0.010502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Wood1.mat
+  artifactKey: Guid(ef2090142eb6f6248bc0752504a60c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Wood1.mat using Guid(ef2090142eb6f6248bc0752504a60c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0839ab0da373c9f0f57c8c753962cec5') in 0.010539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Light.mat
+  artifactKey: Guid(11c2bb81b7d9c9b4da368f9414b5f103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Light.mat using Guid(11c2bb81b7d9c9b4da368f9414b5f103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23dc237e2e6b6b613aba81843c8b2c85') in 0.014063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Green2.mat
+  artifactKey: Guid(22223c466d55a324599475055a039598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Green2.mat using Guid(22223c466d55a324599475055a039598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a17ec39549cd0a3e9d231f19853769c') in 0.010543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Water.mat
+  artifactKey: Guid(a647a6c667bc21c4e9556c18957e5ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Water.mat using Guid(a647a6c667bc21c4e9556c18957e5ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd80fd71b0118998a37c9be2eb342b15') in 0.010367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Steal1.mat
+  artifactKey: Guid(e73fe85ed05a9f84e92c872e0945af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Steal1.mat using Guid(e73fe85ed05a9f84e92c872e0945af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c749ec90811d298673776e5585ef40') in 0.011319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Green3.mat
+  artifactKey: Guid(cdf4011fd8f9ba1458d208387527f25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Green3.mat using Guid(cdf4011fd8f9ba1458d208387527f25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09535fd6159e3c65e0a5ddbcb13984ce') in 0.010549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Green4.mat
+  artifactKey: Guid(37a48c56b8b8c1d4bb28323560b39af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Green4.mat using Guid(37a48c56b8b8c1d4bb28323560b39af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ec13820cf79216e313279f920e8e208') in 0.010514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Green1.mat
+  artifactKey: Guid(07b5ab9090926f74685f600fa9c6cc4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/MobileRuna/MobileMaterials/Green1.mat using Guid(07b5ab9090926f74685f600fa9c6cc4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c167d414a060a222156c481e5df3f6b0') in 0.010690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 199.801499 seconds.
+  path: Assets/RunaCharacter/Enviroment/가로등.prefab
+  artifactKey: Guid(6cdfde97326e81f4c80d1ed0de080e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Enviroment/가로등.prefab using Guid(6cdfde97326e81f4c80d1ed0de080e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ce4441828b6cb03fb2a5ee4f04d74b8') in 0.012644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.404562 seconds.
+  path: Assets/RunaCharacter/Enviroment/휴지통.prefab
+  artifactKey: Guid(30c45fcb0dd63d74ea349514766aa116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Enviroment/휴지통.prefab using Guid(30c45fcb0dd63d74ea349514766aa116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78fc5b2a15a5342e291735cc5eb307bc') in 0.011723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.296839 seconds.
+  path: Assets/RunaCharacter/Enviroment/GameRoomVer02 1.prefab
+  artifactKey: Guid(e4c4e3d52cbcc7546af12572cf87ee52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Enviroment/GameRoomVer02 1.prefab using Guid(e4c4e3d52cbcc7546af12572cf87ee52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d498dcf7d261a5e84be2f8c07c2955e') in 0.074174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 287.748129 seconds.
+  path: Assets/RunaCharacter/Enviroment/Terrain.prefab
+  artifactKey: Guid(53ec404dd338d7e4d8435967fd4017ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Enviroment/Terrain.prefab using Guid(53ec404dd338d7e4d8435967fd4017ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63978f5ce5ec3a3b15b62df082200c04') in 0.091155 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002352 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.803 seconds
+Domain Reload Profiling:
+	ReloadAssembly (803ms)
+		BeginReloadAssembly (97ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (663ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (235ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (230ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (140ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.82 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 193.1 MB.
+System memory in use after: 193.3 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4780.
+Total: 2.926300 ms (FindLiveObjects: 0.287700 ms CreateObjectMapping: 0.135200 ms MarkObjects: 2.395900 ms  DeleteObjects: 0.106300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003027 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.701 seconds
+Domain Reload Profiling:
+	ReloadAssembly (701ms)
+		BeginReloadAssembly (81ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (584ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (198ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (215ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (135ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 193.1 MB.
+System memory in use after: 193.3 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4783.
+Total: 2.677500 ms (FindLiveObjects: 0.238200 ms CreateObjectMapping: 0.135200 ms MarkObjects: 2.207100 ms  DeleteObjects: 0.096000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002397 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.752 seconds
+Domain Reload Profiling:
+	ReloadAssembly (752ms)
+		BeginReloadAssembly (83ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (631ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (208ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (237ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (146ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 193.1 MB.
+System memory in use after: 193.3 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4786.
+Total: 3.098000 ms (FindLiveObjects: 0.283300 ms CreateObjectMapping: 0.129800 ms MarkObjects: 2.561300 ms  DeleteObjects: 0.122600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002609 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.660 seconds
+Domain Reload Profiling:
+	ReloadAssembly (661ms)
+		BeginReloadAssembly (75ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (550ms)
+			LoadAssemblies (57ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (191ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (195ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (121ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.72 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 193.1 MB.
+System memory in use after: 193.3 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4789.
+Total: 2.630600 ms (FindLiveObjects: 0.230200 ms CreateObjectMapping: 0.100900 ms MarkObjects: 2.198500 ms  DeleteObjects: 0.100300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
