@@ -16,9 +16,17 @@ public class LobbyManager : MonoBehaviour
     public Button continueButton; //이어하기 버튼
     public Button resetButton; //데이터 초기화 버튼
     static public bool Continuing = false; //이어하기 준비가 되었는가?
+   
+    private bool CursorVisible = true;
 
+    [SerializeField]
+    private ShootingInterAct shotAct;
+
+   
     private void Awake()
     {
+        shotAct = FindObjectOfType<ShootingInterAct>();
+
         inputField_start
             = transform.Find("StartPanel/Box/InputField").GetComponent<InputField>();
         inputField_countinue
@@ -35,6 +43,33 @@ public class LobbyManager : MonoBehaviour
         LoadData();
         UpdateUI();
     }
+
+    private void Update()
+    {
+        Cursors();
+    }
+
+    private void Cursors()
+    {
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            CursorVisible = !CursorVisible;
+            Cursor.visible = CursorVisible;
+
+            if (CursorVisible)
+            {
+                Cursor.lockState = CursorLockMode.None;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+
+        }
+
+    }
+
     //처음부터 시작하는 함수
     public void StartNewGame()
     {
@@ -46,7 +81,8 @@ public class LobbyManager : MonoBehaviour
             UpdateUI();
 
             Debug.Log("게임을 시작합니다.");
-            SceneManager.LoadScene("Stage_1");
+            shotAct.MainShotGame.SetActive(true);
+            shotAct.MainShotCam.SetActive(true);
         }
     }
     public void ResetData()
@@ -125,9 +161,9 @@ public class LobbyManager : MonoBehaviour
             resetButton.interactable = false;
         }
     }
-
     public void ExitBtn()
     {
-        Application.Quit();
+        shotAct.MainShotGame.SetActive(false);
+        shotAct.MainShotCam.SetActive(false);
     }
 }

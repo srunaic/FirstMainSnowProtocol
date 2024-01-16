@@ -144,7 +144,7 @@ namespace ShootingManager
             {
                 Clicked = true;
                 SaveGame();//로비로 데이터를 한번 이동하더라도 저장.
-                SceneManager.LoadScene("Lobby");
+                SceneManager.LoadScene("ShootingLobby");
                 Debug.Log("함수 실행.");
             }
             else

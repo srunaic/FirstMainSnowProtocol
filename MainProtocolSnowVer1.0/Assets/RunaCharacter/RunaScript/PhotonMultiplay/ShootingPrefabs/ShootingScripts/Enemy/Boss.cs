@@ -9,7 +9,7 @@ public class Boss : MonoBehaviour
     public GameObject boss;
     public GameObject Hpbar;
 
-    public AudioManager audiomanager;
+    //public AudioManager audiomanager;
     //보스가 나올 시간
     static public int BossCount = 0; //씬 하나마다 적용해줄 보스
     public int SpawnCount = 10;
@@ -23,14 +23,14 @@ public class Boss : MonoBehaviour
 
     private void Awake()
     {
-        audiomanager = FindObjectOfType<AudioManager>();
+        //audiomanager = FindObjectOfType<AudioManager>();
     }
 
     private void Update()
     {
         if (!SpawnEnd && BossCount > SpawnCount)
         {
-            audiomanager.AudioListen();
+            //audiomanager.AudioListen();
             Hpbar.SetActive(true);
             boss.SetActive(true);
 

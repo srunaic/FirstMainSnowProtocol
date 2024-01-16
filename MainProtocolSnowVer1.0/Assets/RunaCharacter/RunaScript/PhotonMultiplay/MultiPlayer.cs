@@ -8,6 +8,7 @@ using SeonghyoGameManagerGroup; //게임매니저
 public enum CheckState //포톤 상의 플레이어 상태값.
 {
     None,
+    ChatState,
     Sitting,
     DollGames,
     ShotGames
@@ -63,6 +64,8 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
     private Quaternion currRot = Quaternion.identity;
 
     public bool onMoveable = true;
+    private int onClick = 0;
+
     void Start()
     {
         ScoreText.text = ""+ score;//점수 초기화.
@@ -97,11 +100,12 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
     }
     private void Update()
     {
-        if(pv.IsMine)
+        if (pv.IsMine)
         {
             ProcessPlayerMovement();
-        }
 
+        }
+ 
         if (Input.GetKeyDown(KeyCode.C))
         {
             _checkstate = CheckState.None;
@@ -109,10 +113,10 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
             if (_checkstate == CheckState.None)
             {
                  onMoveable = true;
-            }
-            
+            }  
         }
     }
+
     void ProcessPlayerMovement()
     {
         if (onMoveable)
@@ -156,6 +160,20 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
                 nearShooting.SetShotGame(this);
             }
         }
+       else if (Input.GetButtonDown("Cancel")) //네트워크 환경과 교류 접속 상태일때, 이 키일때 적용되는 값 채팅 연동.
+        {
+            if (onClick <= 0) //메시지
+            {
+                onClick = 1;
+                onMoveable = false;
+
+            }
+            else if (onClick <= 1)
+            {
+                onMoveable = true;
+                onClick = 0; //0으로 초기화.
+            }
+        }
     }
     //포톤에서 유저의 정보를 이 함수로 전달해줌. 그래야 상대측도 보인다.
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) //원격 전송방식.
@@ -164,8 +182,6 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
         {
             stream.SendNext(_PlayerTr.position);
             stream.SendNext(_PlayerTr.rotation);
-            stream.SendNext(currPos);
-            stream.SendNext(currRot);
             stream.SendNext(PhotonNetwork.LocalPlayer.NickName); // 닉네임을 전송
             stream.SendNext(RunaAnim.GetBool("isRun"));//bool값 애니메이션의 전송방법.
            // stream.SendNext(score);
