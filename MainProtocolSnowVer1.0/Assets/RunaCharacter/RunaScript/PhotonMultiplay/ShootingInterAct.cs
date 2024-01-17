@@ -11,9 +11,6 @@ public class ShootingInterAct : MonoBehaviourPunCallbacks
     public GameObject MainShotGame;
     public GameObject MainShotCam;
 
-    [SerializeField]
-    private bool GameActive = false;
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.C))
@@ -21,7 +18,6 @@ public class ShootingInterAct : MonoBehaviourPunCallbacks
             MainShotGame.SetActive(false);
             MainShotCam.SetActive(false);
             ShootCanvas.SetActive(false);
-            GameActive = false;
         }
     }
 
@@ -32,8 +28,6 @@ public class ShootingInterAct : MonoBehaviourPunCallbacks
             _Shotplayer.onMoveable = false;
 
             ShootCanvas.SetActive(true);
-            GameActive = true;
-
         }
     }
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)

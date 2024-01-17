@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI; //UI 제어하기 위함
 using UnityEngine.SceneManagement; //씬 이동을 위함
 using ShootingManager;
+using Photon.Pun;
 
 public class LobbyManager : MonoBehaviour
 {
@@ -71,7 +72,7 @@ public class LobbyManager : MonoBehaviour
     }
 
     //처음부터 시작하는 함수
-    public void StartNewGame()
+    public void StartNewGame(MultiPlayer _Shotplayer)
     {
         if (string.IsNullOrEmpty(inputField_start.text))
             Debug.Log("이름을 입력해주세요.");
@@ -81,6 +82,7 @@ public class LobbyManager : MonoBehaviour
             UpdateUI();
 
             Debug.Log("게임을 시작합니다.");
+
             shotAct.MainShotGame.SetActive(true);
             shotAct.MainShotCam.SetActive(true);
         }
@@ -140,7 +142,6 @@ public class LobbyManager : MonoBehaviour
 
         hasSaveData = true;
     }
-
     void UpdateUI() //불러온 데이터를 UI에 적용
     {
         if (hasSaveData)
