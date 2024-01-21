@@ -26,7 +26,7 @@ public class LiftMultiDoll : MonoBehaviourPunCallbacks
     public Transform _LegDollPos;//이 객체와 자식들을 한번에 움직이기.
     public Transform _LegDollPos2;
     [Header("인형 위치")]
-    public Transform _Doll;
+    public Transform[]_Doll;
     public Transform ZilePos; //인형이 올라갈 위치
 
     [Header("움직임 스피드 관리.")]

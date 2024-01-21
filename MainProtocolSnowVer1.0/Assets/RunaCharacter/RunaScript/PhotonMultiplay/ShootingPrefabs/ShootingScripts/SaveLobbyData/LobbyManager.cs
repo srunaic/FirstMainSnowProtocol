@@ -23,7 +23,12 @@ public class LobbyManager : MonoBehaviour
     [SerializeField]
     private ShootingInterAct shotAct;
 
-   
+    [SerializeField]
+    private GameObject StartPanel;
+
+    public GameObject shootingGamesPrefab; // shootingGame 프리팹을 저장할 변수
+    private GameObject shootingGamesInstance; // shootingGame 인스턴스를 저장할 변수
+
     private void Awake()
     {
         shotAct = FindObjectOfType<ShootingInterAct>();
@@ -47,31 +52,13 @@ public class LobbyManager : MonoBehaviour
 
     private void Update()
     {
-        Cursors();
-    }
-
-    private void Cursors()
-    {
-
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.V))
         {
-            CursorVisible = !CursorVisible;
-            Cursor.visible = CursorVisible;
-
-            if (CursorVisible)
-            {
-                Cursor.lockState = CursorLockMode.None;
-            }
-            else
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-            }
-
+            DestroyShootingGames();
+            StartPanel.SetActive(false);
         }
-
     }
-
-    //처음부터 시작하는 함수
+    //슈팅 게임 처음부터 시작하는 함수
     public void StartNewGame(MultiPlayer _Shotplayer)
     {
         if (string.IsNullOrEmpty(inputField_start.text))
@@ -83,10 +70,40 @@ public class LobbyManager : MonoBehaviour
 
             Debug.Log("게임을 시작합니다.");
 
-            shotAct.MainShotGame.SetActive(true);
-            shotAct.MainShotCam.SetActive(true);
+            CreateShootingGames();
         }
     }
+
+    private void CreateShootingGames()
+    {
+       
+         shootingGamesInstance = Instantiate(shootingGamesPrefab, Vector3.zero, Quaternion.identity);
+        
+    }
+
+    private void RecreateShootingGames()
+    {
+        // 기존 인스턴스가 있다면 제거
+        if (shootingGamesInstance != null)
+        {
+            Destroy(shootingGamesInstance);
+            Debug.Log("Delete shooting games" + shootingGamesInstance);
+        }
+
+        // 리소스에서 프리팹을 로드하고 GameObject에 할당하여 재생성
+        shootingGamesPrefab = Resources.Load<GameObject>("Resources/ShootingGame/ShootingGame 1"); // "Path_To_shootingGame_Prefab"에 실제 프리팹 경로를 넣어주세요.
+        CreateShootingGames();
+    }
+
+    public void DestroyShootingGames()
+    {
+        if (shootingGamesInstance != null)
+        {
+            Destroy(shootingGamesInstance);
+            Debug.Log("Delete shooting games" + shootingGamesInstance);
+        }
+    }
+
     public void ResetData()
     {
         ClearData();
@@ -164,7 +181,7 @@ public class LobbyManager : MonoBehaviour
     }
     public void ExitBtn()
     {
-        shotAct.MainShotGame.SetActive(false);
-        shotAct.MainShotCam.SetActive(false);
+        //shotAct.MainShotGame.SetActive(false);
+        //shotAct.MainShotCam.SetActive(false);
     }
 }

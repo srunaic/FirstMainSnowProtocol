@@ -3,20 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Photon.Pun;
+
+
 public class MultiLiftCatch : MonoBehaviour, IPunObservable
 {
-    [Header("집게가 인형을 잡았을때 판정.")]
-    bool IsTongsHoldingDoll = false;
-    public LiftMultiDoll _LiftMove; //기계 본체 접촉.
+    public enum KindDoll { None, RabbitDoll1, RabbitDoll2 ,HumanDoll }
 
-    [Header("인형 컨트롤")]
-    private Rigidbody dollRigidbody;//인형의 리지드 바디.
-    private Collider dollCollider;
+    [Header("catchKindDoll")]
+    public KindDoll _kindDoll = KindDoll.None;
 
-    [Header("집게 컨트롤")]
+    [Header("Judgment when the tongs catch the doll.")]
+    bool isTongsHoldingDoll = false;
+    public LiftMultiDoll _LiftMove;
+
+    [Header("Puppet Control")]
+    private Rigidbody[] dollRigidbodies = new Rigidbody[2];
+    private Collider[] dollColliders = new Collider[2];
+
+    [Header("Pinch Control")]
     private Collider legDollPos2Collider;
 
-    [Header("애니메이션 추가")]
+    [Header("Add Animation")]
     public Animator LiftAnim;
     private Transform _LiftArmTr;
 
@@ -26,14 +33,18 @@ public class MultiLiftCatch : MonoBehaviour, IPunObservable
     private void Start()
     {
         _LiftArmTr = GetComponent<Transform>();
-        dollRigidbody = _LiftMove._Doll.GetComponent<Rigidbody>();
-        dollCollider = _LiftMove._Doll.GetComponent<Collider>();
-        legDollPos2Collider = _LiftMove._LegDollPos2.GetComponent<Collider>();
 
+        for (int i = 0; i < 2; i++)
+        {
+            dollRigidbodies[i] = _LiftMove._Doll[i].GetComponent<Rigidbody>();
+            dollColliders[i] = _LiftMove._Doll[i].GetComponent<Collider>();
+        }
+
+        legDollPos2Collider = _LiftMove._LegDollPos2.GetComponent<Collider>();
         LiftAnim = GetComponent<Animator>();
     }
 
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) //원격 전송방식.
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting)
         {
@@ -47,44 +58,63 @@ public class MultiLiftCatch : MonoBehaviour, IPunObservable
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Doll"))
+        if (other.CompareTag("RabbitDoll1"))
         {
-            AttachDollToTongs();
+            _kindDoll = KindDoll.RabbitDoll1;
+            AttachDollToTongs(0);
+        }
+
+        else if (other.CompareTag("RabbitDoll2"))
+        {
+            _kindDoll = KindDoll.RabbitDoll2;
+            AttachDollToTongs(1);
         }
 
     }
+
     private void Update()
     {
-        if (IsTongsHoldingDoll)//인형을 잡는 중인지?
+        if (isTongsHoldingDoll)
         {
-            _LiftMove._Doll.position = _LiftMove.ZilePos.position;
+            int dollIndex = (_kindDoll == KindDoll.RabbitDoll1) ? 0 : 1;
+            _LiftMove._Doll[dollIndex].position = _LiftMove.ZilePos.position;
         }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             DetachDollFromTongs();
+            _kindDoll = KindDoll.None;
         }
     }
 
-    private void AttachDollToTongs()//인형을 잡고있다면,
+    private void AttachDollToTongs(int dollIndex)
     {
-        IsTongsHoldingDoll = true;
-        _LiftMove._Doll.position = _LiftMove.ZilePos.position;
+        if (!isTongsHoldingDoll)
+        {
+            isTongsHoldingDoll = true;
 
-        LiftAnim.SetTrigger("ZileLift");
-
-        dollRigidbody.isKinematic = true;
-        dollCollider.enabled = false;
+            _LiftMove._Doll[dollIndex].position = _LiftMove.ZilePos.position;
+            LiftAnim.SetTrigger("ZileLift");
+            
+            dollRigidbodies[dollIndex].isKinematic = true;
+            dollColliders[dollIndex].enabled = false;
+        }
     }
 
-    private void DetachDollFromTongs()//인형을 놓아주는 부분
+    private void DetachDollFromTongs()
     {
-        IsTongsHoldingDoll = false;
-        dollRigidbody.isKinematic = false;
-        dollCollider.enabled = true;
+        isTongsHoldingDoll = false;
+
+        for (int i = 0; i < 2; i++)
+        {
+            dollRigidbodies[i].isKinematic = false;
+            dollColliders[i].enabled = true;
+        }
+
         LiftAnim.SetTrigger("PutZile");
-        StartCoroutine(DisableColliderForDuration(2f)); 
+        StartCoroutine(DisableColliderForDuration(2f));
     }
 
     private IEnumerator DisableColliderForDuration(float duration)
@@ -93,5 +123,4 @@ public class MultiLiftCatch : MonoBehaviour, IPunObservable
         yield return new WaitForSeconds(duration);
         legDollPos2Collider.enabled = true;
     }
-  
 }

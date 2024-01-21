@@ -73,6 +73,7 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\Seat.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\Item\ObjectGrabbable.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\Building\BuildingInterActive.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\Item\ItemSpawner.cs" />
     <Compile Include="Assets\script\ScoreCanvas\ScoreTxt.cs" />
@@ -190,6 +191,7 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingInterAct.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Particle\DestroyParticle.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\Item\PlayerPickUpDrop.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\CameraRotation.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\MobileRuna\MobileInputManager.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\AudioManager.cs" />
@@ -216,8 +218,6 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Bullet\Bullet.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\UserCamTransparent.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\CamVersion.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\Item\PlayerPickUpDrop.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\Item\ObjectGrabbable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
@@ -1008,37 +1008,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="PhotonChat.csproj">
-      <Project>{EBE989B2-2512-75FE-425B-5A60D6401963}</Project>
-      <Name>PhotonChat</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{7C6C5CA2-BF55-86BD-8F0A-E50E2BA141A3}</Project>
-      <Name>PhotonUnityNetworking.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
-      <Project>{1F263AA3-0F31-0864-2C46-D12FFC969521}</Project>
-      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{B93EB28D-9173-8243-CC1E-CD8D86BABD57}</Project>
-      <Name>PhotonRealtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
-      <Project>{8FE75209-867B-2D75-2DF6-A206AABB5DC6}</Project>
-      <Name>PunDemos.DemoHubEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{06EF19B0-6E20-C048-09B2-B58ED2D84C18}</Project>
-      <Name>PhotonUnityNetworking.Utilities</Name>
-    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
       <Project>{90AD2D12-0118-E533-09E3-0CCAEF80FFF6}</Project>
       <Name>PhotonUnityNetworking</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
-      <Project>{C03411FD-412D-33EB-B110-6CE780B77D24}</Project>
-      <Name>PhotonUnityNetworking.Demos</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
       <Project>{C4038CF1-864E-8D43-ECC3-19A3B50C081E}</Project>
@@ -1047,6 +1019,34 @@
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
       <Project>{95FB1A1A-7362-2781-C89B-7BBCEF84C2EB}</Project>
       <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
+      <Project>{06EF19B0-6E20-C048-09B2-B58ED2D84C18}</Project>
+      <Name>PhotonUnityNetworking.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
+      <Project>{C03411FD-412D-33EB-B110-6CE780B77D24}</Project>
+      <Name>PhotonUnityNetworking.Demos</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonChat.csproj">
+      <Project>{EBE989B2-2512-75FE-425B-5A60D6401963}</Project>
+      <Name>PhotonChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
+      <Project>{1F263AA3-0F31-0864-2C46-D12FFC969521}</Project>
+      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
+      <Project>{7C6C5CA2-BF55-86BD-8F0A-E50E2BA141A3}</Project>
+      <Name>PhotonUnityNetworking.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
+      <Project>{8FE75209-867B-2D75-2DF6-A206AABB5DC6}</Project>
+      <Name>PunDemos.DemoHubEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonRealtime.csproj">
+      <Project>{B93EB28D-9173-8243-CC1E-CD8D86BABD57}</Project>
+      <Name>PhotonRealtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

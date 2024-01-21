@@ -8,15 +8,13 @@ public class ShootingInterAct : MonoBehaviourPunCallbacks
 {
     public Transform ShotPos;
     public GameObject ShootCanvas;
-    public GameObject MainShotGame;
-    public GameObject MainShotCam;
+    //public GameObject MainShotGame;
+    //public GameObject MainShotCam;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            MainShotGame.SetActive(false);
-            MainShotCam.SetActive(false);
             ShootCanvas.SetActive(false);
         }
     }
@@ -26,8 +24,8 @@ public class ShootingInterAct : MonoBehaviourPunCallbacks
         if (_Shotplayer._checkstate == CheckState.ShotGames)
         {
             _Shotplayer.onMoveable = false;
-
             ShootCanvas.SetActive(true);
+
         }
     }
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
