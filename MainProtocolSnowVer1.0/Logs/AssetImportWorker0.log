@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'ko' Physical Memory: 16251 MB
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ko' Physical Memory: 16251 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -11,113 +11,115 @@ C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/USER/Documents/GitHub/FirstMainSnowProtocol/MainProtocolSnowVer1.0
+D:/FirstMainSnowProtocol/MainProtocolSnowVer1.0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-9144
-Successfully changed project path to: C:/Users/USER/Documents/GitHub/FirstMainSnowProtocol/MainProtocolSnowVer1.0
-C:/Users/USER/Documents/GitHub/FirstMainSnowProtocol/MainProtocolSnowVer1.0
+54912
+Successfully changed project path to: D:/FirstMainSnowProtocol/MainProtocolSnowVer1.0
+D:/FirstMainSnowProtocol/MainProtocolSnowVer1.0
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 83.12 ms, found 5 plugins.
+Setting a NavMeshArea cost less than one can give unexpected results.
+Refreshing native plugins compatible for Editor in 57.77 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/USER/Documents/GitHub/FirstMainSnowProtocol/MainProtocolSnowVer1.0/Assets
+[Subsystems] Discovering subsystems at path D:/FirstMainSnowProtocol/MainProtocolSnowVer1.0/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
     Vendor:   
-    VRAM:     3962 MB
-    Driver:   27.21.14.6230
+    VRAM:     5980 MB
+    Driver:   31.0.15.3623
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56388
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56868
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001443 seconds.
+Registered in 0.001081 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 87.06 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 60.16 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.610 seconds
+- Completed reload, in  0.389 seconds
 Domain Reload Profiling:
-	ReloadAssembly (610ms)
-		BeginReloadAssembly (55ms)
+	ReloadAssembly (389ms)
+		BeginReloadAssembly (38ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (494ms)
-			LoadAssemblies (54ms)
+		EndReloadAssembly (307ms)
+			LoadAssemblies (37ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (133ms)
+			SetupTypeCache (87ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (230ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (142ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (87ms)
-				BeforeProcessingInitializeOnLoad (8ms)
-				ProcessInitializeOnLoadAttributes (81ms)
-				ProcessInitializeOnLoadMethodAttributes (50ms)
+				RefreshPlugins (60ms)
+				BeforeProcessingInitializeOnLoad (10ms)
+				ProcessInitializeOnLoadAttributes (52ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.016318 seconds.
+Registered in 0.002316 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 86.77 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 76.57 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.206 seconds
+- Completed reload, in  0.976 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1207ms)
-		BeginReloadAssembly (133ms)
+	ReloadAssembly (976ms)
+		BeginReloadAssembly (96ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (1022ms)
-			LoadAssemblies (98ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (842ms)
+			LoadAssemblies (72ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (314ms)
+			SetupTypeCache (264ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (425ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (373ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (87ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (234ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				RefreshPlugins (77ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (199ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.07 ms, found 5 plugins.
+Setting a NavMeshArea cost less than one can give unexpected results.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4298 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 198.2 MB.
-System memory in use after: 198.4 MB.
+System memory in use before: 200.0 MB.
+System memory in use after: 200.2 MB.
 
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 4731.
-Total: 3.789800 ms (FindLiveObjects: 0.349400 ms CreateObjectMapping: 0.271400 ms MarkObjects: 2.996200 ms  DeleteObjects: 0.171900 ms)
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 4733.
+Total: 2.507500 ms (FindLiveObjects: 0.229600 ms CreateObjectMapping: 0.110900 ms MarkObjects: 2.021800 ms  DeleteObjects: 0.144500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -126,1290 +128,96 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/YongYeon/ChameBall/제야의종.fbx
-  artifactKey: Guid(8a7b6a1fce9ef0144aa8643f71d5a49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/제야의종.fbx using Guid(8a7b6a1fce9ef0144aa8643f71d5a49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d13249afa5c4e3efb6973be91a56b29') in 3.017964 seconds 
+  path: Assets/JJ_3D Assets/JJ_Prefabs/Uni.prefab
+  artifactKey: Guid(e8d133a48070c5648ab424cbf39ba5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JJ_3D Assets/JJ_Prefabs/Uni.prefab using Guid(e8d133a48070c5648ab424cbf39ba5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ae8653735e2ae2302c5275e97666e4') in 0.095119 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/YongYeon/ChameBall
-  artifactKey: Guid(0b654c8d3c43484418010a71969c8c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall using Guid(0b654c8d3c43484418010a71969c8c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d2182ee27e04dbbeb1bf6f361c0c133') in 0.008670 seconds 
+  Time since last request: 0.000157 seconds.
+  path: Assets/JJ_3D Assets/JJ_Prefabs/NapjakMandu 1.prefab
+  artifactKey: Guid(8ff06100fb93ad94caa79d0374814364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JJ_3D Assets/JJ_Prefabs/NapjakMandu 1.prefab using Guid(8ff06100fb93ad94caa79d0374814364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '271a5de583f78442d931d656fadc95d1') in 0.034868 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 169.971942 seconds.
-  path: Assets/YongYeon/FoodCar
-  artifactKey: Guid(4cd67e8bf7c401c4a95c22a786114365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar using Guid(4cd67e8bf7c401c4a95c22a786114365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d4aa6bcee26df95ef2690ab54351ec') in 0.006172 seconds 
+  Time since last request: 0.000130 seconds.
+  path: Assets/JJ_3D Assets/JJ_Prefabs
+  artifactKey: Guid(4d400abb28e95dd4cbd6764700218051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JJ_3D Assets/JJ_Prefabs using Guid(4d400abb28e95dd4cbd6764700218051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ef5495b73405ce11cf999a47c40e3e1') in 0.006741 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.044118 seconds.
-  path: Assets/YongYeon/FoodCar/ver01
-  artifactKey: Guid(9408188f4e797244681444b7fd3c42d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01 using Guid(9408188f4e797244681444b7fd3c42d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bd0380f8b154d0ab8ecc2c79ae7e813') in 0.011307 seconds 
+  Time since last request: 0.000120 seconds.
+  path: Assets/JJ_3D Assets/JJ_Prefabs/Raspberry.prefab
+  artifactKey: Guid(3642546b751eee64d9eb6b67b5323276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JJ_3D Assets/JJ_Prefabs/Raspberry.prefab using Guid(3642546b751eee64d9eb6b67b5323276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b8b3c7b72ae6cb6f95c2d2e90f3409') in 0.021958 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.068586 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/푸드트럭ver01.fbx
-  artifactKey: Guid(e49b80419ea7c3b4bbc510f6938ebb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/푸드트럭ver01.fbx using Guid(e49b80419ea7c3b4bbc510f6938ebb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '156014621eb6e75916b5ffa90cfea622') in 0.168023 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.706001 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex
-  artifactKey: Guid(6cbb21743b8a5ba4e9f700a3160808e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex using Guid(6cbb21743b8a5ba4e9f700a3160808e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb7f2664a4b88990a4339dc5d2c2870d') in 0.009135 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.128179 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/간판.mat
-  artifactKey: Guid(376e67fce86255249b7a4b00abefdf88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/간판.mat using Guid(376e67fce86255249b7a4b00abefdf88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1a56f9da64cf2dcd6f8d0fb98b7a4fe') in 0.098616 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분_Base_color.png
-  artifactKey: Guid(83664dbbb73b3fe49aff87e5f517dfbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분_Base_color.png using Guid(83664dbbb73b3fe49aff87e5f517dfbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a05fa2b9d9acbc1340034959ad818c4') in 0.108556 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분_Normal.png
-  artifactKey: Guid(8a42d03eee32dee4c83c8505cb21a206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분_Normal.png using Guid(8a42d03eee32dee4c83c8505cb21a206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e878cd43a80a789f398d2396d399bd9d') in 0.017162 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리_Metallic.png
-  artifactKey: Guid(d80f554b53067254e90d6319d39e6fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리_Metallic.png using Guid(d80f554b53067254e90d6319d39e6fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3efd065ad333992922a4844bab0cec9e') in 0.015702 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Base_color.png
-  artifactKey: Guid(dd56d66626591b54a8b51123e14b9ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Base_color.png using Guid(dd56d66626591b54a8b51123e14b9ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42da58cf7a8284adae1290fc2db92e2e') in 0.015233 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/간판_Roughness.png
-  artifactKey: Guid(05350869867e36d48abdb71bdaaadfbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/간판_Roughness.png using Guid(05350869867e36d48abdb71bdaaadfbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aad302cdd31c50d1123aa39de478d17f') in 0.032699 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리_Normal.png
-  artifactKey: Guid(c78da91cd5434ef48a1ac93ffe11100f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리_Normal.png using Guid(c78da91cd5434ef48a1ac93ffe11100f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa635d8c72cbe8505c3156a7804b8cfc') in 0.018328 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Metallic.png
-  artifactKey: Guid(47f4db37e208f224c83cd3d10283ed55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Metallic.png using Guid(47f4db37e208f224c83cd3d10283ed55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8934ddcab5e3bcb74814d097259a01eb') in 0.018825 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리.mat
-  artifactKey: Guid(6c4df51225f8bb743adbde6131069c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리.mat using Guid(6c4df51225f8bb743adbde6131069c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6bc8812dd3f55c93c43ad6455ad7699') in 0.021063 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Height.png
-  artifactKey: Guid(eee000fb1891f7f4f8485ab7291d3b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Height.png using Guid(eee000fb1891f7f4f8485ab7291d3b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '068b707f1463e525da59e0e1fedd7085') in 0.020447 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분_Mixed_AO.png
-  artifactKey: Guid(5f8139609504d7b4695c801f567e88af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분_Mixed_AO.png using Guid(5f8139609504d7b4695c801f567e88af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11dc05b1a67875433b55ed07b088f42b') in 0.024625 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴_Normal_DirectX.png
-  artifactKey: Guid(fda8032e4fd367a478c3774f11b57198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴_Normal_DirectX.png using Guid(fda8032e4fd367a478c3774f11b57198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2c0f8aa4051ff1f1590c71a677c089') in 0.022764 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/간판_Mixed_AO.png
-  artifactKey: Guid(985f34f88f6746740b0a256ecb1fb2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/간판_Mixed_AO.png using Guid(985f34f88f6746740b0a256ecb1fb2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93390b7cc59f1e5c1caf5a7a99a3d6e0') in 0.025486 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블_Metallic.png
-  artifactKey: Guid(45b9594ac6c7f8a40b8995fab7cbf5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블_Metallic.png using Guid(45b9594ac6c7f8a40b8995fab7cbf5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6878db44201faab39220921a42668bd0') in 0.025480 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판_Height.png
-  artifactKey: Guid(117e6565dfc85724688731156621ed96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판_Height.png using Guid(117e6565dfc85724688731156621ed96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '387e8a415f6d9a2c1fc00100df3acd30') in 0.016852 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블_Roughness.png
-  artifactKey: Guid(7cfd1fea2ac7f3a41b8021fd9e1b7949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블_Roughness.png using Guid(7cfd1fea2ac7f3a41b8021fd9e1b7949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '414597cd8cf74562aa38369948cad0c0') in 0.023665 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블.mat
-  artifactKey: Guid(cc99419f98b0b4a4e8f4f49592d7e965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블.mat using Guid(cc99419f98b0b4a4e8f4f49592d7e965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d116242736d7e5cdc5f9fb262720982') in 0.015074 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판_Mixed_AO.png
-  artifactKey: Guid(91120075a49be1e40913529cd5e737df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판_Mixed_AO.png using Guid(91120075a49be1e40913529cd5e737df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26bcdc1f7f3ddf8ffb4b10004c7b3993') in 0.021942 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분_Height.png
-  artifactKey: Guid(49a1373ab21f4744c86be81bce97cc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분_Height.png using Guid(49a1373ab21f4744c86be81bce97cc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69bd80c23f67358d01cf1a23a8ca3e6f') in 0.015015 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/간판_Metallic.png
-  artifactKey: Guid(5578e299e7f87c5468d885a085916d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/간판_Metallic.png using Guid(5578e299e7f87c5468d885a085916d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a308220ff18522a6b8a938cd71d5d099') in 0.016729 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분_Roughness.png
-  artifactKey: Guid(25f8a347f3bcea34d9df6a117367e8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분_Roughness.png using Guid(25f8a347f3bcea34d9df6a117367e8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd8cb8ed4351fba0f5c81224f93cc593') in 0.020769 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Normal_DirectX.png
-  artifactKey: Guid(6d2b4b9720eebff43b55fa7374dc8d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Normal_DirectX.png using Guid(6d2b4b9720eebff43b55fa7374dc8d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3370347d67c320806c7ea23cd2855fad') in 0.020691 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분_Normal_DirectX.png
-  artifactKey: Guid(a4e6aaa99f7edbc42bdf9224790f2376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분_Normal_DirectX.png using Guid(a4e6aaa99f7edbc42bdf9224790f2376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '073e5305ee14494c16d311c546cb02b3') in 0.022067 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판_Roughness.png
-  artifactKey: Guid(ec099c1ceecd45641b886f860199ac83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판_Roughness.png using Guid(ec099c1ceecd45641b886f860199ac83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86858dcf34eb48634c8cc339a31753c3') in 0.023990 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블_Normal_DirectX.png
-  artifactKey: Guid(62e9c0a65ba9737488b5d1a68b1d6508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블_Normal_DirectX.png using Guid(62e9c0a65ba9737488b5d1a68b1d6508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9faf883cbd2550730b1d5b7dc6e328b4') in 0.022560 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판_Normal.png
-  artifactKey: Guid(c5ebff6f1990ad94a8057825434585a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판_Normal.png using Guid(c5ebff6f1990ad94a8057825434585a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f2e7a656da3660d756c0f60d1c43cea') in 0.019594 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Mixed_AO.png
-  artifactKey: Guid(3b18ad4f512e7e747aa277ed088be3b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Mixed_AO.png using Guid(3b18ad4f512e7e747aa277ed088be3b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beefa78a6d61fbec5c9b7af7d197ba1a') in 0.026828 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블_Normal.png
-  artifactKey: Guid(eee89a37f62dd114b84ce47773089fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블_Normal.png using Guid(eee89a37f62dd114b84ce47773089fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62e4696eb748397838f0844abc6f5dfb') in 0.023224 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판_Normal_DirectX.png
-  artifactKey: Guid(2f7db43ceb440f5479175c357b9a2279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판_Normal_DirectX.png using Guid(2f7db43ceb440f5479175c357b9a2279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d678de1254d8c5cf427434fc120b19') in 0.022148 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Roughness.png
-  artifactKey: Guid(4dae58228dec6684a8a373644f428060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Roughness.png using Guid(4dae58228dec6684a8a373644f428060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b365b9a54f6b02cb1f8695a57d9454') in 0.021600 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리_Mixed_AO.png
-  artifactKey: Guid(7a911e62a652fad4c9855441296b1968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리_Mixed_AO.png using Guid(7a911e62a652fad4c9855441296b1968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2afefc51c44ca0aead1490074eb293d5') in 0.020886 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴_Roughness.png
-  artifactKey: Guid(5853e971341dfd441b09b7f888201a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴_Roughness.png using Guid(5853e971341dfd441b09b7f888201a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f2137e6139025bc9ac3cb1b9466a890') in 0.022955 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/간판_Base_color.png
-  artifactKey: Guid(5bada2edbf6cf014aa40f992f00ca4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/간판_Base_color.png using Guid(5bada2edbf6cf014aa40f992f00ca4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c34436bbf977e292eb0e5af7d18c43b8') in 0.015167 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판.mat
-  artifactKey: Guid(93f976338b7caba4198feb8e1964f8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판.mat using Guid(93f976338b7caba4198feb8e1964f8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf203a17ab2a153cfafc353741eecfcc') in 0.020844 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/간판_Height.png
-  artifactKey: Guid(803fd4561546b2c42923daa9a61437cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/간판_Height.png using Guid(803fd4561546b2c42923daa9a61437cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ebcd8396a30e12c31012b04cbc86c5') in 0.016960 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분_Metallic.png
-  artifactKey: Guid(3800e0aaabe0fec44a628c633ca2d289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분_Metallic.png using Guid(3800e0aaabe0fec44a628c633ca2d289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff1767c0c3d89223eb301ec0085c2f23') in 0.014664 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/간판_Normal.png
-  artifactKey: Guid(e3e21b29776a27444828fae703be1c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/간판_Normal.png using Guid(e3e21b29776a27444828fae703be1c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c474fff6c940d1fabf7424406131cb46') in 0.015069 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Normal.png
-  artifactKey: Guid(01445e3c10c35cf46886e94790d5bdcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Normal.png using Guid(01445e3c10c35cf46886e94790d5bdcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1fa0bdc9298103327f059c3f5795745') in 0.016446 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블_Base_color.png
-  artifactKey: Guid(4aef9a5625a2b1f4b9ebaf3bd637770b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블_Base_color.png using Guid(4aef9a5625a2b1f4b9ebaf3bd637770b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67ff696b7c71bbd6107a9162500d5702') in 0.021668 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리_Roughness.png
-  artifactKey: Guid(b9d8992d6734ada4082b74b151f04432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리_Roughness.png using Guid(b9d8992d6734ada4082b74b151f04432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d729917f7aff894c9692e62daea9122') in 0.023382 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판_Metallic.png
-  artifactKey: Guid(106ef7e2dc6857b47b78b64c3befd224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판_Metallic.png using Guid(106ef7e2dc6857b47b78b64c3befd224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee7aaa53bf17f86db81feded8cf0c774') in 0.017739 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴_Normal.png
-  artifactKey: Guid(85800528937a27f41b3ff843b462c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴_Normal.png using Guid(85800528937a27f41b3ff843b462c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd35f89e77cd3abdd441a6c0dc4e846e') in 0.021248 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리_Height.png
-  artifactKey: Guid(53ce3ada62f2cda4c82e1b73b3b03fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리_Height.png using Guid(53ce3ada62f2cda4c82e1b73b3b03fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '751388a7baea52625785c8f0be27cc82') in 0.016888 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판_Base_color.png
-  artifactKey: Guid(e10c624cbc80a1b4aa25278191b26454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/뒷발판_Base_color.png using Guid(e10c624cbc80a1b4aa25278191b26454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22203b6164948806fb82b93b8f4f02c5') in 0.015256 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블_Height.png
-  artifactKey: Guid(779d8664dff20d64db3d503a4c88b371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블_Height.png using Guid(779d8664dff20d64db3d503a4c88b371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9be25343fc7b3fa30694cef4d455c87') in 0.022212 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴_Height.png
-  artifactKey: Guid(79260e4b92784fe4093409885611d2d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴_Height.png using Guid(79260e4b92784fe4093409885611d2d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbfbac49872981b08e1edba21e83f994') in 0.015880 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/간판_Normal_DirectX.png
-  artifactKey: Guid(61e449afd62b1534c875f90d4cf79551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/간판_Normal_DirectX.png using Guid(61e449afd62b1534c875f90d4cf79551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '334b4d8c2e1e10fc0fdad333a5a2b4e4') in 0.023712 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴_Mixed_AO.png
-  artifactKey: Guid(ef5cdcdfc85d22245b6276966467723a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴_Mixed_AO.png using Guid(ef5cdcdfc85d22245b6276966467723a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36540e2dcafd5db62415f3081c64bbf') in 0.024353 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴_Base_color.png
-  artifactKey: Guid(ba833f15ac6c50549988437bf428169b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴_Base_color.png using Guid(ba833f15ac6c50549988437bf428169b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ee8de8e863894a4ef53bd145f3074e') in 0.019207 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리_Base_color.png
-  artifactKey: Guid(b6a2f6239e6dec04d8c3e49199975aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리_Base_color.png using Guid(b6a2f6239e6dec04d8c3e49199975aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afe00c5f15a9d5b5129907f86a983e08') in 0.017838 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭.mat
-  artifactKey: Guid(bea2ac3bc9ca7a84c870272d2738236b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭.mat using Guid(bea2ac3bc9ca7a84c870272d2738236b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02c10206ad77aa92461a1ccc3a3c0aa7') in 0.028982 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블_Mixed_AO.png
-  artifactKey: Guid(8a4ded1bdd0b19a43843a503bd824b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/푸드테이블_Mixed_AO.png using Guid(8a4ded1bdd0b19a43843a503bd824b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '655704d8fcb0e588623dd866ccfb7f43') in 0.024336 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴.mat
-  artifactKey: Guid(0e8dea1d5aa4baf4b8cdb5597d16c80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴.mat using Guid(0e8dea1d5aa4baf4b8cdb5597d16c80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b22edd0ecd6087bea97270a0d320ed20') in 0.021417 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리_Normal_DirectX.png
-  artifactKey: Guid(725d72e0132ff994c840d914a0c20edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞유리_Normal_DirectX.png using Guid(725d72e0132ff994c840d914a0c20edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73c855db853b3d46c3160bbe228b2ced') in 0.023818 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분.mat
-  artifactKey: Guid(be4661f99e026374f809e61c0836180b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/앞상단부분.mat using Guid(be4661f99e026374f809e61c0836180b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38ed08608b28fbea88a4ad2054cb3349') in 0.020389 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴_Metallic.png
-  artifactKey: Guid(1293d314e665f144cb79f1786b42c9e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/바퀴_Metallic.png using Guid(1293d314e665f144cb79f1786b42c9e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5638e4125472ea2deffee7a1186b296') in 0.015484 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.275085 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Base_color 1.png
-  artifactKey: Guid(f4db70e88e432054494128aa0eca1512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Base_color 1.png using Guid(f4db70e88e432054494128aa0eca1512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65b071be75862d5988055259e95cde93') in 0.027126 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.306538 seconds.
-  path: Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Base_color 2.png
-  artifactKey: Guid(4302293d83026384482383e5965e2a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex/트럭_Base_color 2.png using Guid(4302293d83026384482383e5965e2a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b525845e6e8c52623e676c41b4f00a5') in 0.020974 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 125.309816 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex
-  artifactKey: Guid(ccdaa8c9bf9a16947bde6cbf0d809e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex using Guid(ccdaa8c9bf9a16947bde6cbf0d809e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '494137c27c0e8734e51cfc0abe02bfa6') in 0.008210 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.027949 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/기왓장.mat
-  artifactKey: Guid(1df1adfa0e6488744bcdc56e2536fd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/기왓장.mat using Guid(1df1adfa0e6488744bcdc56e2536fd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52156d0678f3cd523c31a47aad6e7981') in 0.022281 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/기왓장_Roughness.png
-  artifactKey: Guid(80c1a032e4b93984c975bd9f5048cdb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/기왓장_Roughness.png using Guid(80c1a032e4b93984c975bd9f5048cdb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6878f79f553ffb8cf3850f74a4a0ee5') in 0.033603 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/앞계단_Metallic.png
-  artifactKey: Guid(0f94c1f0074228a4f9699d8e3f224765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/앞계단_Metallic.png using Guid(0f94c1f0074228a4f9699d8e3f224765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16cee3d1ff549e34bbab8f6ce3ec4dac') in 0.015243 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/앞계단.mat
-  artifactKey: Guid(b1fd25b1b9b987f47a51606460110e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/앞계단.mat using Guid(b1fd25b1b9b987f47a51606460110e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc5885a3150363043c6cf51cd4fc1ce') in 0.022134 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/앞계단_Normal.png
-  artifactKey: Guid(c767f2fa1253af245bc8eeed7c419b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/앞계단_Normal.png using Guid(c767f2fa1253af245bc8eeed7c419b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6919de0b6731481d47fabda8d75e7ca5') in 0.015391 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/앞계단_Height.png
-  artifactKey: Guid(0a7de5a0ed56d9643a5317777e126d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/앞계단_Height.png using Guid(0a7de5a0ed56d9643a5317777e126d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9748eb765e7b20c88340cb2981c5af67') in 0.015009 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/종망치_Normal.png
-  artifactKey: Guid(3e2cda27f4642544dbdaf500995c5b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/종망치_Normal.png using Guid(3e2cda27f4642544dbdaf500995c5b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '947d4b9f85b2e74b85d6cfdc68669eec') in 0.017445 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/나무기둥.mat
-  artifactKey: Guid(11dffc597f4ac9d489ca7ed3c90135ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/나무기둥.mat using Guid(11dffc597f4ac9d489ca7ed3c90135ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '451d0c47f9d7a3a4558822999972f4e6') in 0.022423 seconds 
+  Time since last request: 0.000121 seconds.
+  path: Assets/JJ_3D Assets/JJ_Prefabs/Blueberries.prefab
+  artifactKey: Guid(1c4b9437a2b996f4b97f7ee4d375d293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JJ_3D Assets/JJ_Prefabs/Blueberries.prefab using Guid(1c4b9437a2b996f4b97f7ee4d375d293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27895855fe33ff393eba90038d85172') in 0.018326 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000193 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/사이드지붕_Height.png
-  artifactKey: Guid(b24ea9b0272e9d74d860dabd382cc05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/사이드지붕_Height.png using Guid(b24ea9b0272e9d74d860dabd382cc05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '641c3dc5b0d4561b0a190443aa7ffa17') in 0.016156 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/사이드아래기둥_Base_color.png
-  artifactKey: Guid(6c79a834daf0f3349ac6243f38a88afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/사이드아래기둥_Base_color.png using Guid(6c79a834daf0f3349ac6243f38a88afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ca75d958e179b46b5c927daf1d63f8') in 0.016593 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/앞계단_Base_color.png
-  artifactKey: Guid(4ab4b8b5a3485b040872a7ba524092aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/앞계단_Base_color.png using Guid(4ab4b8b5a3485b040872a7ba524092aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4575c1054132382910901d487af60952') in 0.014642 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/종기둥_Metallic.png
-  artifactKey: Guid(f8ffe4f161a67874dba207a196195374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/종기둥_Metallic.png using Guid(f8ffe4f161a67874dba207a196195374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '490d7ae8598be47efe9337ad23fbc058') in 0.015282 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/사이드지붕_Normal.png
-  artifactKey: Guid(3cb784d02a0a9154badb7b51b009c31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/사이드지붕_Normal.png using Guid(3cb784d02a0a9154badb7b51b009c31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1a0fc3e03557d36b3c7ec20ce8f6b4') in 0.016008 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/바닥_Metallic.png
-  artifactKey: Guid(c2a8df387c9154f4a91174de9eb79fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/바닥_Metallic.png using Guid(c2a8df387c9154f4a91174de9eb79fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91f52402e027cd0a135cd3499a1d5bab') in 0.014965 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/사이드벽_Normal.png
-  artifactKey: Guid(9902aa26bc540c146ba7c22cb244917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/사이드벽_Normal.png using Guid(9902aa26bc540c146ba7c22cb244917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a668822d434ca2a54c0386186e9ae537') in 0.015621 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/나무기둥_Metallic.png
-  artifactKey: Guid(ff48bc4879cfc2b4aa8d8d0194e23f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/나무기둥_Metallic.png using Guid(ff48bc4879cfc2b4aa8d8d0194e23f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80fac41d44f5518e24e730233b6f1328') in 0.018504 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/종_Height.png
-  artifactKey: Guid(1da322521fcd43b459578707c880537a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/종_Height.png using Guid(1da322521fcd43b459578707c880537a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9951377b4c707648136a776e41c55962') in 0.023179 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/기왓장_Metallic.png
-  artifactKey: Guid(25570a6cfa139304380a4edf29500cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/기왓장_Metallic.png using Guid(25570a6cfa139304380a4edf29500cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1416cf2f7ae80ef1e187e641d2d3e8b9') in 0.017695 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/기왓장_Height.png
-  artifactKey: Guid(e7e873867ff0eb64ca8ecefa59dbea39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/기왓장_Height.png using Guid(e7e873867ff0eb64ca8ecefa59dbea39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e519dcf96b0d91e9804c8e7a2bf251de') in 0.021645 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/사이드아래기둥_Metallic.png
-  artifactKey: Guid(7430c5d984024404f996b3ad95d0a43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/사이드아래기둥_Metallic.png using Guid(7430c5d984024404f996b3ad95d0a43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb39322b09b48ee7daa5984ec0c04a5') in 0.021935 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/사이드벽.mat
-  artifactKey: Guid(9ca400bb910547a418c7fb1589590b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/사이드벽.mat using Guid(9ca400bb910547a418c7fb1589590b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feecfcf27038e60ac223af18929f9650') in 0.028053 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/종망치_Base_color.png
-  artifactKey: Guid(57ba124a5f6370b4f8b4beed119e0675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/종망치_Base_color.png using Guid(57ba124a5f6370b4f8b4beed119e0675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc71772ff9516fdd4c278fbd10c5f702') in 0.015772 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/바닥_Normal.png
-  artifactKey: Guid(0e4a8ad8ac6da26479a281dc6e2a88b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/바닥_Normal.png using Guid(0e4a8ad8ac6da26479a281dc6e2a88b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd880bc781625fa0cf7253bec19fb8a5c') in 0.016016 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/사이드벽_Height.png
-  artifactKey: Guid(552080dc2f4c69249849ca9f71684376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/사이드벽_Height.png using Guid(552080dc2f4c69249849ca9f71684376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ab80c7ddfa027eef08cc89e57c89cd3') in 0.016223 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/종_Normal.png
-  artifactKey: Guid(1048b8ff8ed44f34ba15ddf7914407d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/종_Normal.png using Guid(1048b8ff8ed44f34ba15ddf7914407d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f442475267c3dc5128f32208bb31ebb5') in 0.014168 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/사이드아래기둥_Normal.png
-  artifactKey: Guid(a0709ef984d26894aacec81f5a77a771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/사이드아래기둥_Normal.png using Guid(a0709ef984d26894aacec81f5a77a771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3264cfb7eb09934d6883410a7a00fcbc') in 0.014997 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/사이드지붕_Base_color.png
-  artifactKey: Guid(b17c0dc6dc557ad43b94e97c7c4968e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/사이드지붕_Base_color.png using Guid(b17c0dc6dc557ad43b94e97c7c4968e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd03cf1bd9522652041647bdee78c944c') in 0.015608 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/바닥.mat
-  artifactKey: Guid(8149a991c2bef7e45904bfa510da31c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/바닥.mat using Guid(8149a991c2bef7e45904bfa510da31c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc681639b25f05f8001f714fb3684928') in 0.021883 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/종.mat
-  artifactKey: Guid(3e204ed5145787a499646698298120c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/종.mat using Guid(3e204ed5145787a499646698298120c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f01c7b80fff26bfd3a4420ae74c1fc34') in 0.020968 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/나무기둥_Base_color.png
-  artifactKey: Guid(58213ef397c1c37459ff04de25808719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/나무기둥_Base_color.png using Guid(58213ef397c1c37459ff04de25808719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26366eb57355651b47fe4ba5b784729') in 0.019509 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/종기둥.mat
-  artifactKey: Guid(46a93f746fd636e40b7727e639cd4ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/종기둥.mat using Guid(46a93f746fd636e40b7727e639cd4ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8ead1de88b45c8f47125dde2cb1e812') in 0.022984 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/기왓장_Base_color.png
-  artifactKey: Guid(3789aeb3d7b8e774fbbaeaaf9de16736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/기왓장_Base_color.png using Guid(3789aeb3d7b8e774fbbaeaaf9de16736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '268470b79b601f5cc82c734d0f3bc9bc') in 0.016318 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/사이드벽_Base_color.png
-  artifactKey: Guid(9b09b9b6a4484ba418524c641f1f67a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/사이드벽_Base_color.png using Guid(9b09b9b6a4484ba418524c641f1f67a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eded28ac23c82aa033ebc4bbc36782c9') in 0.014136 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/종기둥_Normal.png
-  artifactKey: Guid(b900bef47797ec94baab6e07cf4c525d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/종기둥_Normal.png using Guid(b900bef47797ec94baab6e07cf4c525d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '983194e3895d5325d72c8784f3381653') in 0.015711 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/사이드지붕.mat
-  artifactKey: Guid(f69a74e730431e240a207377ce846bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/사이드지붕.mat using Guid(f69a74e730431e240a207377ce846bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '008a5b836a7d024e583b57f049f78b67') in 0.022000 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/종기둥_Base_color.png
-  artifactKey: Guid(b7833c4c28544fb4d9314759b5f8dd37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/종기둥_Base_color.png using Guid(b7833c4c28544fb4d9314759b5f8dd37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '138bcb0ac447fce3951ba85e977e683e') in 0.015054 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/바닥_Height.png
-  artifactKey: Guid(0f5775f3a24d6a045bd3a1ab86635272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/바닥_Height.png using Guid(0f5775f3a24d6a045bd3a1ab86635272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1644dd95b7b28f761d11a66248d7a030') in 0.015401 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/종_Base_color.png
-  artifactKey: Guid(a3803eeef5ee9aa40b610e080955d56d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/종_Base_color.png using Guid(a3803eeef5ee9aa40b610e080955d56d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41faa44a27b0516e515a0dcf6c09f067') in 0.015279 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/나무기둥_Height.png
-  artifactKey: Guid(7604f28b04a764f40bb2dee691aa07a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/나무기둥_Height.png using Guid(7604f28b04a764f40bb2dee691aa07a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '049652e851dbad954469785128d35cd5') in 0.015636 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/종망치_Metallic.png
-  artifactKey: Guid(ce3fc25635eafe241b4b4f7e8ec3b3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/종망치_Metallic.png using Guid(ce3fc25635eafe241b4b4f7e8ec3b3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff14d80e497f08bf7a6ed699a7257a06') in 0.013458 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/종망치_Height.png
-  artifactKey: Guid(e35de9934350885479a828785529feb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/종망치_Height.png using Guid(e35de9934350885479a828785529feb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da57b77116eba0f396ccf3a26307d55') in 0.019704 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/사이드지붕_Metallic.png
-  artifactKey: Guid(4692dbe09ba972a408c0ce69b021a8c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/사이드지붕_Metallic.png using Guid(4692dbe09ba972a408c0ce69b021a8c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df39a15f6e8da24972b7b7aa1785d1c') in 0.018762 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/사이드아래기둥.mat
-  artifactKey: Guid(bb41229687f0bce45b1b4db5d3f9209a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/사이드아래기둥.mat using Guid(bb41229687f0bce45b1b4db5d3f9209a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deeed3e200cb862925f211dd63e9cbe6') in 0.024515 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/바닥_Base_color.png
-  artifactKey: Guid(1d5371de834ac0c419e9b86551865d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/바닥_Base_color.png using Guid(1d5371de834ac0c419e9b86551865d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '163ab23c11a1d9676f5fae8d45cb4994') in 0.014949 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/사이드벽_Metallic.png
-  artifactKey: Guid(6306e99e2b458854eb62f2035f9402d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/사이드벽_Metallic.png using Guid(6306e99e2b458854eb62f2035f9402d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '509b64abe61c5a7be41d0ecf07b0a9e2') in 0.014484 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/종_Metallic.png
-  artifactKey: Guid(b49af656e222a4643875ac7488ad8a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/종_Metallic.png using Guid(b49af656e222a4643875ac7488ad8a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92207b0dd416880f91150cad8ec4439b') in 0.020924 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/기왓장_Normal.png
-  artifactKey: Guid(346c69263a4752945bce65f1244908ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/기왓장_Normal.png using Guid(346c69263a4752945bce65f1244908ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a9b40add89cbdd97904eae3312969d1') in 0.018805 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000335 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/사이드아래기둥_Height.png
-  artifactKey: Guid(01d564106257e00498a0cc4319e89d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/사이드아래기둥_Height.png using Guid(01d564106257e00498a0cc4319e89d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b230bf66894310898c0834eaa422a732') in 0.015901 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/종기둥_Height.png
-  artifactKey: Guid(07eae2d314bae4045b53367efab06e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/종기둥_Height.png using Guid(07eae2d314bae4045b53367efab06e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88c7a5fdf147a2314517cbe87e7a4fd8') in 0.014561 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/나무기둥_Normal.png
-  artifactKey: Guid(318ee5c199800fa488a3e04512f6716b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/나무기둥_Normal.png using Guid(318ee5c199800fa488a3e04512f6716b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '764c419723db095ea581296fdad235f9') in 0.014939 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000274 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/종망치.mat
-  artifactKey: Guid(ebb2280fddf726046a48dfec06c99f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/종망치.mat using Guid(ebb2280fddf726046a48dfec06c99f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93521cddb07d25c77e85985f8d97cada') in 0.020992 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.158080 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/제야의종모델링.fbx
-  artifactKey: Guid(e16e0ba5d29eb944790ecf46a409db81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/제야의종모델링.fbx using Guid(e16e0ba5d29eb944790ecf46a409db81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b930a6c3212c1100f4f41935c411c2e1') in 2.237824 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 68.065337 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex
-  artifactKey: Guid(9d2cceb41bdd753439c111ef59103803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex using Guid(9d2cceb41bdd753439c111ef59103803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c6ce92f01282359efc1909fbf55acda') in 0.009402 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.943530 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장_Base_color.png
-  artifactKey: Guid(34e0407b32a91804e87468d97fd455b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장_Base_color.png using Guid(34e0407b32a91804e87468d97fd455b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37f93b84d809c580ee028ea494f451cf') in 0.015524 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥_Base_color.png
-  artifactKey: Guid(1b8ebdadc19d53948933d5082d8f4545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥_Base_color.png using Guid(1b8ebdadc19d53948933d5082d8f4545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '793009c5a4786bd440720186993e115f') in 0.016980 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치_Normal.png
-  artifactKey: Guid(726302a273fefcf4186e0f70ea930c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치_Normal.png using Guid(726302a273fefcf4186e0f70ea930c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f5bdb5f02bfab5ba9626d00ee6d708') in 0.015290 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕_Base_color.png
-  artifactKey: Guid(16f19c6a367f30d4d977ede38196d6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕_Base_color.png using Guid(16f19c6a367f30d4d977ede38196d6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e1cf06dd0d6a83cbaa1eb8e43c4330e') in 0.014688 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단_Base_color.png
-  artifactKey: Guid(a92c8d119399f004488511288f4ea318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단_Base_color.png using Guid(a92c8d119399f004488511288f4ea318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13fa51664ab854c7f9499efc5efd3dea') in 0.019335 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단_Height.png
-  artifactKey: Guid(02d77e23fccda894b8a3a08b7b80030c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단_Height.png using Guid(02d77e23fccda894b8a3a08b7b80030c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36ab22ab0b0722c5f88acf7a59fd0b7b') in 0.024817 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000366 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕_Height.png
-  artifactKey: Guid(c4bf8862b5761b040bb0bf68f521395a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕_Height.png using Guid(c4bf8862b5761b040bb0bf68f521395a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f0a1bd34540615f69be8889fc3bf5e') in 0.019388 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장_Height.png
-  artifactKey: Guid(9580c1449a9a5194f95338957afe2971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장_Height.png using Guid(9580c1449a9a5194f95338957afe2971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7175bce1ca72f3667addcecf4f8fc098') in 0.014494 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000789 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥_Base_color.png
-  artifactKey: Guid(bc767b5777123654da8ba98797c05cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥_Base_color.png using Guid(bc767b5777123654da8ba98797c05cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d1c64497480f606104ccb4f1f525d0') in 0.015054 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장_Metallic.png
-  artifactKey: Guid(1907d55a44f2f2546add4ce309db82fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장_Metallic.png using Guid(1907d55a44f2f2546add4ce309db82fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '911d4962fad877d0ee45dfe0d3469617') in 0.008955 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치_Metallic.png
-  artifactKey: Guid(01b8b1f266246404680556ba95665fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치_Metallic.png using Guid(01b8b1f266246404680556ba95665fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17acbfb660dd6060fb5c6414a5938a10') in 0.010376 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕_Height.png
-  artifactKey: Guid(a84c15b7c3805b345aeee068a8e97719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕_Height.png using Guid(a84c15b7c3805b345aeee068a8e97719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05e87fb6eb6591ce78e5df7dcbbf66f3') in 0.014571 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥_Metallic.png
-  artifactKey: Guid(c3651f4bbc03ff74f9fda1c692d1ddb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥_Metallic.png using Guid(c3651f4bbc03ff74f9fda1c692d1ddb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02ff654065ca79774b58d014e802af0f') in 0.012041 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단_Normal.png
-  artifactKey: Guid(878b1cec93a03f248a5eb5a96e58ec33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단_Normal.png using Guid(878b1cec93a03f248a5eb5a96e58ec33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f489db84cf915fca02e661f1755b2a9c') in 0.009912 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥_Base_color.png
-  artifactKey: Guid(c360a781752c8614fb118a8a3cef452f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥_Base_color.png using Guid(c360a781752c8614fb118a8a3cef452f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fe84acb9705a26abe344b5814081d86') in 0.013338 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥_Normal.png
-  artifactKey: Guid(ef66ab94d8e81304d8016a5713d94478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥_Normal.png using Guid(ef66ab94d8e81304d8016a5713d94478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa0b60d4e72e285acca46428aa8ea5cd') in 0.009193 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕_Normal.png
-  artifactKey: Guid(c02c017c0937d484aa0d4b36cd3a6a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕_Normal.png using Guid(c02c017c0937d484aa0d4b36cd3a6a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bacd7f249f5ef717f2e221bfebb1a757') in 0.014270 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단_Metallic.png
-  artifactKey: Guid(c222423566159304eadeceeda067dcc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단_Metallic.png using Guid(c222423566159304eadeceeda067dcc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d0e90a744d2f15e50f502a8ef8c7028') in 0.014914 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종기둥_Normal.png
-  artifactKey: Guid(cb55b8312474bb74c911958fddaea288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종기둥_Normal.png using Guid(cb55b8312474bb74c911958fddaea288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f180358c36a8f097eb463b9c53d663de') in 0.008963 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장_Normal.png
-  artifactKey: Guid(1ea22c7fc0c7ae24286e381841aee08a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장_Normal.png using Guid(1ea22c7fc0c7ae24286e381841aee08a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc087a47de0c4c778f2f96502ccfc91f') in 0.016745 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥_Metallic.png
-  artifactKey: Guid(a72d638f8fa2dab478c2d642147ea18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥_Metallic.png using Guid(a72d638f8fa2dab478c2d642147ea18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a380b42f6af48a7389d58b04a8e1a4f') in 0.008525 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종기둥_Height.png
-  artifactKey: Guid(6c2ff1e4a91acf341b4b744b9eddd27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종기둥_Height.png using Guid(6c2ff1e4a91acf341b4b744b9eddd27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f4452cb5da8a1801213aa1fbbdaee3f') in 0.013784 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕_Metallic.png
-  artifactKey: Guid(1b16bd090cb1940458da9f37e8ec034b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕_Metallic.png using Guid(1b16bd090cb1940458da9f37e8ec034b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8875a75f41340f86a314532b21cc9fc6') in 0.009341 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종_Metallic.png
-  artifactKey: Guid(68478b9821d6b754c9ae616a1756348a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종_Metallic.png using Guid(68478b9821d6b754c9ae616a1756348a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38d78dd85c162f11bc395bccfafc003c') in 0.014784 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥_Height.png
-  artifactKey: Guid(30aad5f573f69e74db5085f5d06338f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥_Height.png using Guid(30aad5f573f69e74db5085f5d06338f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '517152073b03d5162c2f12998ddb6772') in 0.014068 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종_Base_color.png
-  artifactKey: Guid(36a5ae24b25e6574ca4ac56c62bca43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종_Base_color.png using Guid(36a5ae24b25e6574ca4ac56c62bca43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '242984ce203f6734e4a5406c9494785e') in 0.015391 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽_Metallic.png
-  artifactKey: Guid(97ca4d8f7e98fc5449eb19c0d02daee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽_Metallic.png using Guid(97ca4d8f7e98fc5449eb19c0d02daee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '806d9ca8cd7f54daa51373d8a4a1c783') in 0.009956 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽_Normal.png
-  artifactKey: Guid(3e3417603b4c24e48b60a614bdeca1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽_Normal.png using Guid(3e3417603b4c24e48b60a614bdeca1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed139d5f133e8b2ba95b8aa5aa9a0e85') in 0.010087 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥_Normal.png
-  artifactKey: Guid(c5dbd0c1bef802a4bbdda73f39de4eab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥_Normal.png using Guid(c5dbd0c1bef802a4bbdda73f39de4eab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad5a9fecfd83dfd70b1de4f8901fa21d') in 0.010595 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종_Height.png
-  artifactKey: Guid(ca974650adf790a40abae7cab79a23db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종_Height.png using Guid(ca974650adf790a40abae7cab79a23db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '338deb5ec0444be426a449fa7bd5e979') in 0.011393 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치_Height.png
-  artifactKey: Guid(1147ba06624ecfa46bc649c7558303e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치_Height.png using Guid(1147ba06624ecfa46bc649c7558303e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a5e1154e85f302a44fb1f53ab9975d9') in 0.013357 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥_Normal.png
-  artifactKey: Guid(d54b3f8e807cc1246b03036ec1d84c4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥_Normal.png using Guid(d54b3f8e807cc1246b03036ec1d84c4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3168ab4d82edfdc873ed642a5a9a146d') in 0.017004 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕_Base_color.png
-  artifactKey: Guid(f3c206738ef4f944091be0849659ef0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕_Base_color.png using Guid(f3c206738ef4f944091be0849659ef0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '146e8917a83cbde2df9e13f5b91e266b') in 0.014058 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥_Height.png
-  artifactKey: Guid(df191c83871346a408715767b387502d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥_Height.png using Guid(df191c83871346a408715767b387502d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e1006f835ac79896768ea91e3765ba') in 0.017372 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕_Normal.png
-  artifactKey: Guid(010be8943c7e4d348b2c28e1d83044e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕_Normal.png using Guid(010be8943c7e4d348b2c28e1d83044e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d6f61bf96f730880994d5a9f95d643b') in 0.011581 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥_Height.png
-  artifactKey: Guid(54ff28e83e9d1514f9d4b0bb3062f97c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥_Height.png using Guid(54ff28e83e9d1514f9d4b0bb3062f97c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '056827559d4659d405bfc33565f44569') in 0.015577 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종_Normal.png
-  artifactKey: Guid(4b48138568b9a6f42816114de0056a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종_Normal.png using Guid(4b48138568b9a6f42816114de0056a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ab2f663f0290e464cbaddb46afcb8d') in 0.016493 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치_Base_color.png
-  artifactKey: Guid(963f22222e9655d4ab600afeb182985e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치_Base_color.png using Guid(963f22222e9655d4ab600afeb182985e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd51598c575e86913e46fb625ec829e62') in 0.023973 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥_Metallic.png
-  artifactKey: Guid(da0823fa7e08e6d4bb21684084f7013d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥_Metallic.png using Guid(da0823fa7e08e6d4bb21684084f7013d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a698d000a6925d7d7a1a78a36ebf4c1') in 0.011192 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽_Height.png
-  artifactKey: Guid(d8fc15fb39ad07849b237aa563b5809f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽_Height.png using Guid(d8fc15fb39ad07849b237aa563b5809f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '399b87da0e400481cca9cae95c176549') in 0.014668 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕_Metallic.png
-  artifactKey: Guid(24f613bd1dcfb034dba36d7e155ca57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕_Metallic.png using Guid(24f613bd1dcfb034dba36d7e155ca57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '809cbc1c9038f5aca39ef4cb1d40dbb2') in 0.015544 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종기둥_Metallic.png
-  artifactKey: Guid(78549659a8ae52444ad9a14755130ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종기둥_Metallic.png using Guid(78549659a8ae52444ad9a14755130ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f3877d6fcf97d13015219080cb89abb') in 0.015258 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종기둥_Base_color.png
-  artifactKey: Guid(dffc02b286702ed40b653ce6d3b0bc61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종기둥_Base_color.png using Guid(dffc02b286702ed40b653ce6d3b0bc61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a292f84e9112e0107536f92315a6ffd') in 0.015427 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽_Base_color.png
-  artifactKey: Guid(c7f2f199c4be13d4cb8ec815a492da10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽_Base_color.png using Guid(c7f2f199c4be13d4cb8ec815a492da10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd07c70be77ad3bc9285abf3e1fdce3c') in 0.015481 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 30.521639 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/제야의종모델링.fbx
-  artifactKey: Guid(e16e0ba5d29eb944790ecf46a409db81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/제야의종모델링.fbx using Guid(e16e0ba5d29eb944790ecf46a409db81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61d09bc96be12d0181c15e6e54ef4df8') in 2.001289 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 44.940553 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장.mat
-  artifactKey: Guid(a90b67015e282d048ba1c637f3d66b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장.mat using Guid(a90b67015e282d048ba1c637f3d66b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a908a50d433b94cda503a47a944b6dd') in 0.017272 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000284 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종기둥.mat
-  artifactKey: Guid(361591cfda2988442990d1626ff38a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종기둥.mat using Guid(361591cfda2988442990d1626ff38a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd057887e58de144d2b01974cdfe3a86') in 0.014032 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕.mat
-  artifactKey: Guid(dad6d0ade0caa564da9cd64bff47b076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕.mat using Guid(dad6d0ade0caa564da9cd64bff47b076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caf229e9a8fb8d6164b6be879cd63051') in 0.013489 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000232 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종.mat
-  artifactKey: Guid(55a12affcf10bfd409636e309506ff84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종.mat using Guid(55a12affcf10bfd409636e309506ff84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d0ac8bbf98478050c4e4fa1d1ade0fa') in 0.014355 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단.mat
-  artifactKey: Guid(f1890f2a1a6bed842817edb02d8bad58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단.mat using Guid(f1890f2a1a6bed842817edb02d8bad58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3d2e5021ba81ea30e2c110c2adfc047') in 0.014431 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥.mat
-  artifactKey: Guid(7f8eeec31bc29134fa7fce6ef1f52238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥.mat using Guid(7f8eeec31bc29134fa7fce6ef1f52238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6831939aa80c57cf181d3b4b0a76c91') in 0.015302 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000633 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽.mat
-  artifactKey: Guid(d89d6b48ebea2234c994a3d4f04a0c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽.mat using Guid(d89d6b48ebea2234c994a3d4f04a0c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9543e0231f22889969716000a357bf2') in 0.014313 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥.mat
-  artifactKey: Guid(777e08b2012c4b94486ead5cfb463a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥.mat using Guid(777e08b2012c4b94486ead5cfb463a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4639d6430ab7ebb58533be3f783574d7') in 0.012436 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥.mat
-  artifactKey: Guid(9ec99039365fe4541bfe99844c53725b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥.mat using Guid(9ec99039365fe4541bfe99844c53725b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d990bc50bef4a3852a693ef9cff6af') in 0.012896 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000351 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕.mat
-  artifactKey: Guid(c39edaf614a14b940a083beb150e8f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕.mat using Guid(c39edaf614a14b940a083beb150e8f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a0e4cd150f2644602188f1c032adca0') in 0.015043 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치.mat
-  artifactKey: Guid(033990ae96b0ca748b4aa0f8dafb9850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치.mat using Guid(033990ae96b0ca748b4aa0f8dafb9850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11baa01baa0b7cc816fe71beacdc9ff4') in 0.013984 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 164.619427 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥_Roughness.png
-  artifactKey: Guid(8ca8a80525a349141811a455b534baff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥_Roughness.png using Guid(8ca8a80525a349141811a455b534baff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c1eeaeee3ddd5debd3677d3ac94c093') in 0.014329 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 46.404743 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥_Mixed_AO.png
-  artifactKey: Guid(6feba28d437a84947b89484e82ae1ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥_Mixed_AO.png using Guid(6feba28d437a84947b89484e82ae1ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36f15228b1a35d82dcae10fd956792fb') in 0.013347 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 49.619770 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥_Normal_OpenGL.png
-  artifactKey: Guid(c0b49d0c40d38c443ab576dc8c3df196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥_Normal_OpenGL.png using Guid(c0b49d0c40d38c443ab576dc8c3df196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f80c06224bee6923bf225710cde489e2') in 0.022861 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 117.081485 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽_Normal_OpenGL.png
-  artifactKey: Guid(3176dd32fc959b64c82213f2ecbf54f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽_Normal_OpenGL.png using Guid(3176dd32fc959b64c82213f2ecbf54f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef16c509866cdbf92c981a227154795') in 0.018661 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 46.085087 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장_Normal_OpenGL.png
-  artifactKey: Guid(e373caf3e645f514e87c0737f9c4a31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장_Normal_OpenGL.png using Guid(e373caf3e645f514e87c0737f9c4a31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1a47aa7d142788520bba129c3137bef') in 0.019209 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 55.706471 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥_Normal_OpenGL.png
-  artifactKey: Guid(2004fe449bbc5884e8fd4083059a9d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥_Normal_OpenGL.png using Guid(2004fe449bbc5884e8fd4083059a9d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf577f7df909ffa765e274727708cb85') in 0.018169 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 66.848583 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥_Normal_OpenGL.png
-  artifactKey: Guid(173948d999016454e862465b4f45f6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥_Normal_OpenGL.png using Guid(173948d999016454e862465b4f45f6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89034faf0f73e4ef1bd890f3a6ebde70') in 0.037416 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 59.876234 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕_Normal_OpenGL.png
-  artifactKey: Guid(5df608f50a059fb41a0dc44fff4448f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕_Normal_OpenGL.png using Guid(5df608f50a059fb41a0dc44fff4448f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20a9749ad3bb68d952039f835128ecd6') in 0.023040 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 75.889125 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단_Normal_OpenGL.png
-  artifactKey: Guid(927c8fa72b0e10f419ad0a427cf8a3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단_Normal_OpenGL.png using Guid(927c8fa72b0e10f419ad0a427cf8a3bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa5d1ae297cc989da438b99c0f39ebb5') in 0.019713 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 67.700120 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종_Normal_OpenGL.png
-  artifactKey: Guid(ab8ec0e63403d0b4485705d27db15c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종_Normal_OpenGL.png using Guid(ab8ec0e63403d0b4485705d27db15c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b96d4947b2cdf13351130165ed82177') in 0.013061 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.962822 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종_Roughness.png
-  artifactKey: Guid(2340d508f948b62498a11b4cffc5ccf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종_Roughness.png using Guid(2340d508f948b62498a11b4cffc5ccf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '653881c688d90f604f78d02d5aed4d07') in 0.013939 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 73.502675 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종_Roughness 1.png
-  artifactKey: Guid(6890d787ac9d88e4084696be3951bfaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종_Roughness 1.png using Guid(6890d787ac9d88e4084696be3951bfaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61873fcac05fbc86ac183e338af1a4c9') in 0.017474 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕_Roughness.png
-  artifactKey: Guid(9543efbf6c3567c439ea09d105168e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕_Roughness.png using Guid(9543efbf6c3567c439ea09d105168e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13ffc8a1aa0e186fb7b608449037dfa9') in 0.014200 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕_Normal_OpenGL.png
-  artifactKey: Guid(e842033f883ba71449445f22ae9b3d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕_Normal_OpenGL.png using Guid(e842033f883ba71449445f22ae9b3d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d62c60781a8d8eb219a2ec17f5fc6b7') in 0.016181 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 46.279894 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단_Roughness.png
-  artifactKey: Guid(949d2d1c0cc9fd6449f1615c293d5230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단_Roughness.png using Guid(949d2d1c0cc9fd6449f1615c293d5230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01dda40bfe6423a8ffeade24ce41188') in 0.019710 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.605334 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장_Roughness.png
-  artifactKey: Guid(45fda827ca8b69644bbb5570dbc84cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장_Roughness.png using Guid(45fda827ca8b69644bbb5570dbc84cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9dda543892070c6b9405ae9e6cb4739') in 0.018650 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 41.185662 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥_Roughness.png
-  artifactKey: Guid(2efe28984d7cd0343bc28c8e44999aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥_Roughness.png using Guid(2efe28984d7cd0343bc28c8e44999aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de5db0693156e20351d4e667df767e29') in 0.017973 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.298180 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽_Roughness.png
-  artifactKey: Guid(f761dd55edcbb0344acd9a39c6991b05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽_Roughness.png using Guid(f761dd55edcbb0344acd9a39c6991b05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bfd2a8ac6041bac5524a652543f5573') in 0.015050 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.737321 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥_Roughness.png
-  artifactKey: Guid(5bbfa503f16ec4d4ca903a3ee60ef5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥_Roughness.png using Guid(5bbfa503f16ec4d4ca903a3ee60ef5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b948575b544641ad1da0aba618940a5') in 0.014173 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 23.895691 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕_Roughness.png
-  artifactKey: Guid(a312e82d5412ccd478842240ebe05256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕_Roughness.png using Guid(a312e82d5412ccd478842240ebe05256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90dbb5dfc5320ef3a6d54617322b6615') in 0.016348 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 53.972191 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치_Roughness.png
-  artifactKey: Guid(dcb6bf80c7e51134e995366d2ae1cc33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치_Roughness.png using Guid(dcb6bf80c7e51134e995366d2ae1cc33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d765364f584d540348f71831d7506e') in 0.014072 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.019372 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치_Normal_OpenGL.png
-  artifactKey: Guid(84c578026a5c15f4db5b015e2ef13d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치_Normal_OpenGL.png using Guid(84c578026a5c15f4db5b015e2ef13d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6346112d492ac770e7fe53952920e1') in 0.013997 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 56.888102 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥.mat
-  artifactKey: Guid(7f8eeec31bc29134fa7fce6ef1f52238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/나무기둥.mat using Guid(7f8eeec31bc29134fa7fce6ef1f52238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14f23b0fefdccaccf3b52f6c465890fe') in 0.043042 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종기둥.mat
-  artifactKey: Guid(361591cfda2988442990d1626ff38a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종기둥.mat using Guid(361591cfda2988442990d1626ff38a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee7776b8946c03fa179eb31f73e8bd40') in 0.027207 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕.mat
-  artifactKey: Guid(dad6d0ade0caa564da9cd64bff47b076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드지붕.mat using Guid(dad6d0ade0caa564da9cd64bff47b076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e3f08e15b2e75102593cffd45719994') in 0.026515 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종.mat
-  artifactKey: Guid(55a12affcf10bfd409636e309506ff84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종.mat using Guid(55a12affcf10bfd409636e309506ff84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf850668f55b868f13126259814ed877') in 0.026756 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단.mat
-  artifactKey: Guid(f1890f2a1a6bed842817edb02d8bad58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/앞계단.mat using Guid(f1890f2a1a6bed842817edb02d8bad58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1f6da7e5152684dfd609e51657745c6') in 0.026728 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽.mat
-  artifactKey: Guid(d89d6b48ebea2234c994a3d4f04a0c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드벽.mat using Guid(d89d6b48ebea2234c994a3d4f04a0c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f9689d8b6e849adc14d01aa37c47a59') in 0.025598 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥.mat
-  artifactKey: Guid(777e08b2012c4b94486ead5cfb463a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/사이드아래기둥.mat using Guid(777e08b2012c4b94486ead5cfb463a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6784770f1bc513ca6d99eeb865a0d97c') in 0.024791 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥.mat
-  artifactKey: Guid(9ec99039365fe4541bfe99844c53725b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥.mat using Guid(9ec99039365fe4541bfe99844c53725b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f0ea8bf00a0ac391d7f6672597ceff2') in 0.024112 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕.mat
-  artifactKey: Guid(c39edaf614a14b940a083beb150e8f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/지붕.mat using Guid(c39edaf614a14b940a083beb150e8f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae8cc86b96c1a3fe8bc1c1e8a9fdd1b8') in 0.026200 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치.mat
-  artifactKey: Guid(033990ae96b0ca748b4aa0f8dafb9850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/종망치.mat using Guid(033990ae96b0ca748b4aa0f8dafb9850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a2b375cdc20def99505c353f9026ff7') in 0.023981 seconds 
+  path: Assets/JJ_3D Assets/JJ_Prefabs/Blueberry.prefab
+  artifactKey: Guid(6cbb1ce912669c946a19d61fbcc32c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JJ_3D Assets/JJ_Prefabs/Blueberry.prefab using Guid(6cbb1ce912669c946a19d61fbcc32c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d13c575d83e1f17825e63058af48a8') in 0.024218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 98.377131 seconds.
+  path: Assets/RunaCharacter/Enviroment/prefabsEn/Building.fbx
+  artifactKey: Guid(4012679781547b041aacb8d9cce15c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Enviroment/prefabsEn/Building.fbx using Guid(4012679781547b041aacb8d9cce15c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf15b9625fd81701ced41f8e12c2a4cf') in 0.262489 seconds 
 ========================================================================
 Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
 Registering precompiled user dll's ...
-Registered in 0.008607 seconds.
+Registered in 0.002607 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.06 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.72 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.345 seconds
+- Completed reload, in  0.716 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1346ms)
-		BeginReloadAssembly (165ms)
+	ReloadAssembly (716ms)
+		BeginReloadAssembly (87ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (2ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (1115ms)
-			LoadAssemblies (134ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (591ms)
+			LoadAssemblies (64ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (427ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (348ms)
+			SetupTypeCache (209ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (206ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (91ms)
-				ProcessInitializeOnLoadAttributes (223ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (124ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (45ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.28 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.74 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4143 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.8 MB.
-System memory in use after: 190.0 MB.
+System memory in use before: 188.9 MB.
+System memory in use after: 189.2 MB.
 
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 4778.
-Total: 5.801300 ms (FindLiveObjects: 0.627800 ms CreateObjectMapping: 0.532500 ms MarkObjects: 4.489400 ms  DeleteObjects: 0.150400 ms)
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 4779.
+Total: 2.675000 ms (FindLiveObjects: 0.219900 ms CreateObjectMapping: 0.111300 ms MarkObjects: 2.234100 ms  DeleteObjects: 0.108900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1418,181 +226,55 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
 Registering precompiled user dll's ...
-Registered in 0.006590 seconds.
+Registered in 0.002791 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.19 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 1.12 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.422 seconds
+- Completed reload, in  0.876 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1422ms)
-		BeginReloadAssembly (140ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (1217ms)
-			LoadAssemblies (135ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (422ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (409ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (119ms)
-				ProcessInitializeOnLoadAttributes (262ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (42ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.17 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4143 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.9 MB.
-System memory in use after: 190.1 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4781.
-Total: 4.442300 ms (FindLiveObjects: 0.603800 ms CreateObjectMapping: 0.480500 ms MarkObjects: 3.226000 ms  DeleteObjects: 0.130900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006353 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.43 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.491 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1491ms)
-		BeginReloadAssembly (194ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (1185ms)
-			LoadAssemblies (205ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (428ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (376ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (104ms)
-				ProcessInitializeOnLoadAttributes (242ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (42ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.37 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4143 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.9 MB.
-System memory in use after: 190.1 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4784.
-Total: 4.676700 ms (FindLiveObjects: 0.396300 ms CreateObjectMapping: 0.389400 ms MarkObjects: 3.763400 ms  DeleteObjects: 0.126600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 999.559307 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장.mat
-  artifactKey: Guid(a90b67015e282d048ba1c637f3d66b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/기왓장.mat using Guid(a90b67015e282d048ba1c637f3d66b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3a0b0f18f9ef3b10e37d279fba3399c') in 0.116798 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 195.248202 seconds.
-  path: Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥.mat
-  artifactKey: Guid(9ec99039365fe4541bfe99844c53725b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/YongYeon/ChameBall/ChangBallTex/Tex/바닥.mat using Guid(9ec99039365fe4541bfe99844c53725b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60a233b5aec3d7053cc6442810165255') in 0.025367 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005537 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.01 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.077 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1078ms)
-		BeginReloadAssembly (121ms)
+	ReloadAssembly (876ms)
+		BeginReloadAssembly (97ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (895ms)
-			LoadAssemblies (102ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (733ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (341ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (277ms)
+			SetupTypeCache (259ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (258ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (183ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (159ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (35ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.91 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.89 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4143 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.9 MB.
-System memory in use after: 190.1 MB.
+System memory in use before: 189.0 MB.
+System memory in use after: 189.2 MB.
 
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4788.
-Total: 3.880500 ms (FindLiveObjects: 0.303900 ms CreateObjectMapping: 0.191200 ms MarkObjects: 3.159200 ms  DeleteObjects: 0.225400 ms)
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4782.
+Total: 2.910700 ms (FindLiveObjects: 0.294000 ms CreateObjectMapping: 0.162400 ms MarkObjects: 2.315400 ms  DeleteObjects: 0.138200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1601,8 +283,526 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.002850 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.745 seconds
+Domain Reload Profiling:
+	ReloadAssembly (745ms)
+		BeginReloadAssembly (90ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (617ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (219ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (215ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (133ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.04 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4143 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 189.1 MB.
+System memory in use after: 189.3 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4785.
+Total: 2.622900 ms (FindLiveObjects: 0.303000 ms CreateObjectMapping: 0.117700 ms MarkObjects: 2.089900 ms  DeleteObjects: 0.111400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.002615 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.892 seconds
+Domain Reload Profiling:
+	ReloadAssembly (892ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (742ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (264ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (257ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (156ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4143 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 189.1 MB.
+System memory in use after: 189.3 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4788.
+Total: 3.038500 ms (FindLiveObjects: 0.253800 ms CreateObjectMapping: 0.118500 ms MarkObjects: 2.541900 ms  DeleteObjects: 0.123200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.002597 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.736 seconds
+Domain Reload Profiling:
+	ReloadAssembly (737ms)
+		BeginReloadAssembly (85ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (610ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (209ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (213ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (131ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4143 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 189.1 MB.
+System memory in use after: 189.3 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4791.
+Total: 2.674900 ms (FindLiveObjects: 0.233000 ms CreateObjectMapping: 0.118600 ms MarkObjects: 2.196000 ms  DeleteObjects: 0.126300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.002495 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.678 seconds
+Domain Reload Profiling:
+	ReloadAssembly (678ms)
+		BeginReloadAssembly (76ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (566ms)
+			LoadAssemblies (60ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (196ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (199ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (120ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4143 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 189.1 MB.
+System memory in use after: 189.3 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4794.
+Total: 2.740200 ms (FindLiveObjects: 0.221300 ms CreateObjectMapping: 0.102500 ms MarkObjects: 2.283600 ms  DeleteObjects: 0.132200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.002734 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.847 seconds
+Domain Reload Profiling:
+	ReloadAssembly (848ms)
+		BeginReloadAssembly (94ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (709ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (252ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (247ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (150ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.06 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4143 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 189.1 MB.
+System memory in use after: 189.3 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4797.
+Total: 3.221200 ms (FindLiveObjects: 0.275200 ms CreateObjectMapping: 0.133000 ms MarkObjects: 2.684100 ms  DeleteObjects: 0.127800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.002712 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.783 seconds
+Domain Reload Profiling:
+	ReloadAssembly (784ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (644ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (237ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (216ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (133ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4143 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 189.1 MB.
+System memory in use after: 189.4 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4800.
+Total: 2.863600 ms (FindLiveObjects: 0.272600 ms CreateObjectMapping: 0.124700 ms MarkObjects: 2.350500 ms  DeleteObjects: 0.114800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.002411 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.734 seconds
+Domain Reload Profiling:
+	ReloadAssembly (734ms)
+		BeginReloadAssembly (85ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (611ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (223ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (207ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (127ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4143 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 189.2 MB.
+System memory in use after: 189.4 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4803.
+Total: 2.636200 ms (FindLiveObjects: 0.224200 ms CreateObjectMapping: 0.111900 ms MarkObjects: 2.179100 ms  DeleteObjects: 0.120100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1594.767124 seconds.
+  path: Assets/RunaCharacter/Enviroment/prefabsEn/BuildingWindow.mat
+  artifactKey: Guid(de97126223511034793b2c37ecd89354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Enviroment/prefabsEn/BuildingWindow.mat using Guid(de97126223511034793b2c37ecd89354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4b8e4137196dd295067984579c538af') in 0.174295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/AddressableAssetsData/DataBuilders/BuildScriptPackedMode.asset
+  artifactKey: Guid(461496a89878ad44983e22bbd2e1d0c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddressableAssetsData/DataBuilders/BuildScriptPackedMode.asset using Guid(461496a89878ad44983e22bbd2e1d0c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64fb8b20b35f75454bfe01b5829e7da5') in 0.008036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/AddressableAssetsData/AssetGroups/Built In Data.asset
+  artifactKey: Guid(9c07004804eb7b94b983411899bfc41f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddressableAssetsData/AssetGroups/Built In Data.asset using Guid(9c07004804eb7b94b983411899bfc41f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec209c693c833715b9361642b54cf304') in 0.005665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/AddressableAssetsData/DataBuilders/BuildScriptVirtualMode.asset
+  artifactKey: Guid(29ed3ece2a417c744ae71f770b8c4606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddressableAssetsData/DataBuilders/BuildScriptVirtualMode.asset using Guid(29ed3ece2a417c744ae71f770b8c4606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69290cf76c1948fbd445fed9ac8967ac') in 0.005558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/AddressableAssetsData/DataBuilders/BuildScriptFastMode.asset
+  artifactKey: Guid(8bc2f0ca95e60d24d8fa455fbf68493f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddressableAssetsData/DataBuilders/BuildScriptFastMode.asset using Guid(8bc2f0ca95e60d24d8fa455fbf68493f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3373564761528e709d5f68965f270d4') in 0.006811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Assets/RunaCharacter/Enviroment/prefabsEn/WallBuilding 2.mat
+  artifactKey: Guid(c9f45cd09d756b74cb32ef88e23f1d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Enviroment/prefabsEn/WallBuilding 2.mat using Guid(c9f45cd09d756b74cb32ef88e23f1d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64262e1ed3037ee95262e44d6a4dff10') in 0.025178 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/RunaCharacter/Enviroment/prefabsEn/WallBuilding 1.mat
+  artifactKey: Guid(20f20cd46bbd0b4429db7ae9e79234dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Enviroment/prefabsEn/WallBuilding 1.mat using Guid(20f20cd46bbd0b4429db7ae9e79234dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6659bbce99ef852745f91ad9bdbef723') in 0.029305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/RunaCharacter/Enviroment/prefabsEn/WallBuilding.mat
+  artifactKey: Guid(d0c1c8a19ffdcf94983c9c433da1887d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/Enviroment/prefabsEn/WallBuilding.mat using Guid(d0c1c8a19ffdcf94983c9c433da1887d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a1fab927788f5ea4cd38f2091e3c65') in 0.015527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.351292 seconds.
+  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/Bullet.prefab
+  artifactKey: Guid(6a0643045829aab4187a2b934a7ec87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/Bullet.prefab using Guid(6a0643045829aab4187a2b934a7ec87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9928b0c7146f1406a733b0f22d9951bd') in 0.020980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Prefabs/UI/Button Regular.prefab
+  artifactKey: Guid(395d3cc3d7cf0014a870fee72cbd3490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Prefabs/UI/Button Regular.prefab using Guid(395d3cc3d7cf0014a870fee72cbd3490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c834162f920cd6650436c70041227e5') in 0.020381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Prefabs/Bullet.prefab
+  artifactKey: Guid(5624ee9da9d10514ea7b808e83979c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Prefabs/Bullet.prefab using Guid(5624ee9da9d10514ea7b808e83979c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd82b9654bbe7730f263fff096608ca8') in 0.030189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/bush1.FBX
+  artifactKey: Guid(c8680fab33c72bb4ba3e31987e0b0182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/bush1.FBX using Guid(c8680fab33c72bb4ba3e31987e0b0182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b8094e77bb0af1961c89d0b753e8a38') in 0.037481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.382627 seconds.
+  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/E_Bullet.prefab
+  artifactKey: Guid(bcc5fc6f385ceeb40a85210a789b3aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/E_Bullet.prefab using Guid(bcc5fc6f385ceeb40a85210a789b3aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a78732fe8ee400281cb47be9defb8d4c') in 0.012573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/E_Bullet 1.prefab
+  artifactKey: Guid(31affbca83d789b4c9088be4f71a2c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/E_Bullet 1.prefab using Guid(31affbca83d789b4c9088be4f71a2c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a8c61bfc11ef86f1cff058382583cd8') in 0.011655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/E_Bullet_s 1.prefab
+  artifactKey: Guid(47ab0edf3ff81fd428d044a3f16d9acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/E_Bullet_s 1.prefab using Guid(47ab0edf3ff81fd428d044a3f16d9acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9f6475b6252ffdb7d7ebeb6126f1813') in 0.012049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/E_Bullet_s.prefab
+  artifactKey: Guid(8eefe4b39b9c6c744b64f36a9bf6b54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/E_Bullet_s.prefab using Guid(8eefe4b39b9c6c744b64f36a9bf6b54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74acbeb8ab530ed212edf95987f9a06d') in 0.011491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.743837 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Game/Bullet.cs
+  artifactKey: Guid(6321a7d9112988841b7223ac6a925bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Game/Bullet.cs using Guid(6321a7d9112988841b7223ac6a925bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35494aef9c438bacdcaf24797578947d') in 0.007829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.512024 seconds.
+  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingScripts/Bullet/Bullet.cs
+  artifactKey: Guid(b6feeeb2661815d4fb432b5e4f9b9653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingScripts/Bullet/Bullet.cs using Guid(b6feeeb2661815d4fb432b5e4f9b9653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5acc8c913675d1e56e4aea946d08b644') in 0.001332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.648218 seconds.
+  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingScripts/Bullet/UltimateBullet.cs
+  artifactKey: Guid(f92383d7ab1584149bf499ac942076a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingScripts/Bullet/UltimateBullet.cs using Guid(f92383d7ab1584149bf499ac942076a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bef2769dd3ec7030a1cde2a37ed2e423') in 0.005996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.390715 seconds.
+  path: Assets/script/Enemy/Enemybullet.cs
+  artifactKey: Guid(939e31ef46223ff46a00dfe41f8cb77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/script/Enemy/Enemybullet.cs using Guid(939e31ef46223ff46a00dfe41f8cb77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46df1404ee2019cd7050f5395938392e') in 0.007638 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

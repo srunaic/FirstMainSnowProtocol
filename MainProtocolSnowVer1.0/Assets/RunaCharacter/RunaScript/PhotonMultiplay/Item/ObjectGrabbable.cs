@@ -5,22 +5,17 @@ using UnityEngine;
 public class ObjectGrabbable : MonoBehaviour
 {
     private Rigidbody objectRigidbody;
-    private Transform objectGrabPointTransform;
+    public Transform objectGrabPointTransform; //this Transform null
+
+    public Rigidbody rb;
 
     private void Awake()
     {
+        rb = GetComponent<Rigidbody>();
+        objectGrabPointTransform = GetComponent<Transform>();
         objectRigidbody = GetComponent<Rigidbody>();
     }
 
-    public void Grab(Transform objectGrabPointTransform)
-    {
-        this.objectGrabPointTransform = objectGrabPointTransform;
-    }
-    public void Drop()
-    {
-        this.objectGrabPointTransform = null;
-        objectRigidbody.useGravity = true;
-    }
     private void FixedUpdate()
     {
         if(objectGrabPointTransform != null)
