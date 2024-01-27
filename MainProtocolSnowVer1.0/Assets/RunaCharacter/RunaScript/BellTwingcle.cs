@@ -43,15 +43,19 @@ public class BellTwingcle : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        
          BellUI.SetActive(false);
-         BellAnim.SetBool("OnBell", false);
-        
+     
     }
+
+
     IEnumerator SoundTrack() //사운드 나오는 타이밍
     {
+        yield return new WaitForSeconds(1f);
         AudioGameManage.Instance.bellSound(); //인스턴스 오디오 매니저 호출.
         yield return new WaitForSeconds(2f);
+        AudioGameManage.Instance.OffbellSound();
+        BellAnim.SetBool("OnBell", false);
+
     }
 
 }

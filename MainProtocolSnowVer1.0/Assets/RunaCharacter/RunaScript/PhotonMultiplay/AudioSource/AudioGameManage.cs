@@ -80,6 +80,14 @@ namespace SeonghyoAudio
             audioGroup.Play();
 
         }
+        public void OffbellSound()
+        {
+
+            audioGroup.clip = BellAudio;
+            audioGroup.Stop();
+
+        }
+
 
 
     }
