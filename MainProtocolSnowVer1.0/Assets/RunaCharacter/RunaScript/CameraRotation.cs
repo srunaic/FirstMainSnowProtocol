@@ -9,9 +9,10 @@ public class CameraRotation : MonoBehaviour
     public Transform followTarget;
     //카메라 따라다니면서 위치를 맞춤.
     public Vector3 followOffset = Vector3.zero;
-    private float CamMoveSpeed = 5f;
+    private float CamMoveSpeed = 2f;
     public bool invertY = false; // Y 축 회전 반전 여부
-    private float rotationX = 0.2f; // X 축 회전 각도
+
+    //private float rotationX = 0.5f;
 
     [Header("LookAt")]
     public Transform lookTarget;
@@ -20,7 +21,9 @@ public class CameraRotation : MonoBehaviour
     //카메라를 쳐다보면서 회전 조정.
     [SerializeField]
     private float angleY = 0;//캐릭터가 수평 상태일때의 회전 축 임의의 값.
-    private float angleZ = 0;
+    [SerializeField]
+    private float angleZ = 0;//카메라 축의 방향 위
+
     private float rotateSpeedX = 10f;
     private float rotSpeedY = 10f;
 
@@ -30,7 +33,6 @@ public class CameraRotation : MonoBehaviour
 
     private void Start()
     {   
-        
           followTarget = GameObject.Find("CamPivot").GetComponent<Transform>();
           lookTarget = GameObject.Find("CamPivot").GetComponent<Transform>();
 
@@ -39,7 +41,7 @@ public class CameraRotation : MonoBehaviour
 
           angleY = 0;
           angleZ = 0;
-      
+
     }
 
     private void FixedUpdate()//고정된 주기마다 업데이트(물리주기 ,훨씬 늦게 반복.0.02)
@@ -49,7 +51,7 @@ public class CameraRotation : MonoBehaviour
         if (lookTarget != null)
             CamLook();
         //물리주기에 맞춰서 반복.
-        //CamSensitivity();
+       // CamSensitivity();
     }
     private void Update()
     {
@@ -63,13 +65,13 @@ public class CameraRotation : MonoBehaviour
         angleY += mInputX * rotateSpeedX; //y축 앵글 바뀜.
         angleZ += mInputY * rotSpeedY;
 
-        Quaternion rotX = Quaternion.Euler(0, angleY, angleZ);
+        Quaternion rotX = Quaternion.Euler(-angleZ, angleY, 0); //이거 잘 조정하셈.
 
         Vector3 followPos =
             followTarget.position + rotX * followOffset; //앵글이 바뀌었을때,
 
         transform.position = 
-            Vector3.Lerp(transform.position , followPos ,Time.deltaTime * CamMoveSpeed); //돌아가는 함수.
+            Vector3.Lerp(transform.position , followPos ,Time.deltaTime * CamMoveSpeed); //카메라가 떨리는 이유.
     }
     public void CamLook()
     {

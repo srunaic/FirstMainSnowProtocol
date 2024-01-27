@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/RunaCharacter/RunaScene/PingPongGame.unity
+- path: Assets/RunaCharacter/HwaYeon/HwaYepm.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
