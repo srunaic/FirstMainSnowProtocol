@@ -28,6 +28,15 @@ public class ShootingInterAct : MonoBehaviourPunCallbacks
 
         }
     }
+    public void SetShotGameHwaYeon(HwaYeonMove _Shotplayer2)
+    {
+        if (_Shotplayer2._checkstate == CheckHwaYeonState.ShotGames)
+        {
+            _Shotplayer2.onMoveable = false;
+            ShootCanvas.SetActive(true);
+
+        }
+    }
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting)

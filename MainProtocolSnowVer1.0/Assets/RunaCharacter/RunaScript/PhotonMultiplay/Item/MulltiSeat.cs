@@ -8,7 +8,7 @@ public class MulltiSeat : MonoBehaviourPunCallbacks
 {
     public Transform sitPos;
 
-    public void SetSeat(MultiPlayer player)
+    public void SetSeat(MultiPlayer player) //첫번째 캐릭터 선택시 
     {
         //의자에 앉을 때의 위치를 동기화
         if (player.OnSit == false)
@@ -19,8 +19,21 @@ public class MulltiSeat : MonoBehaviourPunCallbacks
         {
             player.SetSit();
         }
-        
+
     }
+
+    public void HwaYeonSeat(HwaYeonMove _player2)//두번째 캐릭터 선택시 
+    {
+        if (_player2.OnSit == false)
+        {
+            _player2.pv.RPC("SetSit", RpcTarget.All);
+        }
+        else
+        {
+            _player2.SetSit();
+        }
+    }
+
     public void OffSeat(MultiPlayer _player)
     {
     if (_player.OnSit == true)
@@ -31,6 +44,17 @@ public class MulltiSeat : MonoBehaviourPunCallbacks
     {
         _player.OffSit();
     }
+    }
+    public void HwaYeonOffSeat(HwaYeonMove _player2)
+    {
+        if (_player2.OnSit == true)
+        {
+            _player2.pv.RPC("OffSit", RpcTarget.All);
+        }
+        else
+        {
+            _player2.OffSit();
+        }
     }
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {

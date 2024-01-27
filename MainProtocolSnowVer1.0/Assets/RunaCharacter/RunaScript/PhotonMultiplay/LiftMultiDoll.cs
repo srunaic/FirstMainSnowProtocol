@@ -125,7 +125,7 @@ public class LiftMultiDoll : MonoBehaviourPunCallbacks
                 _DollGame();
             }
         }
-        
+
     }
     private void OnTriggerExit(Collider other)
     {

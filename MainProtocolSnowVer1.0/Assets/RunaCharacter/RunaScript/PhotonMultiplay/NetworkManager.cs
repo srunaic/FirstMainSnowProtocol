@@ -12,6 +12,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     /*[Header("아이템 생성기")]
     public GameObject ItemSpawn;*/
 
+    public static NetworkManager Instance;
+
     [Header("DisconnectPanel")]
     public GameObject MainUI;
     public GameObject DisConnectPanel;
@@ -114,7 +116,18 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     void Awake()
     {
-        Screen.SetResolution(1920, 1080, false);
+        if (Instance != null)
+        {
+            Destroy(Instance);
+        }
+        else if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(Instance);
+        }
+
+
+        Screen.SetResolution(1920, 1080, false); //최초 해상도 설정.
     }
     void Update()
     {

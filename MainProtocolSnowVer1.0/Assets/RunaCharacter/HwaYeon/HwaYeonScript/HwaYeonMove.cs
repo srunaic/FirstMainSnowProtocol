@@ -3,19 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using SeonghyoGameManagerGroup;
+using Photon.Pun;
 
 public enum CheckHwaYeonState //포톤 상의 플레이어 상태값.
 {
     None,
-    ChatState,
     Sitting,
     DollGames,
     ShotGames
 }
-public class HwaYeonMove : MonoBehaviour
+public class HwaYeonMove : MonoBehaviour,IPunObservable
 {
     [Header("플레이어의 현재 상태줄표시")]
     public CheckHwaYeonState _checkstate = CheckHwaYeonState.None;
+
+    [Header("인터페이스 상호작용")]
+    public MulltiSeat nearSeat;
+    public ShootingInterAct nearShooting;
+
+    [Header("포톤 Text 정보 들고오기")]
+    public Text PlayerTxt; //포톤에 넘겨받을 플레이어 닉네임 정보.
+
+    [Header("포톤에서 실행되는 캐릭터")]
+    public PhotonView pv;
+    private Transform _PlayerTr;
+
+    private Vector3 currPos = Vector3.zero;
+    private Quaternion currRot = Quaternion.identity;
 
     [Header("싱글 비동기적 움직임관리")]
     public float moveSpeed = 20f; // 이동 속도 조절 변수
@@ -30,6 +44,7 @@ public class HwaYeonMove : MonoBehaviour
     [SerializeField]
     private bool isGrounded; // 캐릭터가 땅에 닿아 있는지 여부를 판단하기 위한 변수
     public bool onGround;
+
 
     [Header("중력 가속도")]
     private Rigidbody rb;
@@ -48,16 +63,29 @@ public class HwaYeonMove : MonoBehaviour
     private float BaseSpeed = 2f;
 
     public bool onMoveable = true;
+    private int onClick = 0;
 
     void Start()
     {
         _checkstate = CheckHwaYeonState.None;
-
         gravity = -Physics.gravity.y;
         rb = GetComponent<Rigidbody>();
         HwaAnim = GetComponent<Animator>();
 
+        pv = GetComponent<PhotonView>();
+        _PlayerTr = GetComponent <Transform>();
+
+        if(pv.IsMine && GameManager.instance.isConnect == true)
+        {
+            PhotonNetwork.LocalPlayer.NickName = NetworkManager.Instance.NickNameInput.text; //플레이어 2는 Instance화 된 매니저에서 직접 참조형.
+            PlayerTxt.text = PhotonNetwork.LocalPlayer.NickName;//로컬 닉네임 으로 변환.
+
+            Camera.main.GetComponent<FollowCam>().SetPlayer(transform);
+            nearSeat = FindObjectOfType<MulltiSeat>();
+        }
     }
+
+
     private void FixedUpdate()
     {
         if (rb.velocity.y < 0)
@@ -68,41 +96,159 @@ public class HwaYeonMove : MonoBehaviour
     }
     private void Update()
     {
+        if (pv.IsMine)
+        {
+            ProcessPlayerMovement();
+
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            _checkstate = CheckHwaYeonState.None;
+
+            if (_checkstate == CheckHwaYeonState.None)
+            {
+                onMoveable = true;
+            }
+        }
+
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            stream.SendNext(_PlayerTr.position);
+            stream.SendNext(_PlayerTr.rotation);
+            stream.SendNext(PhotonNetwork.LocalPlayer.NickName); // 닉네임을 전송
+            stream.SendNext(HwaAnim.GetBool("isRun"));//bool값 애니메이션의 전송방법.
+        }
+        else
+        {
+            currPos = (Vector3)stream.ReceiveNext();
+            currRot = (Quaternion)stream.ReceiveNext();
+            PlayerTxt.text = (string)stream.ReceiveNext(); // 받은 닉네임을 텍스트로 업데이트
+            HwaAnim.SetBool("isRun", (bool)stream.ReceiveNext());
+        }
+    }
+
+    [PunRPC]
+    void TriggerJumpAnimation()
+    {
+        HwaAnim.SetTrigger("Jump");
+    }
+
+    [PunRPC]
+    public void SetSit()//앉기
+    {
+        if (nearSeat != null)
+        {
+            onMoveable = false;
+
+            transform.rotation = nearSeat.sitPos.rotation;
+            Debug.Log("의자 동기화" + nearSeat);
+            HwaAnim.SetTrigger("Sit");
+
+            OnSit = true;
+        }
+    }
+
+    [PunRPC]
+    public void OffSit()//앉는키 해제
+    {
+        if (OnSit)
+        {
+            HwaAnim.SetTrigger("Stend");
+
+            onMoveable = true;
+            OnSit = false;
+            //애니메이션 추가.
+
+        }
+    }
+    void ProcessPlayerMovement()
+    {
         if (onMoveable)
         {
             Move(); // 움직임 처리.   
         }
         else
-           rb.velocity = Vector3.zero + Vector3.up * VelocityY;
-
-        if (isGrounded)
         {
-            SlopeGrounded();
+            rb.velocity = Vector3.up * VelocityY;
+        }
+
+        if (_checkstate == CheckHwaYeonState.Sitting)
+        {
+            if (nearSeat != null && Input.GetKeyDown(KeyCode.Z))//앉을때 동작.
+            {
+                nearSeat.HwaYeonSeat(this);
+            }
+        }
+        else if (OnSit && Input.GetKeyDown(KeyCode.C))//일어날때 동작.
+        {
+            _checkstate = CheckHwaYeonState.None;
+
+            if (_checkstate == CheckHwaYeonState.None)
+            {
+                nearSeat.HwaYeonOffSeat(this);
+            }
+        }
+        else if (nearShooting != null && _checkstate == CheckHwaYeonState.ShotGames)
+        {
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                nearShooting.SetShotGameHwaYeon(this);
+            }
+        }
+        else if (Input.GetButtonDown("Cancel")) //네트워크 환경과 교류 접속 상태일때, 이 키일때 적용되는 값 채팅 연동.
+        {
+            if (onClick <= 0) //메시지
+            {
+                onClick = 1;
+                onMoveable = false;
+
+            }
+            else if (onClick <= 1)
+            {
+                onMoveable = true;
+                onClick = 0; //0으로 초기화.
+            }
+        }
+
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        //멀티플레이 중이고 마스터가 아니면 
+        if (GameManager.instance.isConnect == true//게임 접속하기 상태라면,,
+            && !PhotonNetwork.IsMasterClient)
+            return; //아래코드 스킵
+
+        else if (other.TryGetComponent<MulltiSeat>(out MulltiSeat findSeat))
+        {
+            _checkstate = CheckHwaYeonState.Sitting;
+            nearSeat = findSeat;
+        }
+        else if (other.TryGetComponent<ShootingInterAct>(out ShootingInterAct findShot))
+        {
+            nearShooting = findShot;
+            if (nearShooting != null)
+            {
+                _checkstate = CheckHwaYeonState.ShotGames;
+            }
         }
     }
-
-    //경사면에서의 움직임 제어
-    public void SlopeGrounded()
+    public void OnTriggerStay(Collider other)
     {
-        RaycastHit hit;
-        float slopeAngle = 0f;
-
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, checkHeight + 0.1f))
+        if (other.CompareTag("DollGaming")) //인형뽑기 기계
         {
-            slopeAngle = Vector3.Angle(hit.normal, Vector3.up);
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                _checkstate = CheckHwaYeonState.DollGames;
+            }
+            else if (_checkstate == CheckHwaYeonState.DollGames)
+            {
+                onMoveable = false;
+            }
         }
-
-        if (slopeAngle > 0.1f && slopeAngle < 45f)
-        {
-            Vector3 slopeDirection = Vector3.Cross(hit.normal, -transform.right);
-
-            float slopeForce = Mathf.Tan(slopeAngle * Mathf.Deg2Rad) * moveSpeed;
-
-            Vector3 slopeForceVector = slopeDirection * slopeForce;
-
-            rb.AddForce(slopeForceVector, ForceMode.Acceleration);
-        }
-
     }
 
     public void Move()
@@ -161,26 +307,33 @@ public class HwaYeonMove : MonoBehaviour
         // 캐릭터의 점프 처리
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
-            HwaAnim.SetTrigger("Jump");
+            //HwaAnim.SetTrigger("Jump");
+            pv.RPC("TriggerJumpAnimation", RpcTarget.All);//점프 애니메이션 포톤에 넘겨주기.
             float jumpSpeed = Mathf.Sqrt(2 * Mathf.Abs(gravity) * jumpHeight);
 
-            rb.velocity = movement + Vector3.up * jumpSpeed * 1f;
-            isGrounded = false;
+   
+            rb.velocity = movement + Vector3.up * jumpSpeed * 5f ;
+           
         }
-        rb.velocity = movement + Vector3.up * rb.velocity.y;
+        else
+        {
+            isGrounded = false;
+            rb.velocity = movement + Vector3.down * rb.velocity.y;
 
+        }
         //땅이 아닐때,
         if (!isGrounded)
         {
             if (rb.velocity.y > 0)
             {
-                Physics.gravity = new Vector3(0, VelocityY, 0);//물체 중력 제어 계산
 
+                Physics.gravity = new Vector3(0, -VelocityY, 0);//물체 중력 제어 계산
+                
                 //이 코드에 따라 무중력과 중력으로 바뀜.
             }
         }
 
     }
 
-
+  
 }
