@@ -56,7 +56,7 @@ public class BossShooting : MonoBehaviour
 
     void Start()
     {
-        BossMaxHealth = 300;
+        BossMaxHealth = 100;
         currentHealth = BossMaxHealth; //현재 hp = 최대치
         healthBar.setMaxHealth(BossMaxHealth);
 

@@ -11,6 +11,12 @@ public class Potion : MonoBehaviour
     public float spawnHeight = 0;
     public float flowSpeed = 1.0f;//이동속도
     public float rotateSpeed = 20f;//회전 속도
+
+    private void Start()
+    {
+        StartCoroutine(PotionDestroy());
+    }
+
     void Update()
     {
         transform.position += Vector3.down * flowSpeed * Time.deltaTime;
@@ -30,6 +36,12 @@ public class Potion : MonoBehaviour
         {
             Destroy(gameObject, 0.2f);
         }
+    }
+
+    IEnumerator PotionDestroy()
+    {
+        yield return new WaitForSeconds(10f);
+        Destroy(gameObject);
     }
 
 }

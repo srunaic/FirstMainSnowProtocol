@@ -80,6 +80,7 @@ public class MultiLiftCatch : MonoBehaviour, IPunObservable
         {
             int dollIndex = (_kindDoll == KindDoll.RabbitDoll1) ? 0 : 1;
             _LiftMove._Doll[dollIndex].position = _LiftMove.ZilePos.position;
+
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -112,7 +113,6 @@ public class MultiLiftCatch : MonoBehaviour, IPunObservable
             dollRigidbodies[i].isKinematic = false;
             dollColliders[i].enabled = true;
         }
-
         LiftAnim.SetTrigger("PutZile");
         StartCoroutine(DisableColliderForDuration(2f));
     }

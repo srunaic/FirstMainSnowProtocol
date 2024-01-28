@@ -29,6 +29,7 @@ public class Bullet : MonoBehaviour
         rigidbody2D.gravityScale = 0;
 
         rigidbody2D.velocity = direction.normalized * speed;
+        StartCoroutine(BulletDestroy());
     }
  
     private void OnTriggerEnter2D(Collider2D collision)
@@ -112,6 +113,12 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
 
+    }
+
+    IEnumerator BulletDestroy()
+    {
+        yield return new WaitForSeconds(10f);
+        Destroy(gameObject);
     }
 
 }

@@ -38,7 +38,7 @@ namespace SeonghyoGameManagerGroup //게임매니저 그룹 이용.
             Vector3 pos = spawnPoints[PhotonNetwork.CurrentRoom.PlayerCount].position; //대기시간
             Quaternion rot = spawnPoints[PhotonNetwork.CurrentRoom.PlayerCount].rotation;
 
-            GameObject _player = PhotonNetwork.Instantiate("PlayerRuna", Vector3.zero, Quaternion.identity, 0);//플레이어 접속
+            GameObject _player = PhotonNetwork.Instantiate("Multi Dwarf Idle", Vector3.zero, Quaternion.identity, 0);//플레이어 접속
         }
 
     }

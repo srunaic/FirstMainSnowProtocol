@@ -289,6 +289,8 @@ public class PlayerMove : MonoBehaviour
 
     IEnumerator CheckBoomer()
     {
+        if (shotLevel == 4)
+        {
             Debug.Log("±Ã±Ø±â ÀÛµ¿");
             UsingWeapon = true;//±Ã±Ø±â »ç¿ëÁßÀÔ´Ï´Ù.
 
@@ -300,8 +302,9 @@ public class PlayerMove : MonoBehaviour
 
             if (WeaponMaxCount == 3) //3¹ø Á¦ÇÑ.
             {
-                 UsingWeapon = false;
+                UsingWeapon = false;
             }
+        }
         else if (!UsingWeapon)
         {
             Destroy(UltimiteWeapon);

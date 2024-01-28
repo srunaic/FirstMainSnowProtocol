@@ -49,7 +49,7 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
     [Header("중력 가속도")]
     private Rigidbody rb;
     private float gravity;
-    public float VelocityY = -22.0f;
+    public float VelocityY = 22.0f;
 
     [Header("캐릭터 애니메이션 관리")]
     public Animator HwaAnim;
@@ -67,8 +67,8 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
 
     void Start()
     {
-        _checkstate = CheckHwaYeonState.None;
         gravity = -Physics.gravity.y;
+        _checkstate = CheckHwaYeonState.None;
         rb = GetComponent<Rigidbody>();
         HwaAnim = GetComponent<Animator>();
 
@@ -91,16 +91,19 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
         if (rb.velocity.y < 0)
         {
             // 캐릭터가 땅에 닿아 있는지 검사
-            isGrounded = Physics.Raycast(transform.position, Vector3.down, feetHeight + checkHeight);
+            isGrounded = Physics.Raycast(transform.position, Vector3.up, feetHeight + checkHeight);
         }
+ 
     }
-    private void Update()
+    public void Update()
     {
+      
         if (pv.IsMine)
         {
             ProcessPlayerMovement();
-
+            
         }
+      
         if (Input.GetKeyDown(KeyCode.C))
         {
             _checkstate = CheckHwaYeonState.None;
@@ -110,7 +113,7 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
                 onMoveable = true;
             }
         }
-
+  
     }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -171,11 +174,6 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
         {
             Move(); // 움직임 처리.   
         }
-        else
-        {
-            rb.velocity = Vector3.up * VelocityY;
-        }
-
         if (_checkstate == CheckHwaYeonState.Sitting)
         {
             if (nearSeat != null && Input.GetKeyDown(KeyCode.Z))//앉을때 동작.
@@ -303,36 +301,26 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
 
         }
 
-
         // 캐릭터의 점프 처리
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
-            //HwaAnim.SetTrigger("Jump");
             pv.RPC("TriggerJumpAnimation", RpcTarget.All);//점프 애니메이션 포톤에 넘겨주기.
             float jumpSpeed = Mathf.Sqrt(2 * Mathf.Abs(gravity) * jumpHeight);
 
-   
-            rb.velocity = movement + Vector3.up * jumpSpeed * 5f ;
-           
+            rb.velocity = movement + Vector3.up * jumpSpeed * 5f;
+          
         }
         else
-        {
             isGrounded = false;
-            rb.velocity = movement + Vector3.down * rb.velocity.y;
 
-        }
-        //땅이 아닐때,
         if (!isGrounded)
         {
             if (rb.velocity.y > 0)
             {
-
-                Physics.gravity = new Vector3(0, -VelocityY, 0);//물체 중력 제어 계산
-                
-                //이 코드에 따라 무중력과 중력으로 바뀜.
+                Physics.gravity = Vector3.up * 60f;
             }
+         
         }
-
     }
 
   

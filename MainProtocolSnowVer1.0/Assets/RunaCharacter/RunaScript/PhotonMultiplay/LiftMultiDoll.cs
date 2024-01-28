@@ -31,7 +31,7 @@ public class LiftMultiDoll : MonoBehaviourPunCallbacks
 
     [Header("움직임 스피드 관리.")]
     public float speed = 0.10f;
-    public float Downspeed = 0.08f;
+    public float Downspeed = 5f;
 
     public Vector3 LiftVec;
 
@@ -46,6 +46,7 @@ public class LiftMultiDoll : MonoBehaviourPunCallbacks
         pv = GetComponent<PhotonView>();
          TimeGames = 0;//인형뽑기 시간 초기화.
         _TimeTxt.text = "0:20";//시간 초
+       
     }
 
     private void Update()
@@ -134,6 +135,7 @@ public class LiftMultiDoll : MonoBehaviourPunCallbacks
             _gameKind = GameKinded.None;
         }
     }
+
     IEnumerator _DollGameFadeTiming()
     {
         yield return new WaitForSeconds(1f);
