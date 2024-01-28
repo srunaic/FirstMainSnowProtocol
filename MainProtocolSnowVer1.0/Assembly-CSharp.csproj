@@ -53,7 +53,7 @@
     <UnityVersion>2020.3.30f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\script\OPtionCanvas\SceneChange.cs" />
@@ -82,6 +82,7 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\MultiPlayer.cs" />
     <Compile Include="Assets\script\bakhoMoving\CameraViewChange.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+    <Compile Include="Assets\RunaCharacter\HwaYeon\HwaYeonScript\HwaYeonMove.cs" />
     <Compile Include="Assets\script\SunAndNight\sunNight.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Map\MapScroll.cs" />
     <Compile Include="Assets\Howon\RhythmGame\Scripts\EventManager.cs" />
@@ -221,7 +222,6 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Bullet\Bullet.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\UserCamTransparent.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\CamVersion.cs" />
-    <Compile Include="Assets\RunaCharacter\HwaYeon\HwaYeonScript\HwaYeonMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
