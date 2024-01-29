@@ -5,12 +5,20 @@ using UnityEngine;
 
 namespace SeonghyoGameManagerGroup //게임매니저 그룹 이용.
 {
+    public enum ChoicePlayer 
+    {
+       NonePlayer,
+       RunaPlayer,
+       HwaYeonPlayer
+    }
     public class GameManager : MonoBehaviour
     {
         [Header("게임 인스턴스화 씬이 넘어가더도 파괴 안됨.")]
         public static GameManager instance = null;
         public bool isConnect = false;
         public Transform[] spawnPoints;
+
+        public ChoicePlayer _choicePlayer = ChoicePlayer.NonePlayer;
 
         private void Awake()
         {
@@ -38,7 +46,15 @@ namespace SeonghyoGameManagerGroup //게임매니저 그룹 이용.
             Vector3 pos = spawnPoints[PhotonNetwork.CurrentRoom.PlayerCount].position; //대기시간
             Quaternion rot = spawnPoints[PhotonNetwork.CurrentRoom.PlayerCount].rotation;
 
-            GameObject _player = PhotonNetwork.Instantiate("Multi Dwarf Idle", Vector3.zero, Quaternion.identity, 0);//플레이어 접속
+            if (_choicePlayer == ChoicePlayer.RunaPlayer) // 1번 선택지를 뽑으면 
+            {
+                GameObject _player2 = PhotonNetwork.Instantiate("PlayerRuna", Vector3.zero, Quaternion.identity, 0);//플레이어 접속
+            }
+            else if (_choicePlayer == ChoicePlayer.HwaYeonPlayer)
+            {
+                GameObject _player = PhotonNetwork.Instantiate("Multi Dwarf Idle", Vector3.zero, Quaternion.identity, 0);//플레이어 접속
+            
+            } 
         }
 
     }

@@ -91,13 +91,20 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
         if (rb.velocity.y < 0)
         {
             // 캐릭터가 땅에 닿아 있는지 검사
-            isGrounded = Physics.Raycast(transform.position, Vector3.up, feetHeight + checkHeight);
+            isGrounded = Physics.Raycast(transform.position, Vector3.down, feetHeight + checkHeight);
         }
- 
+        else if (!isGrounded)
+        {
+            if (rb.velocity.y > 0)
+            {
+                Physics.gravity = new Vector3(0, -VelocityY, 0);
+            }
+
+        }
+
     }
     public void Update()
     {
-      
         if (pv.IsMine)
         {
             ProcessPlayerMovement();
@@ -280,13 +287,15 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
         //처음 움직임 초기화 시킴. 레프트 쉬프트 누를시에 달림.
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            HwaAnim.SetBool("isRun", true);
-            moveSpeed *= RunSpeed;
+        
+             HwaAnim.SetBool("isRun", true);
+             moveSpeed *= RunSpeed;
+           
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            HwaAnim.SetBool("isRun", false);
-            moveSpeed = BaseSpeed;
+             HwaAnim.SetBool("isRun", false);
+             moveSpeed = BaseSpeed;
         }
 
         if (horizontalInput != 0 || verticalInput != 0)//움직일 때,
@@ -301,26 +310,17 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
 
         }
 
-        // 캐릭터의 점프 처리
+        // 캐릭터의 점프 처리 달리기 상태일때도 이 키가 눌리면 작동 되도록.
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
             pv.RPC("TriggerJumpAnimation", RpcTarget.All);//점프 애니메이션 포톤에 넘겨주기.
             float jumpSpeed = Mathf.Sqrt(2 * Mathf.Abs(gravity) * jumpHeight);
 
-            rb.velocity = movement + Vector3.up * jumpSpeed * 5f;
-          
+            rb.velocity = movement + Vector3.down * jumpSpeed * 5f;
         }
         else
             isGrounded = false;
 
-        if (!isGrounded)
-        {
-            if (rb.velocity.y > 0)
-            {
-                Physics.gravity = Vector3.up * 60f;
-            }
-         
-        }
     }
 
   

@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'ko' Physical Memory: 65386 MB
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'ko' Physical Memory: 16251 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -15,12 +15,12 @@ C:/Users/USER/Documents/GitHub/FirstMainSnowProtocol/MainProtocolSnowVer1.0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64727
+6656
 Successfully changed project path to: C:/Users/USER/Documents/GitHub/FirstMainSnowProtocol/MainProtocolSnowVer1.0
 C:/Users/USER/Documents/GitHub/FirstMainSnowProtocol/MainProtocolSnowVer1.0
 Using Asset Import Pipeline V2.
 Setting a NavMeshArea cost less than one can give unexpected results.
-Refreshing native plugins compatible for Editor in 74.72 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 754.58 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
@@ -28,98 +28,98 @@ Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 4060 (ID=0x2882)
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
     Vendor:   
-    VRAM:     7971 MB
-    Driver:   31.0.15.4629
+    VRAM:     3962 MB
+    Driver:   27.21.14.6230
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56496
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56944
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000778 seconds.
+Registered in 0.001737 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 73.17 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 88.66 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.495 seconds
+- Completed reload, in  0.600 seconds
 Domain Reload Profiling:
-	ReloadAssembly (495ms)
-		BeginReloadAssembly (38ms)
+	ReloadAssembly (600ms)
+		BeginReloadAssembly (73ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (395ms)
-			LoadAssemblies (37ms)
+		EndReloadAssembly (463ms)
+			LoadAssemblies (71ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (147ms)
+			SetupTypeCache (145ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (156ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (197ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (73ms)
-				BeforeProcessingInitializeOnLoad (11ms)
-				ProcessInitializeOnLoadAttributes (52ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
+				RefreshPlugins (89ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (68ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004324 seconds.
+Registered in 0.009718 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 70.63 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 90.44 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.281 seconds
+- Completed reload, in  1.274 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1281ms)
-		BeginReloadAssembly (88ms)
+	ReloadAssembly (1275ms)
+		BeginReloadAssembly (134ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (1151ms)
-			LoadAssemblies (396ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (1088ms)
+			LoadAssemblies (110ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (241ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (382ms)
+			SetupTypeCache (353ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (459ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (71ms)
-				BeforeProcessingInitializeOnLoad (92ms)
-				ProcessInitializeOnLoadAttributes (200ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				RefreshPlugins (91ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (173ms)
+				ProcessInitializeOnLoadMethodAttributes (79ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Setting a NavMeshArea cost less than one can give unexpected results.
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.78 ms, found 7 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.99 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4771 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 236.9 MB.
-System memory in use after: 237.1 MB.
+System memory in use before: 219.3 MB.
+System memory in use after: 219.5 MB.
 
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 5212.
-Total: 2.815100 ms (FindLiveObjects: 0.233500 ms CreateObjectMapping: 0.108900 ms MarkObjects: 2.312400 ms  DeleteObjects: 0.159500 ms)
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 5192.
+Total: 4.168800 ms (FindLiveObjects: 0.688200 ms CreateObjectMapping: 0.333800 ms MarkObjects: 3.016700 ms  DeleteObjects: 0.128800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,113 +134,175 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingScripts/Player/PlayerMove.cs
-  artifactKey: Guid(4384660598e259745bc9e9ba7e09d212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingScripts/Player/PlayerMove.cs using Guid(4384660598e259745bc9e9ba7e09d212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4b04ee52a76b447c728e0d10fc69b4') in 0.019722 seconds 
+  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/BossEnemy2.prefab
+  artifactKey: Guid(b3c10b6976dca254aa61e6b3667ab851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/BossEnemy2.prefab using Guid(b3c10b6976dca254aa61e6b3667ab851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78f9c5a9fd206c935db51646aef3c883') in 0.110716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000435 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/ShootingGame/FinalBoss.prefab
+  artifactKey: Guid(3b72d172fbcf24d45ad162c8c5f7e5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/ShootingGame/FinalBoss.prefab using Guid(3b72d172fbcf24d45ad162c8c5f7e5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a847951586b3a73b51b3c2ad2e0ed929') in 0.026832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/FinalBoss.prefab
+  artifactKey: Guid(8c944e66519d43b45b751dbc594b7e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/FinalBoss.prefab using Guid(8c944e66519d43b45b751dbc594b7e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2aff1387d44859bc655ecd4ede6d3cd') in 0.088353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/BossEnemy.prefab
+  artifactKey: Guid(ae6fe13cd84a7f84f9848682830c3b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/BossEnemy.prefab using Guid(ae6fe13cd84a7f84f9848682830c3b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1bc9cfbcc8cc196787aca9ea559bd5d') in 0.062361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/BossEnemy4.prefab
+  artifactKey: Guid(3ad78f401a8721e438cc906a1b287c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/BossEnemy4.prefab using Guid(3ad78f401a8721e438cc906a1b287c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbcafa41bb8958512c3508c159f74f58') in 0.065970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2133.623972 seconds.
+  path: Assets/YongYeon/FoodCar
+  artifactKey: Guid(4cd67e8bf7c401c4a95c22a786114365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar using Guid(4cd67e8bf7c401c4a95c22a786114365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d4aa6bcee26df95ef2690ab54351ec') in 0.007487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.873632 seconds.
+  path: Assets/YongYeon/FoodCar/ver01
+  artifactKey: Guid(9408188f4e797244681444b7fd3c42d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver01 using Guid(9408188f4e797244681444b7fd3c42d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bd0380f8b154d0ab8ecc2c79ae7e813') in 0.008592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.065240 seconds.
+  path: Assets/YongYeon/FoodCar/ver01/푸드트럭ver01.fbx
+  artifactKey: Guid(e49b80419ea7c3b4bbc510f6938ebb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver01/푸드트럭ver01.fbx using Guid(e49b80419ea7c3b4bbc510f6938ebb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '156014621eb6e75916b5ffa90cfea622') in 0.324554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.578612 seconds.
+  path: Assets/YongYeon/FoodCar/ver01/ver01Tex
+  artifactKey: Guid(6cbb21743b8a5ba4e9f700a3160808e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver01/ver01Tex using Guid(6cbb21743b8a5ba4e9f700a3160808e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb7f2664a4b88990a4339dc5d2c2870d') in 0.022528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.857668 seconds.
+  path: Assets/YongYeon/FoodCar/ver01/푸드트럭ver01.fbx
+  artifactKey: Guid(e49b80419ea7c3b4bbc510f6938ebb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver01/푸드트럭ver01.fbx using Guid(e49b80419ea7c3b4bbc510f6938ebb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '138148e7fa35d47643a42e62b79206ed') in 0.264930 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.585998 seconds.
+  path: Assets/YongYeon/FoodCar/ver02
+  artifactKey: Guid(5f64e2be144e20d48bd587260efe451d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02 using Guid(5f64e2be144e20d48bd587260efe451d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8338eb6acf37bced8d74ffa7a9541b7f') in 0.008949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.012097 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/푸드트럭ver012.fbx
+  artifactKey: Guid(5bae79deee0ce17438f7d3f8145668b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/푸드트럭ver012.fbx using Guid(5bae79deee0ce17438f7d3f8145668b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c0b68c378763d0152c2eaeec2a065f3') in 0.172808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.900591 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Tex
+  artifactKey: Guid(3509cc58a3fb52748bd212ed9b141801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Tex using Guid(3509cc58a3fb52748bd212ed9b141801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc340b70642a97a12f7877df86a658e6') in 0.009975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.130543 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Tex/간판_Base_color.png
+  artifactKey: Guid(ba3803a0c7d1b154098ca9c91eb4583b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Tex/간판_Base_color.png using Guid(ba3803a0c7d1b154098ca9c91eb4583b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8714c651443634ac30c55291185f2546') in 0.046383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Tex/지붕상단_Base_color.png
+  artifactKey: Guid(406cbd9e867b04a4cb747e58d13dc6a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Tex/지붕상단_Base_color.png using Guid(406cbd9e867b04a4cb747e58d13dc6a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd69f26ef1c1cdb7a2fb6eb80365b47ed') in 0.015451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Tex/트럭_Base_color.png
+  artifactKey: Guid(df1b0789fef183e4b8a09606cfdb6a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Tex/트럭_Base_color.png using Guid(df1b0789fef183e4b8a09606cfdb6a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b37837625827a34d7ee313ba38284453') in 0.017914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Tex/푸드테이블_Base_color.png
+  artifactKey: Guid(7a245a8f018a8fa468b308d924ca9f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Tex/푸드테이블_Base_color.png using Guid(7a245a8f018a8fa468b308d924ca9f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc0993bf150cb62d00592ecd70c0cf4') in 0.016627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Tex/앞상단부분_Base_color.png
+  artifactKey: Guid(5d681e5e5e4de2b44bdf50759ab59823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Tex/앞상단부분_Base_color.png using Guid(5d681e5e5e4de2b44bdf50759ab59823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ee04a34972f8186b5c49f09b5a552d') in 0.017099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Tex/바퀴_Base_color.png
+  artifactKey: Guid(ee071b8f554cd644491ec8de1e05ddd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Tex/바퀴_Base_color.png using Guid(ee071b8f554cd644491ec8de1e05ddd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7826aa729128ea4ec99bf0e84d2b71aa') in 0.016619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Tex/뒷발판_Base_color.png
+  artifactKey: Guid(f881b55e859ed50459f940ee91922031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Tex/뒷발판_Base_color.png using Guid(f881b55e859ed50459f940ee91922031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b28aab4040e7cd904411b2593ef8cf') in 0.016847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Tex/앞유리_Base_color.png
+  artifactKey: Guid(6800d7c99c395304eae95ac93c497ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Tex/앞유리_Base_color.png using Guid(6800d7c99c395304eae95ac93c497ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14b6de7a30659094464e8c2fb9eb32c4') in 0.018722 seconds 
 ========================================================================
 Received Prepare
 Setting a NavMeshArea cost less than one can give unexpected results.
 Registering precompiled user dll's ...
-Registered in 0.004147 seconds.
+Registered in 0.010835 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 1.05 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.775 seconds
+- Completed reload, in  1.415 seconds
 Domain Reload Profiling:
-	ReloadAssembly (776ms)
-		BeginReloadAssembly (85ms)
+	ReloadAssembly (1416ms)
+		BeginReloadAssembly (174ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (652ms)
-			LoadAssemblies (65ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1164ms)
+			LoadAssemblies (161ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (220ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (243ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (81ms)
-				ProcessInitializeOnLoadAttributes (141ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.76 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4607 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 221.8 MB.
-System memory in use after: 222.0 MB.
-
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 5215.
-Total: 2.714500 ms (FindLiveObjects: 0.209200 ms CreateObjectMapping: 0.106200 ms MarkObjects: 2.270500 ms  DeleteObjects: 0.125100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Setting a NavMeshArea cost less than one can give unexpected results.
-Registering precompiled user dll's ...
-Registered in 0.005058 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.901 seconds
-Domain Reload Profiling:
-	ReloadAssembly (901ms)
-		BeginReloadAssembly (96ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (762ms)
-			LoadAssemblies (79ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (257ms)
+			SetupTypeCache (406ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (286ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (329ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (168ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (183ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (19ms)
+			AwakeInstancesAfterBackupRestoration (34ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.80 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 1.13 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4607 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 221.8 MB.
-System memory in use after: 222.1 MB.
+System memory in use before: 207.7 MB.
+System memory in use after: 207.9 MB.
 
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 5218.
-Total: 2.983400 ms (FindLiveObjects: 0.239700 ms CreateObjectMapping: 0.144100 ms MarkObjects: 2.464700 ms  DeleteObjects: 0.133900 ms)
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 5239.
+Total: 3.669100 ms (FindLiveObjects: 0.343400 ms CreateObjectMapping: 0.292900 ms MarkObjects: 2.907100 ms  DeleteObjects: 0.125300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -255,224 +317,186 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 221.838936 seconds.
-  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingScripts/Player/PlayerMove.cs
-  artifactKey: Guid(4384660598e259745bc9e9ba7e09d212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingScripts/Player/PlayerMove.cs using Guid(4384660598e259745bc9e9ba7e09d212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c186b970c97940db672f8d8cad7903f6') in 0.007520 seconds 
-========================================================================
-Received Prepare
-Setting a NavMeshArea cost less than one can give unexpected results.
-Registering precompiled user dll's ...
-Registered in 0.003652 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.789 seconds
-Domain Reload Profiling:
-	ReloadAssembly (789ms)
-		BeginReloadAssembly (85ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (666ms)
-			LoadAssemblies (70ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (232ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (242ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (79ms)
-				ProcessInitializeOnLoadAttributes (142ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.85 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4607 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 221.9 MB.
-System memory in use after: 222.1 MB.
-
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 5221.
-Total: 2.749200 ms (FindLiveObjects: 0.251000 ms CreateObjectMapping: 0.116700 ms MarkObjects: 2.244900 ms  DeleteObjects: 0.135600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 867.860165 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/New Folder
+  artifactKey: Guid(92491a61c05d87d448491fdac473976c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/New Folder using Guid(92491a61c05d87d448491fdac473976c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ddbe84053e4524b70bb8990242751d9') in 0.018470 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 74.894587 seconds.
-  path: Assets/RunaCharacter/RunaPrefabs/Resources/ShootingGame/ShootingGame.prefab
-  artifactKey: Guid(d4c235cdd8c5a1646998f5134aad2721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RunaCharacter/RunaPrefabs/Resources/ShootingGame/ShootingGame.prefab using Guid(d4c235cdd8c5a1646998f5134aad2721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6dd1420dd05bd617cddccbcb6eec624') in 0.143784 seconds 
-========================================================================
-Received Prepare
-Setting a NavMeshArea cost less than one can give unexpected results.
-Registering precompiled user dll's ...
-Registered in 0.005054 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.796 seconds
-Domain Reload Profiling:
-	ReloadAssembly (797ms)
-		BeginReloadAssembly (89ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (665ms)
-			LoadAssemblies (73ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (223ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (246ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (141ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.79 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4607 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 225.3 MB.
-System memory in use after: 225.5 MB.
-
-Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 5234.
-Total: 2.885200 ms (FindLiveObjects: 0.229200 ms CreateObjectMapping: 0.107400 ms MarkObjects: 2.402500 ms  DeleteObjects: 0.145600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 1.301063 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Mat
+  artifactKey: Guid(de2a0f614dd096043aebbd45b466d0fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Mat using Guid(de2a0f614dd096043aebbd45b466d0fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91a502647e297f177449fe464d135753') in 0.010043 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 163.393906 seconds.
-  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/BossEnemy.prefab
-  artifactKey: Guid(ae6fe13cd84a7f84f9848682830c3b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/BossEnemy.prefab using Guid(ae6fe13cd84a7f84f9848682830c3b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1bc9cfbcc8cc196787aca9ea559bd5d') in 0.060653 seconds 
+  Time since last request: 0.036571 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Mat/간판.mat
+  artifactKey: Guid(bc1aeaa0cb61e0f4c89521de47f3cb40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Mat/간판.mat using Guid(bc1aeaa0cb61e0f4c89521de47f3cb40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e91250af1bc1bc68e4b4b826a211573') in 0.077967 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000119 seconds.
-  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/BossEnemy2.prefab
-  artifactKey: Guid(b3c10b6976dca254aa61e6b3667ab851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/BossEnemy2.prefab using Guid(b3c10b6976dca254aa61e6b3667ab851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78f9c5a9fd206c935db51646aef3c883') in 0.013742 seconds 
+  Time since last request: 0.000250 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Mat/앞유리.mat
+  artifactKey: Guid(4ee4c256f80a05e4683eb17928fb4d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Mat/앞유리.mat using Guid(4ee4c256f80a05e4683eb17928fb4d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce763445193dd39354f0d0a564b2e5eb') in 0.019783 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/FinalBoss.prefab
-  artifactKey: Guid(8c944e66519d43b45b751dbc594b7e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/FinalBoss.prefab using Guid(8c944e66519d43b45b751dbc594b7e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2aff1387d44859bc655ecd4ede6d3cd') in 0.014633 seconds 
+  Time since last request: 0.000338 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Mat/트럭.mat
+  artifactKey: Guid(106773f5b426c5945aeb016707305141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Mat/트럭.mat using Guid(106773f5b426c5945aeb016707305141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec7374dc63bcce33d85520183cf26a9') in 0.021206 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/BossEnemy4.prefab
-  artifactKey: Guid(3ad78f401a8721e438cc906a1b287c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingPrefabs/BossEnemy4.prefab using Guid(3ad78f401a8721e438cc906a1b287c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbcafa41bb8958512c3508c159f74f58') in 0.014152 seconds 
+  Time since last request: 0.000268 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Mat/앞상단부분.mat
+  artifactKey: Guid(e61c82f27c48a9e428d12f6c30294445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Mat/앞상단부분.mat using Guid(e61c82f27c48a9e428d12f6c30294445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed3f0f06f2fbcde9e406887aaf7d8d0d') in 0.018247 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.963670 seconds.
-  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingScripts/Enemy/Boss.cs
-  artifactKey: Guid(4148d4e02c9857b4494f76b178bbbaa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingScripts/Enemy/Boss.cs using Guid(4148d4e02c9857b4494f76b178bbbaa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fccd2dab4a5b8f3da2f58f26619b6425') in 0.013949 seconds 
+  Time since last request: 0.000334 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Mat/뒷발판.mat
+  artifactKey: Guid(d77239fe379b07c48b72b7559a1d41d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Mat/뒷발판.mat using Guid(d77239fe379b07c48b72b7559a1d41d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c795283bc5fce97e90bf7ebb9a55b320') in 0.016947 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.067250 seconds.
-  path: Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingScripts/Enemy/BossShooting.cs
-  artifactKey: Guid(5acf030e028eecb428804fa8f8b83997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RunaCharacter/RunaScript/PhotonMultiplay/ShootingPrefabs/ShootingScripts/Enemy/BossShooting.cs using Guid(5acf030e028eecb428804fa8f8b83997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad0acf06539ac024bebfefa6fad31079') in 0.006646 seconds 
+  Time since last request: 0.000249 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Mat/바퀴.mat
+  artifactKey: Guid(2e43e22a9e8d5c34d9930296b5acc869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Mat/바퀴.mat using Guid(2e43e22a9e8d5c34d9930296b5acc869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c22f0a715357b3a7f648a74404d19b65') in 0.018490 seconds 
 ========================================================================
-Received Prepare
-Setting a NavMeshArea cost less than one can give unexpected results.
-Registering precompiled user dll's ...
-Registered in 0.004033 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.821 seconds
-Domain Reload Profiling:
-	ReloadAssembly (821ms)
-		BeginReloadAssembly (86ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (698ms)
-			LoadAssemblies (67ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (246ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (259ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (153ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.80 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4607 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 225.1 MB.
-System memory in use after: 225.3 MB.
-
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 5238.
-Total: 2.793300 ms (FindLiveObjects: 0.222100 ms CreateObjectMapping: 0.111600 ms MarkObjects: 2.324900 ms  DeleteObjects: 0.134200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Mat/지붕상단.mat
+  artifactKey: Guid(483b0bcc5abe4aa4e9dc8750a20be84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Mat/지붕상단.mat using Guid(483b0bcc5abe4aa4e9dc8750a20be84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '851cbfc01eba2ea9a4053ed667a5e995') in 0.020793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/YongYeon/FoodCar/ver02/Mat/푸드테이블.mat
+  artifactKey: Guid(43e6f32b23e486640a306561a4eb3004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/FoodCar/ver02/Mat/푸드테이블.mat using Guid(43e6f32b23e486640a306561a4eb3004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '616398049ada03846ff549adc49d0797') in 0.018640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.743701 seconds.
+  path: Assets/YongYeon/Character_YO
+  artifactKey: Guid(0a77c8cc7ebff6c4d9f1862b22cad9b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/Character_YO using Guid(0a77c8cc7ebff6c4d9f1862b22cad9b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8e0fbeb708aaed22c15785a626d92c1') in 0.009154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.043661 seconds.
+  path: Assets/YongYeon/Character_YO/Charactrever01.fbx
+  artifactKey: Guid(2b8722490fba21f4aa186ff8a04e77af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/Character_YO/Charactrever01.fbx using Guid(2b8722490fba21f4aa186ff8a04e77af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88d3dee3d17960bcf76fca4b34b8f55d') in 0.102442 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.347570 seconds.
+  path: Assets/YongYeon/Character_YO/yoTex
+  artifactKey: Guid(90228fc7781b2724bb8fc7f1385f94f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/Character_YO/yoTex using Guid(90228fc7781b2724bb8fc7f1385f94f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30a42bbe05fbd7ad90cb8375a8313826') in 0.007800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.039662 seconds.
+  path: Assets/YongYeon/Character_YO/yoTex/Body_Base_color.png
+  artifactKey: Guid(3277d23070e20854bae2cbbd578228be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/Character_YO/yoTex/Body_Base_color.png using Guid(3277d23070e20854bae2cbbd578228be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ee6acc3fbb600e92e8b76f0572999b2') in 0.029928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/YongYeon/Character_YO/yoTex/Heair_Base_color.png
+  artifactKey: Guid(fa350e0e3bf22cc4bbcc430c128c0b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/Character_YO/yoTex/Heair_Base_color.png using Guid(fa350e0e3bf22cc4bbcc430c128c0b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f67276c78fce5652bbe1b3fa9f1388b') in 0.017716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/YongYeon/Character_YO/yoTex/New Material.mat
+  artifactKey: Guid(f20b2b5ef0c38f44d9aa1c2979c7e309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/Character_YO/yoTex/New Material.mat using Guid(f20b2b5ef0c38f44d9aa1c2979c7e309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41ef6391a4e729d559866855a498d217') in 0.029140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/YongYeon/Character_YO/yoTex/Top_Base_color.png
+  artifactKey: Guid(b14bd6c1c2b611e4e9ed632532fa5076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/Character_YO/yoTex/Top_Base_color.png using Guid(b14bd6c1c2b611e4e9ed632532fa5076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26f0deadd183c4e3866153376c60d369') in 0.018511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/YongYeon/Character_YO/yoTex/Under_Base_color.png
+  artifactKey: Guid(1f6a6743c7142ea4fa85ae2faa62022c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/Character_YO/yoTex/Under_Base_color.png using Guid(1f6a6743c7142ea4fa85ae2faa62022c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '923f30956bad59bf6c356fa33fd4a0d3') in 0.016354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/YongYeon/Character_YO/yoTex/Foot_Base_color.png
+  artifactKey: Guid(754c87ed6f36cf74f915fdb3c4b983b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/Character_YO/yoTex/Foot_Base_color.png using Guid(754c87ed6f36cf74f915fdb3c4b983b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af2c159ee3dc20cbcb195c791018693e') in 0.033359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/YongYeon/Character_YO/yoTex/faceUV.png
+  artifactKey: Guid(6bbe9c53b78a2424aae7d02e332f06dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/Character_YO/yoTex/faceUV.png using Guid(6bbe9c53b78a2424aae7d02e332f06dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e4e02b3c6cd6b5d2454375dc8bc91f0') in 0.015546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.438127 seconds.
+  path: Assets/YongYeon/Character_YO/yoMat
+  artifactKey: Guid(be2321515e895aa46848b6e7b57d11ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/Character_YO/yoMat using Guid(be2321515e895aa46848b6e7b57d11ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b5670af8c5a82802581540dd8111f0') in 0.010169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.181554 seconds.
+  path: Assets/YongYeon/ChameBall
+  artifactKey: Guid(0b654c8d3c43484418010a71969c8c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/ChameBall using Guid(0b654c8d3c43484418010a71969c8c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d2182ee27e04dbbeb1bf6f361c0c133') in 0.008596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.982915 seconds.
+  path: Assets/YongYeon/Car
+  artifactKey: Guid(e61d00a7d0c0dd1478260fd630e76305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/Car using Guid(e61d00a7d0c0dd1478260fd630e76305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc281c448c5bdf43f79413eeca3a3d27') in 0.016765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.039061 seconds.
+  path: Assets/YongYeon/Car/CarVer01.fbx
+  artifactKey: Guid(fb641b27d9c062844939592d7718a2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/Car/CarVer01.fbx using Guid(fb641b27d9c062844939592d7718a2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac9eae8bea888f2531b2cf8ec41fb53') in 0.155227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.841841 seconds.
+  path: Assets/YongYeon/Car/carTex
+  artifactKey: Guid(363bbf21688e15e4aad20e26cc271c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon/Car/carTex using Guid(363bbf21688e15e4aad20e26cc271c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2dcae093e5ed5ea771afc73cf09dc7b') in 0.010355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.592811 seconds.
+  path: Assets/New Terrain 1.asset
+  artifactKey: Guid(02b5a7323d803fb41849c4d11ce09d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 1.asset using Guid(02b5a7323d803fb41849c4d11ce09d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree tree_f must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree tree_k must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree tree_a must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree tree_j must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ -> (artifact id: 'cc6d27c82e3f32424b4a2c5324f1e559') in 0.338434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/YongYeon
+  artifactKey: Guid(1f18356ddf8889643b91ea25c3c4c6c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/YongYeon using Guid(1f18356ddf8889643b91ea25c3c4c6c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e154599d454d117f6275890d7dea5509') in 0.008405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/New Terrain 3.asset
+  artifactKey: Guid(f93a3e10de3eac04083caa9d3671e9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 3.asset using Guid(f93a3e10de3eac04083caa9d3671e9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b96955e416a3eb209bee3695e4aa622') in 0.014775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/New Terrain 2.asset
+  artifactKey: Guid(1f8ac5a7d272df04abc81731f57ec8f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 2.asset using Guid(1f8ac5a7d272df04abc81731f57ec8f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66a8ff3735daea9e6b7632f8eab48dc9') in 0.013066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(8ce3c078a230ba4439ecf503101a7cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(8ce3c078a230ba4439ecf503101a7cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '692ec9500cb8d11e706abc7208aea10b') in 0.013533 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
