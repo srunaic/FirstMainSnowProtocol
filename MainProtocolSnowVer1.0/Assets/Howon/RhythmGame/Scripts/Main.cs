@@ -53,7 +53,8 @@ namespace Howon.RhythmGame
 
     public struct ResultData
     {
-        public int score;
+        public int totalScore;
+        public int stageScore;
         public EGrade eGrade;
         public int numGood;
         public int numGreat;
@@ -67,8 +68,10 @@ namespace Howon.RhythmGame
         private SheetMusic _sheet;
         private GameObject _note;
         private SpriteRenderer _judgeTextSR;
+        private SpriteRenderer _renderVideoPlayer;
 
         private MusicPlayer _musicPlayer;
+        private VideoController _videoController;
 
         private Coroutine _coFlowNote = null;
 
@@ -95,6 +98,7 @@ namespace Howon.RhythmGame
 
         private void Awake()
         {
+            _videoController = transform.Find("VideoPlayer").GetComponent<VideoController>();
             _musicPlayer = transform.Find("MusicPlayer").GetComponent<MusicPlayer>();
             _judgeTextSR = transform.Find("ImgJudgeText").GetComponent<SpriteRenderer>();
             _asyncNoteHandle = ResourceManager.instance.LoadPrefab<GameObject>("Note");
@@ -117,6 +121,8 @@ namespace Howon.RhythmGame
             {
                 _asyncScriptableHandle = handle;
                 _sheet = (SheetMusic)_asyncScriptableHandle.Result;
+                //_videoController.Play("GreenShining");
+                _videoController.Play("MoonBackground");
                 _musicPlayer.Play(_sheet.titleName);
 
                 EventManager.instance.onJudgement = JudgeNote;
@@ -148,7 +154,7 @@ namespace Howon.RhythmGame
             ResultData data = ShareDataManager.instance.RetData;
 
             int beatCount = _sheet.beats.Count;
-            float convertedScore = (float)data.score / (float)(_scoreGreat * beatCount); // 환산점수
+            float convertedScore = (float)data.stageScore / (float)(_scoreGreat * beatCount); // 환산점수
 
             Debug.Log("convertedScore : " + convertedScore);
             if (convertedScore >= .95f) ShareDataManager.instance.Grade = EGrade.S;
@@ -191,6 +197,7 @@ namespace Howon.RhythmGame
             ResourceManager.instance.ReleaseAsset(_asyncNoteHandle);
             ResourceManager.instance.ReleaseAsset(_asyncScriptableHandle);
             _musicPlayer.ReleaseMusic();
+            _videoController.ReleaseVideo();
         }
 
         private void PlayParticle(EKey eKey)
@@ -209,19 +216,22 @@ namespace Howon.RhythmGame
 
                 if (eJudgeTiming == EJudgeTiming.Good)
                 {
-                    ShareDataManager.instance.Score += _scoreGood;
+                    ShareDataManager.instance.TotalScore += _scoreGood;
+                    ShareDataManager.instance.StageScore += _scoreGood;
                     ShareDataManager.instance.NumGood++;
                     EventManager.instance.onRecover(_recoverGood);
                 }
                 else if (eJudgeTiming == EJudgeTiming.Great)
                 {
-                    ShareDataManager.instance.Score += _scoreGreat;
+                    ShareDataManager.instance.TotalScore += _scoreGreat;
+                    ShareDataManager.instance.StageScore += _scoreGreat;
                     ShareDataManager.instance.NumGreat++;
                     EventManager.instance.onRecover(_recoverGreat);
                 }
                 else if (eJudgeTiming == EJudgeTiming.Bad)
                 {
-                    ShareDataManager.instance.Score += _scoreBad;
+                    ShareDataManager.instance.TotalScore += _scoreBad;
+                    ShareDataManager.instance.StageScore += _scoreBad;
                     ShareDataManager.instance.NumBad++;
                     EventManager.instance.onRecover(_recoverBad);
                 }
@@ -236,19 +246,22 @@ namespace Howon.RhythmGame
 
                 if (eJudgeTiming == EJudgeTiming.Good)
                 {
-                    ShareDataManager.instance.Score += _scoreGood;
+                    ShareDataManager.instance.TotalScore += _scoreGood;
+                    ShareDataManager.instance.StageScore += _scoreGood;
                     ShareDataManager.instance.NumGood++;
                     EventManager.instance.onRecover(_recoverGood);
                 }
                 else if (eJudgeTiming == EJudgeTiming.Great)
                 {
-                    ShareDataManager.instance.Score += _scoreGreat;
+                    ShareDataManager.instance.TotalScore += _scoreGreat;
+                    ShareDataManager.instance.StageScore += _scoreGreat;
                     ShareDataManager.instance.NumGreat++;
                     EventManager.instance.onRecover(_recoverGreat);
                 }
                 else if (eJudgeTiming == EJudgeTiming.Bad)
                 {
-                    ShareDataManager.instance.Score += _scoreBad;
+                    ShareDataManager.instance.TotalScore += _scoreBad;
+                    ShareDataManager.instance.StageScore += _scoreBad;
                     ShareDataManager.instance.NumBad++;
                     EventManager.instance.onRecover(_recoverBad);
                 }

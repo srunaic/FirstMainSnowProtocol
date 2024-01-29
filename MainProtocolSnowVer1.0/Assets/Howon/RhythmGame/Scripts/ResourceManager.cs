@@ -52,6 +52,39 @@ namespace Howon.RhythmGame
         }
 
         // 동기화 방식
+        public AsyncOperationHandle LoadVideoClip<T>(string name)
+        {
+            AsyncOperationHandle<T> handle = Addressables.LoadAssetAsync<T>(_myFolderPath + $"Video/{name}.mp4");
+            handle.WaitForCompletion();
+
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
+                return handle;
+            }
+            else
+            {
+                Debug.LogError($"비디오 파일 로드 실패 : {name}");
+                return default;
+            }
+        }
+
+        public AsyncOperationHandle LoadImage<T>(string name)
+        {
+            AsyncOperationHandle<T> handle = Addressables.LoadAssetAsync<T>(_myFolderPath + $"Images/{name}.png");
+            handle.WaitForCompletion();
+
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
+                return handle;
+            }
+            else
+            {
+                Debug.LogError($"이미지 파일 로드 실패 : {name}");
+                return default;
+            }
+        }
+
+        // 동기화 방식
         public AsyncOperationHandle LoadScriptableData<T>(string name)
         {
             AsyncOperationHandle<T> handle = Addressables.LoadAssetAsync<T>(_myFolderPath + $"ScriptableData/{name}.asset");

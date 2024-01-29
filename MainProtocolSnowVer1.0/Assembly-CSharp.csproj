@@ -222,6 +222,7 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Bullet\Bullet.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\UserCamTransparent.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\CamVersion.cs" />
+    <Compile Include="Assets\Howon\RhythmGame\Scripts\VideoController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />

@@ -18,7 +18,7 @@ namespace Howon.RhythmGame
 
         private void Update()
         {
-            _scoreText.text = ShareDataManager.instance.Score.ToString();
+            _scoreText.text = ShareDataManager.instance.TotalScore.ToString();
         }
     }
 }

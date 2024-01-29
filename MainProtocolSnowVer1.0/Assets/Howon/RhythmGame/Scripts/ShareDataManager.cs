@@ -21,10 +21,16 @@ namespace Howon.RhythmGame
 
         public ResultData RetData { get { return resultData; } }
 
-        public int Score
+        public int TotalScore
         {
-            get { return resultData.score; }
-            set { resultData.score = value; }
+            get { return resultData.totalScore; }
+            set { resultData.totalScore = value; }
+        }
+
+        public int StageScore
+        {
+            get { return resultData.stageScore; }
+            set { resultData.stageScore = value; }
         }
 
         public EGrade Grade
