@@ -95,14 +95,6 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
             // 캐릭터가 땅에 닿아 있는지 검사
             isGrounded = Physics.Raycast(transform.position, Vector3.down, feetHeight + checkHeight);
         }
-        else if (!isGrounded)
-        {
-            if (rb.velocity.y > 0)
-            {
-                Physics.gravity = new Vector3(0, -VelocityY, 0);
-            }
-
-        }
 
     }
     public void Update()
@@ -110,7 +102,17 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
         if (pv.IsMine)
         {
             ProcessPlayerMovement();
-            
+
+
+            if (!isGrounded)
+            {
+                if (rb.velocity.y > 0)
+                {
+                    Physics.gravity = new Vector3(0, -VelocityY * 10f, 0);
+                }
+
+            }
+
         }
       
         if (Input.GetKeyDown(KeyCode.C))
