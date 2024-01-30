@@ -9,11 +9,6 @@ using SeonghyoGameManagerGroup; //게임매니저
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
-    /*[Header("아이템 생성기")]
-    public GameObject ItemSpawn;*/
-
-    public static NetworkManager Instance;
-
     [Header("DisconnectPanel")]
     public GameObject MainUI;
     public GameObject DisConnectPanel;
@@ -49,7 +44,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     [SerializeField]
     private GameObject CreatePlaye2rBtn; //캐릭터 생성 버튼 추가
 
-    List<RoomInfo> myList = new List<RoomInfo>();//자료구조.
+    List<RoomInfo> myList = new List<RoomInfo>();//방 만들기 자료구조.
     int currentPage = 1, maxPage, multiple;
 
     //게임시작을 하면,캐릭터가 생성되고 네트워크 연결됨.
@@ -116,8 +111,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         if (num == -2) --currentPage;
         else if (num == -1) ++currentPage;
-        else PhotonNetwork.JoinRoom(myList[multiple + num].Name);
+        else PhotonNetwork.JoinRoom(myList[multiple + num].Name); // 방 참가.
         MyListRenewal();
+
+        Debug.Log("방생성" + name);
     }
 
     void MyListRenewal() //코드에서 버튼 제어.
@@ -156,17 +153,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     void Awake()
     {
-        if (Instance != null)
-        {
-            Destroy(Instance);
-        }
-        else if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(Instance);
-        }
-
-
         Screen.SetResolution(1920, 1080, false); //최초 해상도 설정.
     }
     void Update()

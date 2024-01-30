@@ -65,8 +65,11 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
     public bool onMoveable = true;
     private int onClick = 0;
 
+    public NetworkManager netManager;
+
     void Start()
     {
+        netManager = FindObjectOfType<NetworkManager>();
         gravity = -Physics.gravity.y;
         _checkstate = CheckHwaYeonState.None;
         rb = GetComponent<Rigidbody>();
@@ -77,14 +80,13 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
 
         if(pv.IsMine && GameManager.instance.isConnect == true)
         {
-            PhotonNetwork.LocalPlayer.NickName = NetworkManager.Instance.NickNameInput.text; //플레이어 2는 Instance화 된 매니저에서 직접 참조형.
+            PhotonNetwork.LocalPlayer.NickName = netManager.NickNameInput.text; //플레이어 2는 Instance화 된 매니저에서 직접 참조형.
             PlayerTxt.text = PhotonNetwork.LocalPlayer.NickName;//로컬 닉네임 으로 변환.
 
             Camera.main.GetComponent<FollowCam>().SetPlayer(transform);
             nearSeat = FindObjectOfType<MulltiSeat>();
         }
     }
-
 
     private void FixedUpdate()
     {

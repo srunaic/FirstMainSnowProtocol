@@ -163,6 +163,7 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Item\Potion.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\Item\MulltiSeat.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\Howon\RhythmGame\Scripts\VideoController.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\Scripts\Lighthouse.cs" />
     <Compile Include="Assets\script\Enemy\Enemybullet.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingComponent.cs" />
@@ -222,7 +223,6 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Bullet\Bullet.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\UserCamTransparent.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\CamVersion.cs" />
-    <Compile Include="Assets\Howon\RhythmGame\Scripts\VideoController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
@@ -1063,29 +1063,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="PhotonChat.csproj">
-      <Project>{EBE989B2-2512-75FE-425B-5A60D6401963}</Project>
-      <Name>PhotonChat</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{7C6C5CA2-BF55-86BD-8F0A-E50E2BA141A3}</Project>
-      <Name>PhotonUnityNetworking.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
-      <Project>{1F263AA3-0F31-0864-2C46-D12FFC969521}</Project>
-      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
-      <Project>{8FE75209-867B-2D75-2DF6-A206AABB5DC6}</Project>
-      <Name>PunDemos.DemoHubEditor</Name>
-    </ProjectReference>
     <ProjectReference Include="Klak.Extensions.csproj">
       <Project>{35985A79-33E0-25F2-8FEA-9736D5381BBF}</Project>
       <Name>Klak.Extensions</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{90AD2D12-0118-E533-09E3-0CCAEF80FFF6}</Project>
-      <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
     <ProjectReference Include="Klak.Motion.csproj">
       <Project>{DAAC7438-0C60-D055-5B0C-DD80449B6899}</Project>
@@ -1095,41 +1075,61 @@
       <Project>{4AB54EA1-FD09-4DA2-20B6-063FE215E407}</Project>
       <Name>Klak.Wiring</Name>
     </ProjectReference>
-    <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
-      <Project>{C4038CF1-864E-8D43-ECC3-19A3B50C081E}</Project>
-      <Name>PunDemos.DemoSlotcarEditor</Name>
-    </ProjectReference>
     <ProjectReference Include="Klak.Math.Editor.csproj">
       <Project>{F893579E-2ECA-F027-0965-F93CF3103C2B}</Project>
       <Name>Klak.Math.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
-      <Project>{95FB1A1A-7362-2781-C89B-7BBCEF84C2EB}</Project>
-      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Klak.Math.csproj">
       <Project>{F96882CE-8124-CA6D-2EA1-60366557B7E6}</Project>
       <Name>Klak.Math</Name>
     </ProjectReference>
-    <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{B93EB28D-9173-8243-CC1E-CD8D86BABD57}</Project>
-      <Name>PhotonRealtime</Name>
+    <ProjectReference Include="Klak.Wiring.Editor.csproj">
+      <Project>{1455BF2A-8009-5F7B-06C2-C05CD4872B50}</Project>
+      <Name>Klak.Wiring.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Klak.Motion.Editor.csproj">
+      <Project>{4D3EB6DC-0AD4-88F9-CD7E-CA528AC38606}</Project>
+      <Name>Klak.Motion.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.csproj">
+      <Project>{90AD2D12-0118-E533-09E3-0CCAEF80FFF6}</Project>
+      <Name>PhotonUnityNetworking</Name>
+    </ProjectReference>
+    <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
+      <Project>{C4038CF1-864E-8D43-ECC3-19A3B50C081E}</Project>
+      <Name>PunDemos.DemoSlotcarEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
+      <Project>{95FB1A1A-7362-2781-C89B-7BBCEF84C2EB}</Project>
+      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
       <Project>{06EF19B0-6E20-C048-09B2-B58ED2D84C18}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
-    <ProjectReference Include="Klak.Wiring.Editor.csproj">
-      <Project>{1455BF2A-8009-5F7B-06C2-C05CD4872B50}</Project>
-      <Name>Klak.Wiring.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
       <Project>{C03411FD-412D-33EB-B110-6CE780B77D24}</Project>
       <Name>PhotonUnityNetworking.Demos</Name>
     </ProjectReference>
-    <ProjectReference Include="Klak.Motion.Editor.csproj">
-      <Project>{4D3EB6DC-0AD4-88F9-CD7E-CA528AC38606}</Project>
-      <Name>Klak.Motion.Editor</Name>
+    <ProjectReference Include="PhotonChat.csproj">
+      <Project>{EBE989B2-2512-75FE-425B-5A60D6401963}</Project>
+      <Name>PhotonChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
+      <Project>{1F263AA3-0F31-0864-2C46-D12FFC969521}</Project>
+      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
+      <Project>{7C6C5CA2-BF55-86BD-8F0A-E50E2BA141A3}</Project>
+      <Name>PhotonUnityNetworking.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
+      <Project>{8FE75209-867B-2D75-2DF6-A206AABB5DC6}</Project>
+      <Name>PunDemos.DemoHubEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonRealtime.csproj">
+      <Project>{B93EB28D-9173-8243-CC1E-CD8D86BABD57}</Project>
+      <Name>PhotonRealtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
