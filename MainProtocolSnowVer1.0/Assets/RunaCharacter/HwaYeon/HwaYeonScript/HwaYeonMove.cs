@@ -103,16 +103,6 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
         {
             ProcessPlayerMovement();
 
-
-            if (!isGrounded)
-            {
-                if (rb.velocity.y > 0)
-                {
-                    Physics.gravity = new Vector3(0, -VelocityY * 10f, 0);
-                }
-
-            }
-
         }
       
         if (Input.GetKeyDown(KeyCode.C))
@@ -158,7 +148,9 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
         {
             onMoveable = false;
 
-            transform.rotation = nearSeat.sitPos.rotation;
+            transform.rotation = nearSeat.sitPos[0].rotation;
+            transform.rotation = nearSeat.sitPos[1].rotation;
+
             Debug.Log("의자 동기화" + nearSeat);
             HwaAnim.SetTrigger("Sit");
 
@@ -304,16 +296,16 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
 
         if (horizontalInput != 0 || verticalInput != 0)//움직일 때,
         {
-            //Quaternion rotMove = Quaternion.LookRotation(moveDirection); // 이동 방향으로 회전
-            //transform.rotation = Quaternion.Lerp(transform.rotation, rotMove, rotLookSpeed * Time.deltaTime);
+            Quaternion rotMove = Quaternion.LookRotation(moveDirection); // 이동 방향으로 회전
+            transform.rotation = rotMove;
 
-            Quaternion rotMove = Quaternion.LookRotation(moveDirection);//카메라 회전방향으로 초기화.
+            transform.rotation = Quaternion.Lerp(transform.rotation, rotMove, rotLookSpeed * Time.deltaTime);
+
+            /*Quaternion rotMove = Quaternion.LookRotation(moveDirection);//카메라 회전방향으로 초기화.
             transform.rotation = rotMove;
 
             transform.rotation = Quaternion.Lerp(transform.rotation, rotMove, rotLookSpeed * Time.deltaTime);//서서히 바라보도록.*/
-
         }
-
         // 캐릭터의 점프 처리 달리기 상태일때도 이 키가 눌리면 작동 되도록.
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
@@ -322,9 +314,18 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
 
             rb.velocity = movement + Vector3.down * jumpSpeed * 5f;
         }
-        else
-            isGrounded = false;
 
+        rb.velocity = movement + Vector3.up * rb.velocity.y;
+
+        if (!isGrounded)
+        {
+            if (rb.velocity.y > 0)
+            {
+                Physics.gravity = new Vector3(0, -VelocityY, 0);
+                Debug.Log("점프"+ gravity);
+            }
+
+        }
     }
 
   

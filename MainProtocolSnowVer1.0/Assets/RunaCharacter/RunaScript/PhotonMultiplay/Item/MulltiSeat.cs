@@ -6,7 +6,7 @@ using Photon.Realtime;
 
 public class MulltiSeat : MonoBehaviourPunCallbacks
 {
-    public Transform sitPos;
+    public Transform[] sitPos;
 
     public void SetSeat(MultiPlayer player) //첫번째 캐릭터 선택시 
     {

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using SeonghyoGameManagerGroup; //게임매니저
+using System.Threading;
 
 public enum CheckState //포톤 상의 플레이어 상태값.
 {
@@ -15,6 +16,9 @@ public enum CheckState //포톤 상의 플레이어 상태값.
 }
 public class MultiPlayer : MonoBehaviour, IPunObservable
 {
+    [Header("파티클 FootStep")]
+    [SerializeField]
+    public GameObject _PlayerFootParticle;
     [Header("플레이어의 현재 상태줄표시")]
     public CheckState _checkstate = CheckState.None;
 
@@ -50,7 +54,7 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
     public Animator RunaAnim;
 
     [Header("캐릭터 애니메이션 bool값 저장")]
-    public bool isMove = false;
+
     public bool OnSit = false;
 
     private float RunSpeed = 4f;
@@ -89,7 +93,9 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
             Camera.main.GetComponent<FollowCam>().SetPlayer(transform);
             nearSeat = FindObjectOfType<MulltiSeat>();
         }
+
     }
+
     private void FixedUpdate()
     {
         if(rb.velocity.y < 0)
@@ -117,6 +123,7 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
         }
     }
 
+    #region 플레이어 움직임 동기화
     void ProcessPlayerMovement()
     {
         if (onMoveable)
@@ -228,15 +235,19 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
     [PunRPC]
     public void SetSit()//앉기
     {
+
         if (nearSeat != null)
         {
             onMoveable = false;
 
-            transform.rotation = nearSeat.sitPos.rotation;
+            transform.rotation = nearSeat.sitPos[0].rotation;
+            transform.rotation = nearSeat.sitPos[1].rotation;
+
             Debug.Log("의자 동기화" + nearSeat);
             RunaAnim.SetTrigger("Sit");
 
             OnSit = true;
+
         }
     }
 
@@ -307,6 +318,7 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
 
         yield return new WaitForSeconds(6.7f);
     }
+    #endregion
 
     public void Move()
     {
@@ -334,14 +346,10 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
         //애니메이션 실행.
         if (moveDirection != Vector3.zero) //벡터 초기화 방식.
         {
-            isMove = true;
-            if (isMove)
-            {
-                RunaAnim.SetFloat("InputX", MovePlayer.x);
-                RunaAnim.SetFloat("InputY", MovePlayer.y);
-            }
-
+            RunaAnim.SetFloat("InputX", MovePlayer.x);
+            RunaAnim.SetFloat("InputY", MovePlayer.y);
         }
+  
         //처음 움직임 초기화 시킴. 레프트 쉬프트 누를시에 달림.
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
@@ -354,11 +362,10 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
             moveSpeed = BaseSpeed;
         }
 
-        if (horizontalInput != 0 || verticalInput != 0)
+        if (horizontalInput != 0 || verticalInput != 0) //걷는 중.
         {
             Quaternion rotMove = Quaternion.LookRotation(moveDirection); // 이동 방향으로 회전
             transform.rotation = Quaternion.Lerp(transform.rotation, rotMove, rotLookSpeed * Time.deltaTime);
-
         }
         // 캐릭터의 점프 처리
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
@@ -376,13 +383,11 @@ public class MultiPlayer : MonoBehaviour, IPunObservable
         {
             if (rb.velocity.y > 0)
             {
-                RunaAnim.SetTrigger("highLanding");
+                //RunaAnim.SetTrigger("highLanding");
                 Physics.gravity = new Vector3(0, VelocityY, 0);//물체 중력 제어 계산
-
-                //이 코드에 따라 무중력과 중력으로 바뀜.
             }
         }
-
+       
     }
 
 }
