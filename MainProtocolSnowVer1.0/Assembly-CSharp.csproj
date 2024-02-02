@@ -116,6 +116,7 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\AudioSource\AudioGameManage.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Enemy\EnemySpawn.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaPrefabs\Resources\RyhthmGame\RhythmInteractive.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Manager\PauseManager.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\BellTwingcle.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\Environment\#NVJOB Assets\Dynamic Sky (For Demo)\DynamicSkyForDemo.cs" />
@@ -235,7 +236,6 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Bullet\Bullet.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\UserCamTransparent.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\CamVersion.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaPrefabs\Resources\RyhthmGame\RhythmInteractive.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
