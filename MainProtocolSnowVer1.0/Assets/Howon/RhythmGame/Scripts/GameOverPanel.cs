@@ -73,10 +73,11 @@ namespace Howon.RhythmGame
 
         void OnTerminate()
         {
+            SceneManager.LoadScene("RunaMapChoiSeongHyo");
 #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
+            //UnityEditor.EditorApplication.isPlaying = false;
 #else
-            Application.Quit();
+            //Application.Quit();
 #endif
         }
 

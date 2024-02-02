@@ -8,8 +8,6 @@ public class ShootingInterAct : MonoBehaviourPunCallbacks
 {
     public Transform ShotPos;
     public GameObject ShootCanvas;
-    //public GameObject MainShotGame;
-    //public GameObject MainShotCam;
 
     private void Update()
     {
@@ -19,7 +17,7 @@ public class ShootingInterAct : MonoBehaviourPunCallbacks
         }
     }
 
-    public void SetShotGame(MultiPlayer _Shotplayer)
+    public void SetShotGame(MultiPlayer _Shotplayer) //this·Î ¼³Á¤.
     {
         if (_Shotplayer._checkstate == CheckState.ShotGames)
         {

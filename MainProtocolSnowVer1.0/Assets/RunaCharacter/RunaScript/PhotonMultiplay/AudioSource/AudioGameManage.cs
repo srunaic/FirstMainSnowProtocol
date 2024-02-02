@@ -12,12 +12,10 @@ namespace SeonghyoAudio
         [Space(10f)]
 
         public static AudioGameManage Instance;
-         
         //캐릭터 오디오 효과음 
         public AudioSource audioGroup;
 
         [Tooltip("오디오 사운드 관리자")]
-
         public PlayableDirector MainBgm; //Timeline Director stage;
         public AudioClip DollGameSound;
         public AudioClip BellAudio;
@@ -39,7 +37,6 @@ namespace SeonghyoAudio
             }
         }
 
-   
         private void Update()
         {
             PlayDollGameSound();
@@ -87,8 +84,6 @@ namespace SeonghyoAudio
             audioGroup.Stop();
 
         }
-
-
 
     }
 }

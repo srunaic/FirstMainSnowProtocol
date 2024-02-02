@@ -9,7 +9,8 @@ namespace SeonghyoGameManagerGroup //게임매니저 그룹 이용.
     {
        NonePlayer,
        RunaPlayer,
-       HwaYeonPlayer
+       HwaYeonPlayer,
+       Runaria
     }
     public class GameManager : MonoBehaviour
     {
@@ -53,8 +54,11 @@ namespace SeonghyoGameManagerGroup //게임매니저 그룹 이용.
             else if (_choicePlayer == ChoicePlayer.HwaYeonPlayer)
             {
                 GameObject _player = PhotonNetwork.Instantiate("Multi Dwarf Idle", Vector3.zero, Quaternion.identity, 0);//플레이어 접속
-            
-            } 
+            }
+            else if (_choicePlayer == ChoicePlayer.Runaria)
+            {
+                GameObject _player3 = PhotonNetwork.Instantiate("Lunaria", Vector3.zero, Quaternion.identity, 0);
+            }
         }
 
     }

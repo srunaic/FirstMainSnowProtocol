@@ -10,7 +10,8 @@ public enum CheckHwaYeonState //포톤 상의 플레이어 상태값.
     None,
     Sitting,
     DollGames,
-    ShotGames
+    ShotGames,
+    RyhthmGame
 }
 public class HwaYeonMove : MonoBehaviour,IPunObservable
 {
@@ -102,7 +103,6 @@ public class HwaYeonMove : MonoBehaviour,IPunObservable
         if (pv.IsMine)
         {
             ProcessPlayerMovement();
-
         }
       
         if (Input.GetKeyDown(KeyCode.C))

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using SeonghyoGameManagerGroup;
 
 namespace YeongYeon
 {
@@ -167,7 +168,6 @@ namespace YeongYeon
                속도를 이 문제를 해결하기 위해 중력에 y축을 사용해야 할 때까지는 보기 회전에 대한
                매개변수가 괜찮았습니다.
             */
-
 
 
             character.Move(velocity * Time.deltaTime);

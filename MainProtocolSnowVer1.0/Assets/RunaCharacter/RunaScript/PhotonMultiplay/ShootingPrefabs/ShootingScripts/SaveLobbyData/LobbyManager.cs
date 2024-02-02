@@ -73,14 +73,10 @@ public class LobbyManager : MonoBehaviour
             CreateShootingGames();
         }
     }
-
     private void CreateShootingGames()
     {
-       
          shootingGamesInstance = Instantiate(shootingGamesPrefab, Vector3.zero, Quaternion.identity);
-        
     }
-
     private void RecreateShootingGames()
     {
         // 기존 인스턴스가 있다면 제거

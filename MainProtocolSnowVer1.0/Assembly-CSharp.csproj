@@ -69,6 +69,7 @@
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
     <Compile Include="Assets\Howon\RhythmGame\Scripts\MusicPlayer.cs" />
     <Compile Include="Assets\Howon\RhythmGame\Scripts\GameOverPanel.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\StepParticleRemove.cs" />
     <Compile Include="Assets\Howon\RhythmGame\Scripts\SelectMusicSceneScripts\UiSelectionDisc.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\Seat.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Assets\script\ScoreCanvas\ScoreTxt.cs" />
     <Compile Include="Assets\script\OPtionCanvas\OPtionSetActive.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+    <Compile Include="Assets\YongYeon\Lunaria\Script\CameraController.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\MultiPlayer.cs" />
     <Compile Include="Assets\script\bakhoMoving\CameraViewChange.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
@@ -93,11 +95,13 @@
     <Compile Include="Assets\Howon\RhythmGame\Scripts\ShareDataManager.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingContext.cs" />
+    <Compile Include="Assets\YongYeon\Lunaria\Script\PlayerController.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Manager\GameManager.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\VignetteModel.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\FogModel.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="Assets\YongYeon\Lunaria\Script\FootstepEffect.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\MobileRuna\UIJoystickInput.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\FollowCam.cs" />
@@ -118,6 +122,7 @@
     <Compile Include="Assets\RunaCharacter\music\CamController.cs" />
     <Compile Include="Assets\Addressables\1.18.19\Prefab Spawner\PrefabSpawnerSample.cs" />
     <Compile Include="Assets\script\OPtionCanvas\ReTry.cs" />
+    <Compile Include="Assets\YongYeon\Lunaria\Script\PlayerController2.cs" />
     <Compile Include="Assets\Melanchall\DryWetMIDI\Demo\DemoScript.cs" />
     <Compile Include="Assets\Howon\RhythmGame\Scripts\UiScore.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
@@ -131,6 +136,7 @@
     <Compile Include="Assets\script\OPtionCanvas\volume.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\SaveLobbyData\LobbyManager.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+    <Compile Include="Assets\DestroyEffect.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\UserLutModel.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\#NVJOB Water Shaders V2\NVWaterShaders.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\FxaaComponent.cs" />
@@ -219,8 +225,9 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
     <Compile Include="Assets\script\Enemy\EnemyExplosion.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\BloomModel.cs" />
-    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\StepDust.cs" />
     <Compile Include="Assets\script\OPtionCanvas\CancleOption.cs" />
+    <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\SongRoomScript\SongRoom.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\MobileRuna\NavAI.cs" />
@@ -228,13 +235,7 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Bullet\Bullet.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\UserCamTransparent.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\CamVersion.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\StepDust.cs" />
-    <Compile Include="Assets\DestroyEffect.cs" />
-    <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\StepParticleRemove.cs" />
-    <Compile Include="Assets\YongYeon\Lunaria\Script\CameraController.cs" />
-    <Compile Include="Assets\YongYeon\Lunaria\Script\PlayerController2.cs" />
-    <Compile Include="Assets\YongYeon\Lunaria\Script\PlayerController.cs" />
-    <Compile Include="Assets\YongYeon\Lunaria\Script\FootstepEffect.cs" />
+    <Compile Include="Assets\RunaCharacter\RunaPrefabs\Resources\RyhthmGame\RhythmInteractive.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />

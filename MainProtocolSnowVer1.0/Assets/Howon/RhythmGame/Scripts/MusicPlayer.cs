@@ -30,7 +30,7 @@ namespace Howon.RhythmGame
                 _musicSource.Play();
             }
         }
-
+        
         public void Stop()
         {
             _musicSource.Stop();
