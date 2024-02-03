@@ -43,6 +43,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     private GameObject CreatePlayerBtn; //캐릭터 생성 버튼 추가
     [SerializeField]
     private GameObject CreatePlaye2rBtn; //캐릭터 생성 버튼 추가
+    [SerializeField]
+    private GameObject CreatePlaye3rBtn; //캐릭터 생성 버튼 추가
 
     List<RoomInfo> myList = new List<RoomInfo>();//방 만들기 자료구조.
     int currentPage = 1, maxPage, multiple;
@@ -52,6 +54,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         CreatePlayerBtn.SetActive(true);
         CreatePlaye2rBtn.SetActive(true);
+        CreatePlaye3rBtn.SetActive(true);
     }
     //루나 캐릭터 생성.
     public void CreatePlayer()
@@ -64,6 +67,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             CreatePlaye2rBtn.SetActive(false);
             StatusText.enabled = false;
             CreatePlayerBtn.SetActive(false);
+            CreatePlaye3rBtn.SetActive(false);
         }
         else
         {
@@ -82,12 +86,32 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             CreatePlaye2rBtn.SetActive(false);
             StatusText.enabled = false;
             CreatePlayerBtn.SetActive(false);
+            CreatePlaye3rBtn.SetActive(false);
         }
         else
         {
             GameManager.instance._choicePlayer = ChoicePlayer.NonePlayer;
         }
 
+    }
+
+    public void CreatePlayer3()
+    {
+        if (PhotonNetwork.IsConnected)
+        {
+
+            GameManager.instance._choicePlayer = ChoicePlayer.Runaria;
+            GameManager.instance.isConnect = true;//GameManager에서 네트워크의 연결을 받으면 캐릭터 생성하도록.
+            RoomPanel.SetActive(false);
+            CreatePlaye2rBtn.SetActive(false);
+            StatusText.enabled = false;
+            CreatePlayerBtn.SetActive(false);
+            CreatePlaye3rBtn.SetActive(false);
+        }
+        else
+        {
+            GameManager.instance._choicePlayer = ChoicePlayer.NonePlayer;
+        }
 
     }
     public void OnChatRoom()

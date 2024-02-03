@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using SeonghyoGameManagerGroup;
 
-namespace YeongYeon
+namespace Seonghyogroup
 {
     public class PlayerController : MonoBehaviour, IPunObservable
     {
@@ -62,7 +62,7 @@ namespace YeongYeon
         void Start()
         {
             character = GetComponent<CharacterController>();
-            Camera.main.GetComponent<CameraController>().follow_target = transform;
+            Camera.main.GetComponent<FollowCam>().SetPlayer(transform);
             animator = GetComponent<Animator>();
             pv = GetComponent<PhotonView>();
             _PlayerTr = GetComponent<Transform>();
@@ -72,6 +72,15 @@ namespace YeongYeon
             //카메라 컨트롤러 스크립트의 후속 대상을 플레이어로 설정해야 합니다.
             //카메라 도트 main.git 구성요소를 사용하여 이를 수행할 수 있습니다.
             // Follow Target = 변환 
+
+            if (pv.IsMine && GameManager.instance.isConnect == true)
+            {
+                PhotonNetwork.LocalPlayer.NickName = networkManger.NickNameInput.text; //플레이어 2는 Instance화 된 매니저에서 직접 참조형.
+                PlayerTxt.text = PhotonNetwork.LocalPlayer.NickName;//로컬 닉네임 으로 변환.
+
+                Camera.main.GetComponent<FollowCam>().SetPlayer(transform);
+                
+            }
         }
         void Update()
         {
@@ -100,8 +109,9 @@ namespace YeongYeon
             float animSpeed = nowSpeed / moveSpeed;
             if (animSpeed > 1f) animSpeed = 1f + (nowSpeed - moveSpeed) / (runSpeed - moveSpeed);
 
+            Debug.Log("인식오류");
             animator.SetFloat("DirX", animSpeed);
-
+            
 
             if (inputVec == Vector3.zero)
             {
