@@ -13,7 +13,8 @@ public enum CheckState //포톤 상의 플레이어 상태값.
     Sitting,
     DollGames,
     ShotGames,
-    RyhthmGame
+    RyhthmGame,
+    RunGame
 }
 public class MultiPlayer : MonoBehaviour, IPunObservable
 {
