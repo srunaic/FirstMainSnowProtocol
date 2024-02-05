@@ -13,17 +13,17 @@ namespace Howon.RhythmGame
 
         private readonly Vector3[] _initPositions =
         {
-        new Vector3(-4, 5, 0), new Vector3(-2, 5, 0),
-        new Vector3(0, 5, 0),  new Vector3(2, 5, 0),
-        new Vector3(4, 5, 0)
-    };
+            new Vector3(-4, 5, 0), new Vector3(-2, 5, 0),
+            new Vector3(0, 5, 0),  new Vector3(2, 5, 0),
+            new Vector3(4, 5, 0)
+        };
 
         public void InitAndGo(EKey eKey, ENoteType eNoteType, float speed)
         {
             _eKey = eKey;
             _eNoteType = eNoteType;
             _speed = speed;
-            transform.position = _initPositions[(int)_eKey];
+            transform.position = transform.position + _initPositions[(int)_eKey];
 
             StartCoroutine(Move());
         }
