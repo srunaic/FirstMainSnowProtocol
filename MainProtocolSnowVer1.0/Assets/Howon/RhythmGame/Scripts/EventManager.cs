@@ -17,8 +17,14 @@ namespace Howon.RhythmGame
         public Action<int> onDamage;
         public Action<int> onRecover;
         public Action<AsyncOperationHandle> onLoadScriptableData;
-        public Action onGameOver;
-        public Action onReleaseAsset;
+        public Action onPreProcessGameOver;
+        public Action onStartMusicList;
+        public Action onCloseMusicList;
+        public Action onStartGameMain;
+        public Action onCloseGameMain;
+        public Action onStartGameOver;
+        public Action onCloseGameOver;
+        public Action onGameTerminate;
     }
 }
 

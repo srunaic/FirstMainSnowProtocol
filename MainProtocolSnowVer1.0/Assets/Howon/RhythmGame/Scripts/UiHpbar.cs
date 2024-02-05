@@ -38,7 +38,7 @@ namespace Howon.RhythmGame
             }
             else
             {
-                EventManager.instance.onGameOver();
+                EventManager.instance.onPreProcessGameOver();
             }
         }
 
@@ -67,7 +67,6 @@ namespace Howon.RhythmGame
         void ChangeSliderColor(Color newColor)
         {
             _imgFill.color = newColor;
-            Debug.Log("º¯°æ : " + slider.value);
         }
     }
 }

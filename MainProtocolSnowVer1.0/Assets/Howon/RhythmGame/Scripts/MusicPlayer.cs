@@ -27,10 +27,11 @@ namespace Howon.RhythmGame
             {
                 _musicSource.clip = audioClip;
 
+                _musicSource.volume = _initVolume;
                 _musicSource.Play();
             }
         }
-        
+
         public void Stop()
         {
             _musicSource.Stop();

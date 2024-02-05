@@ -1,0 +1,721 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ko' Physical Memory: 16251 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/FirstMainSnowProtocol/MainProtocolSnowVer1.0
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+56248
+Successfully changed project path to: D:/FirstMainSnowProtocol/MainProtocolSnowVer1.0
+D:/FirstMainSnowProtocol/MainProtocolSnowVer1.0
+Using Asset Import Pipeline V2.
+Setting a NavMeshArea cost less than one can give unexpected results.
+Refreshing native plugins compatible for Editor in 67.71 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/FirstMainSnowProtocol/MainProtocolSnowVer1.0/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   31.0.15.3623
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001025 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 67.11 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.399 seconds
+Domain Reload Profiling:
+	ReloadAssembly (399ms)
+		BeginReloadAssembly (39ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (315ms)
+			LoadAssemblies (38ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (90ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (17ms)
+			SetupLoadedEditorAssemblies (147ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (67ms)
+				BeforeProcessingInitializeOnLoad (10ms)
+				ProcessInitializeOnLoadAttributes (51ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003230 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 70.51 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  7.533 seconds
+Domain Reload Profiling:
+	ReloadAssembly (7539ms)
+		BeginReloadAssembly (92ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (7408ms)
+			LoadAssemblies (5194ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (887ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (1208ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (71ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (321ms)
+				ProcessInitializeOnLoadMethodAttributes (735ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Setting a NavMeshArea cost less than one can give unexpected results.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.82 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4799 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 224.0 MB.
+System memory in use after: 224.1 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 5227.
+Total: 2.645900 ms (FindLiveObjects: 0.238200 ms CreateObjectMapping: 0.121200 ms MarkObjects: 2.177300 ms  DeleteObjects: 0.108100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Howon/RhythmGame/Scenes/SelectMusicScene.unity
+  artifactKey: Guid(190fd86ddb0c11c4b8a4c51d4fb6b347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scenes/SelectMusicScene.unity using Guid(190fd86ddb0c11c4b8a4c51d4fb6b347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '414303706f9d30983b8afe105bf1edfe') in 0.027275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Howon/RhythmGame/GameResources/Audio/TT.mp3
+  artifactKey: Guid(486ca5fa8a8c4994fac5c69246f645a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/GameResources/Audio/TT.mp3 using Guid(486ca5fa8a8c4994fac5c69246f645a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1dd5ad13e59ddf3ca6f058d6a06f33e') in 0.108603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Howon/RhythmGame/GameResources/Audio/HeroesTonight.mp3
+  artifactKey: Guid(1ec6b4360d1cff7418a6df7bec06a9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/GameResources/Audio/HeroesTonight.mp3 using Guid(1ec6b4360d1cff7418a6df7bec06a9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21cddb595e23a9e3b83a7cb0d12ade89') in 0.019099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Howon/RhythmGame/GameResources/Audio/DontStopTheMusic.mp3
+  artifactKey: Guid(ef1c1f230d662d44893c3882fd1e7ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/GameResources/Audio/DontStopTheMusic.mp3 using Guid(ef1c1f230d662d44893c3882fd1e7ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27375ea7894c6c6f1e6a9e722d383a0b') in 0.018641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.265027 seconds.
+  path: Assets/Howon/RhythmGame/Scenes/MainScene.unity
+  artifactKey: Guid(f6b5a496428330e46a9d2a131469de54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scenes/MainScene.unity using Guid(f6b5a496428330e46a9d2a131469de54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5483b5ed72c210d6cf1166a999d9bf68') in 0.008278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.616407 seconds.
+  path: Assets/Howon/RhythmGame/Scenes/GameOverScene.unity
+  artifactKey: Guid(a72aab5a156862e4a9cc7f0097c6001b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scenes/GameOverScene.unity using Guid(a72aab5a156862e4a9cc7f0097c6001b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d526c61d71449cbd9706867ff4fda3') in 0.007018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.788865 seconds.
+  path: Assets/Howon/RhythmGame/GameResources/Prefabs/MusicListItem.prefab
+  artifactKey: Guid(1cbf5c4dc94a4bf4182c6d7d09a96413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/GameResources/Prefabs/MusicListItem.prefab using Guid(1cbf5c4dc94a4bf4182c6d7d09a96413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0c285304427fe880fdde4841652658c') in 0.025909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Howon/RhythmGame/GameResources/Prefabs/Note.prefab
+  artifactKey: Guid(9cc7ef73c576c1c4893b48942995a362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/GameResources/Prefabs/Note.prefab using Guid(9cc7ef73c576c1c4893b48942995a362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d231557c5192bb263601738b7257de8') in 0.026498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 176.661067 seconds.
+  path: Assets/Howon/RhythmGame/GameResources/Prefabs/GameMain.prefab
+  artifactKey: Guid(8c2e1464c2e9b634bb1958d7af718138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/GameResources/Prefabs/GameMain.prefab using Guid(8c2e1464c2e9b634bb1958d7af718138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64bdb6af2c86c27d63ea4893671cbb41') in 0.053686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 62.197944 seconds.
+  path: Assets/Howon/RhythmGame/GameResources/Prefabs/GameOverCanvas.prefab
+  artifactKey: Guid(d1d1c2139797b4c479a79cd200dfaa11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/GameResources/Prefabs/GameOverCanvas.prefab using Guid(d1d1c2139797b4c479a79cd200dfaa11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2537b4fed819979124e302135bdccc1b') in 0.011043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.013015 seconds.
+  path: Assets/Howon/RhythmGame/Scenes/SelectMusicScene.unity
+  artifactKey: Guid(190fd86ddb0c11c4b8a4c51d4fb6b347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scenes/SelectMusicScene.unity using Guid(190fd86ddb0c11c4b8a4c51d4fb6b347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5589bc1f511c14249b0bd4299b6ae2b1') in 0.006872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 587.994387 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/ResourceManager.cs
+  artifactKey: Guid(c0ec816d0fa6ec241b909e5a24d29978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/ResourceManager.cs using Guid(c0ec816d0fa6ec241b909e5a24d29978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b0de03a07447e5452fe973f2ae1b9a1') in 0.012581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.113042 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/ResourceManager.cs
+  artifactKey: Guid(c0ec816d0fa6ec241b909e5a24d29978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/ResourceManager.cs using Guid(c0ec816d0fa6ec241b909e5a24d29978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '535380f28b0261861677db6798c9edd1') in 0.001969 seconds 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.003917 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.776 seconds
+Domain Reload Profiling:
+	ReloadAssembly (776ms)
+		BeginReloadAssembly (91ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (642ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (250ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (206ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (120ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.82 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4635 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.3 MB.
+System memory in use after: 212.5 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 5241.
+Total: 2.631300 ms (FindLiveObjects: 0.243600 ms CreateObjectMapping: 0.126200 ms MarkObjects: 2.148400 ms  DeleteObjects: 0.112600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 122.873696 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/Beat.cs
+  artifactKey: Guid(ab4a0aaa3eb0e154d93e897e92fe12df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/Beat.cs using Guid(ab4a0aaa3eb0e154d93e897e92fe12df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '714fe3b0cde9946406c193061cc77b9d') in 0.012492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.489867 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/Beat1.cs
+  artifactKey: Guid(63fd163c03fb2194291ee6d5c1af6cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/Beat1.cs using Guid(63fd163c03fb2194291ee6d5c1af6cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96de0fd6faf84372db9601412fe72a30') in 0.008019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.017967 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/CSVEditor1.cs
+  artifactKey: Guid(cbae2f13453be7e45b175bfbc1f59797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/CSVEditor1.cs using Guid(cbae2f13453be7e45b175bfbc1f59797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f8fc5d06245de39e6654b596cd1231') in 0.008135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.816048 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/CSVReader1.cs
+  artifactKey: Guid(1f331211a79a10f4e88d5e7bf1ef405e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/CSVReader1.cs using Guid(1f331211a79a10f4e88d5e7bf1ef405e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de88c27467faf9d4d00c949179225157') in 0.007116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.948727 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/EventManager1.cs
+  artifactKey: Guid(a5b3a98f6162346419ce5edc2b77dae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/EventManager1.cs using Guid(a5b3a98f6162346419ce5edc2b77dae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a79d474ce31bd8bf05b23ee613e38bf') in 0.007468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.521760 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/GameMain.cs
+  artifactKey: Guid(42b6998d3c9ae4c4cbbb9b01e1b2cfb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/GameMain.cs using Guid(42b6998d3c9ae4c4cbbb9b01e1b2cfb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a4e668e4fdee34bee53e433b20f292d') in 0.007297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.138061 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/GameOverCanvas.cs
+  artifactKey: Guid(60d7ac1622204df46a651e960ebc988d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/GameOverCanvas.cs using Guid(60d7ac1622204df46a651e960ebc988d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba4ad17cc244d028aec67abc0a318f99') in 0.001744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.159736 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/GameOverPanel1.cs
+  artifactKey: Guid(2fa7d57cfaa57094fa9dbbd8465645ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/GameOverPanel1.cs using Guid(2fa7d57cfaa57094fa9dbbd8465645ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd01bf6a17562b9a2a2777de4609b79ff') in 0.006174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.884832 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/Main1.cs
+  artifactKey: Guid(a542295ba9d91d44d8f485ac3e554fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/Main1.cs using Guid(a542295ba9d91d44d8f485ac3e554fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a1001b9f9c7dba701093d0d3dfd1be') in 0.007045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.730828 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/MusicPlayer1.cs
+  artifactKey: Guid(d0a8c484e58ce144cbf04fbd18a9a836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/MusicPlayer1.cs using Guid(d0a8c484e58ce144cbf04fbd18a9a836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87acfe3de03f0cfd74c2ca88306bfefe') in 0.007283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.918837 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/Note1.cs
+  artifactKey: Guid(9bff266f2b1f4704d94fce408b1bfd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/Note1.cs using Guid(9bff266f2b1f4704d94fce408b1bfd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c22d99c4ecb52ae2f4a097c1412fb60') in 0.010907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.664974 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/ShareDataManager1.cs
+  artifactKey: Guid(5a2c8be05d24ee049913062b0c428395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/ShareDataManager1.cs using Guid(5a2c8be05d24ee049913062b0c428395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f61d0724e88435ce3cc38d029b89cdf') in 0.006549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.579187 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/SheetMusic1.cs
+  artifactKey: Guid(8a659f50cd790424b83843686d43d7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/SheetMusic1.cs using Guid(8a659f50cd790424b83843686d43d7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1168813dc4b0015475958a1b40d8de5') in 0.007345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.862618 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/TitleScreen1.cs
+  artifactKey: Guid(1c7fa15cbeaa77549954fb72447d0bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/TitleScreen1.cs using Guid(1c7fa15cbeaa77549954fb72447d0bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c1cb11db5fd51a6bf1046cbd8a485b') in 0.008218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.502697 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/UiHpbar1.cs
+  artifactKey: Guid(d3b2cd53e6a02bf499503de3266287fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/UiHpbar1.cs using Guid(d3b2cd53e6a02bf499503de3266287fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a4ec7b4a2ed864f2fa1de55be932d3f') in 0.007812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.792819 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/UiScore1.cs
+  artifactKey: Guid(51c11daacdd1c47499461ee87bac9b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/UiScore1.cs using Guid(51c11daacdd1c47499461ee87bac9b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84331cec7e066bcda9722ad9069ad431') in 0.007227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.669206 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/VideoController1.cs
+  artifactKey: Guid(01479d74577ea3e4db06c192006a12c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/VideoController1.cs using Guid(01479d74577ea3e4db06c192006a12c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53ed05dd7ba17af73ce524b30c77505c') in 0.007620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.699626 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/GameMain.cs
+  artifactKey: Guid(42b6998d3c9ae4c4cbbb9b01e1b2cfb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/GameMain.cs using Guid(42b6998d3c9ae4c4cbbb9b01e1b2cfb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29f92422e8134575115db72348eec8d') in 0.001835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.747950 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/EventManager.cs
+  artifactKey: Guid(83f4cdf2a7506764aa9b2a076e0b3d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/EventManager.cs using Guid(83f4cdf2a7506764aa9b2a076e0b3d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a4a61a7003902bda7f25b9ed809ea82') in 0.007130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.415830 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/EventManager.cs
+  artifactKey: Guid(83f4cdf2a7506764aa9b2a076e0b3d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/EventManager.cs using Guid(83f4cdf2a7506764aa9b2a076e0b3d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25ee2ab3645d5381c05e2558a53ff30') in 0.001620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 72.107219 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/GameOverCanvas.cs
+  artifactKey: Guid(60d7ac1622204df46a651e960ebc988d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/GameOverCanvas.cs using Guid(60d7ac1622204df46a651e960ebc988d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec48877e3d18c91194437ffb8463eb4b') in 0.002213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.306460 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/GameOverPanel.cs
+  artifactKey: Guid(e774a5623e30bdd49a862984870baf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/GameOverPanel.cs using Guid(e774a5623e30bdd49a862984870baf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e84d20fee074fe13574500c4bb255fd0') in 0.007052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2220.742623 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/GameOverPanel.cs
+  artifactKey: Guid(e774a5623e30bdd49a862984870baf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/GameOverPanel.cs using Guid(e774a5623e30bdd49a862984870baf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e8e01db066422735b08d788d5b5ec3e') in 0.001801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.967667 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/Main.cs
+  artifactKey: Guid(42cb9e9f72300244fbeb30d936e9a063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/Main.cs using Guid(42cb9e9f72300244fbeb30d936e9a063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5242551f23381f7b84487f8629633874') in 0.007220 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 261.055250 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/Main.cs
+  artifactKey: Guid(42cb9e9f72300244fbeb30d936e9a063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/Main.cs using Guid(42cb9e9f72300244fbeb30d936e9a063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '124fc1db24f4af90cf86a5b296349205') in 0.002193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.941379 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/MainCanvas.cs
+  artifactKey: Guid(aeb01b70bdcbe3d45b3333a3e57574d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/MainCanvas.cs using Guid(aeb01b70bdcbe3d45b3333a3e57574d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6407808a9abdc19c341a8ecbdbd4ee3') in 0.007196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.570480 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/MusicPlayer.cs
+  artifactKey: Guid(7e1cc3b09e31b184998a53b1394bcb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/MusicPlayer.cs using Guid(7e1cc3b09e31b184998a53b1394bcb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b47476a4e03ca9c4cf957680466e925b') in 0.006985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.472164 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/MusicPlayer.cs
+  artifactKey: Guid(7e1cc3b09e31b184998a53b1394bcb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/MusicPlayer.cs using Guid(7e1cc3b09e31b184998a53b1394bcb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c71323058b3211764718f4ccb28764') in 0.002269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.080088 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/SelectMusic.cs
+  artifactKey: Guid(d4b6fa9e0c9ce2f46a7a93184b4d9d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/SelectMusic.cs using Guid(d4b6fa9e0c9ce2f46a7a93184b4d9d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06f2c1f3726c59d3e54f498dbbccd46f') in 0.009236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.218350 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/SelectMusic.cs
+  artifactKey: Guid(d4b6fa9e0c9ce2f46a7a93184b4d9d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/SelectMusic.cs using Guid(d4b6fa9e0c9ce2f46a7a93184b4d9d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2937db3d74d683b523563df2350bf3d4') in 0.001537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.833253 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/ShareDataManager.cs
+  artifactKey: Guid(cfd42b2bbee37764d9a241067400cd20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/ShareDataManager.cs using Guid(cfd42b2bbee37764d9a241067400cd20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ea2672e7b4a72bba7c6e6a34f3b9e35') in 0.006959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.980975 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/ShareDataManager.cs
+  artifactKey: Guid(cfd42b2bbee37764d9a241067400cd20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/ShareDataManager.cs using Guid(cfd42b2bbee37764d9a241067400cd20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d9bd67fc1f656841085d67c81f8e989') in 0.001681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.459479 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/SelectMusicSceneScripts/UiMusicList.cs
+  artifactKey: Guid(d49d72ec7c5c52f49aee0847c343eb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/SelectMusicSceneScripts/UiMusicList.cs using Guid(d49d72ec7c5c52f49aee0847c343eb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6f4d030bb725391b0789acafbe187f8') in 0.007429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.697837 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/SelectMusicSceneScripts/UiMusicList.cs
+  artifactKey: Guid(d49d72ec7c5c52f49aee0847c343eb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/SelectMusicSceneScripts/UiMusicList.cs using Guid(d49d72ec7c5c52f49aee0847c343eb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3fed804e66cf2c8e47bb8677e1cc34a') in 0.001685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.081482 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/SelectMusicSceneScripts/UiSelectionDisc.cs
+  artifactKey: Guid(c5e617afd6579064eb8c8b4060babdc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/SelectMusicSceneScripts/UiSelectionDisc.cs using Guid(c5e617afd6579064eb8c8b4060babdc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ebc13b3c125e9de40cc14107e37b73e') in 0.013240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.982303 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/SelectMusicSceneScripts/UiSelectionDisc.cs
+  artifactKey: Guid(c5e617afd6579064eb8c8b4060babdc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/SelectMusicSceneScripts/UiSelectionDisc.cs using Guid(c5e617afd6579064eb8c8b4060babdc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8e67d96afd50a62f8754d690280c8bf') in 0.001746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.380586 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/SelectMusicSceneScripts/UiSelectMusicMain.cs
+  artifactKey: Guid(ee2420e0e432a1f478f016c89d7d4eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/SelectMusicSceneScripts/UiSelectMusicMain.cs using Guid(ee2420e0e432a1f478f016c89d7d4eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f7c7cf1cb55be7f22b86fc5105c3b66') in 0.007624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.392677 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/SelectMusicSceneScripts/UiSelectMusicMain.cs
+  artifactKey: Guid(ee2420e0e432a1f478f016c89d7d4eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/SelectMusicSceneScripts/UiSelectMusicMain.cs using Guid(ee2420e0e432a1f478f016c89d7d4eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f0f5d2a2933e1b7e88aab81622bda9d') in 0.001754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 269.413533 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/UiHpbar.cs
+  artifactKey: Guid(9ffc68b7e7428904b883b2567ea9558f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/UiHpbar.cs using Guid(9ffc68b7e7428904b883b2567ea9558f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbf18e5b58d39017ea561b7f93b70031') in 0.006646 seconds 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.306438 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.079 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1080ms)
+		BeginReloadAssembly (149ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (893ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (378ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (332ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (241ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.99 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4639 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.5 MB.
+System memory in use after: 212.7 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 5248.
+Total: 2.814600 ms (FindLiveObjects: 0.300000 ms CreateObjectMapping: 0.140800 ms MarkObjects: 2.278700 ms  DeleteObjects: 0.094300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 65.014304 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/VideoController.cs
+  artifactKey: Guid(b17c2f0afca7c474f8e24f8783304d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/VideoController.cs using Guid(b17c2f0afca7c474f8e24f8783304d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'add52c48509fc2e59fa564b923c548dc') in 0.014588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.823471 seconds.
+  path: Assets/Howon/RhythmGame/Scripts/UiScore.cs
+  artifactKey: Guid(b16cb9ae849612846921acf61cda7b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/Scripts/UiScore.cs using Guid(b16cb9ae849612846921acf61cda7b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '848e10d7bc4f6a211b3bcccd996a4bf3') in 0.007735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 94.039267 seconds.
+  path: Assets/Howon/RhythmGame/GameResources/Audio/ChasingStorms.mp3
+  artifactKey: Guid(6535b04625355f7488397b402b57203d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/GameResources/Audio/ChasingStorms.mp3 using Guid(6535b04625355f7488397b402b57203d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '202b5a2fb19b1cd76b82fe59c682a315') in 0.061719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.287301 seconds.
+  path: Assets/Howon/RhythmGame/GameResources/CsvFile/ChasingStorms.csv
+  artifactKey: Guid(6b2fe0b9c3578d245865706e3d36cd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/GameResources/CsvFile/ChasingStorms.csv using Guid(6b2fe0b9c3578d245865706e3d36cd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e97729ccfa9ab46de6d47a1aad05e53') in 0.008817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 66.145371 seconds.
+  path: Assets/Howon/RhythmGame/GameResources/ScriptableData/ChasingStorms.asset
+  artifactKey: Guid(20507c550760ad249aab08d14448937a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/GameResources/ScriptableData/ChasingStorms.asset using Guid(20507c550760ad249aab08d14448937a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96765011e34db9507a2d48d490e906b7') in 0.004074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.183023 seconds.
+  path: Assets/Howon/RhythmGame/GameResources/ScriptableData/ChasingStorms.asset
+  artifactKey: Guid(20507c550760ad249aab08d14448937a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/GameResources/ScriptableData/ChasingStorms.asset using Guid(20507c550760ad249aab08d14448937a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18aa0438df895e2218ef7ca2e0bdf30a') in 0.002858 seconds 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.003284 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.855 seconds
+Domain Reload Profiling:
+	ReloadAssembly (856ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (709ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (261ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (241ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (141ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.97 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4639 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.5 MB.
+System memory in use after: 212.7 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 5252.
+Total: 2.956700 ms (FindLiveObjects: 0.265900 ms CreateObjectMapping: 0.174300 ms MarkObjects: 2.414800 ms  DeleteObjects: 0.100700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1100.800104 seconds.
+  path: Assets/Howon/RhythmGame/GameResources/ScriptableData/TT.asset
+  artifactKey: Guid(d4f8614d1e18cbe4e95e29d8536c8b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Howon/RhythmGame/GameResources/ScriptableData/TT.asset using Guid(d4f8614d1e18cbe4e95e29d8536c8b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bb9ad1c107cc9573097a5957290a131') in 0.036318 seconds 
+========================================================================
+Received Prepare
+Setting a NavMeshArea cost less than one can give unexpected results.
+Registering precompiled user dll's ...
+Registered in 0.003548 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.735 seconds
+Domain Reload Profiling:
+	ReloadAssembly (736ms)
+		BeginReloadAssembly (84ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (616ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (224ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (212ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (123ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4639 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.5 MB.
+System memory in use after: 212.8 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 5255.
+Total: 2.685800 ms (FindLiveObjects: 0.253300 ms CreateObjectMapping: 0.124400 ms MarkObjects: 2.214200 ms  DeleteObjects: 0.093300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 249.876458 seconds.
+  path: Assets/RunaCharacter/RunaPrefabs/Resources/RhythmGame.prefab
+  artifactKey: Guid(d82e273d8ea36c94893aa5d61ccd3927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunaCharacter/RunaPrefabs/Resources/RhythmGame.prefab using Guid(d82e273d8ea36c94893aa5d61ccd3927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8af42e4d1280bdd3ea7874e5ca3d987') in 0.083150 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

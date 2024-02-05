@@ -16,11 +16,10 @@ namespace Howon.RhythmGame
         [SerializeField] private SheetMusic[] _sheets;
         private UiMusicList _musicList;
 
-
+        public Main mainscript = null;
         private void Awake()
         {
             _musicList = transform.Find("MainPanel/MusicList").GetComponent<UiMusicList>();
-
         }
 
         private void Start()
@@ -28,7 +27,6 @@ namespace Howon.RhythmGame
             if (_sheets != null)
             {
                 _musicList.Init(_sheets);
-
             }
         }
     }

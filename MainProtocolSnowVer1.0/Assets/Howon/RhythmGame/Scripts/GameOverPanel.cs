@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,6 +37,12 @@ namespace Howon.RhythmGame
             _btnStart = transform.Find("ButtonPanel/BtnStart").GetComponent<Button>();
             _btnTerminate = transform.Find("ButtonPanel/BtnTerminate").GetComponent<Button>();
 
+            _btnStart.onClick.AddListener(GotoSelectMusic);
+            _btnTerminate.onClick.AddListener(Terminate);
+        }
+
+        private void OnEnable()
+        {
             _resultData = ShareDataManager.instance.RetData;
 
             _txtGreat.text = $"Great : {_resultData.numGreat}";
@@ -46,8 +53,6 @@ namespace Howon.RhythmGame
 
             _numGrade = (int)_resultData.eGrade;
             _imgGrades[_numGrade].LoadAssetAsync<Sprite>().Completed += LoadImage;
-            _btnStart.onClick.AddListener(OnGotoStartScene);
-            _btnTerminate.onClick.AddListener(OnTerminate);
         }
 
         private void ResetResultData() // 토탈 스코어는 초기화하지 않음
@@ -60,37 +65,44 @@ namespace Howon.RhythmGame
             ShareDataManager.instance.NumMiss = 0;
         }
 
-        private void OnDestroy()
+        private void OnDisable()
         {
             _imgGrades[_numGrade].ReleaseAsset();
         }
 
-        void OnGotoStartScene()
+        void GotoSelectMusic()
         {
             ResetResultData();
-            SceneManager.LoadScene("SelectMusicScene");
+            EventManager.instance.onCloseGameOver();
         }
 
-        void OnTerminate()
+        void Terminate()
         {
-            SceneManager.LoadScene("RunaMapChoiSeongHyo");
-#if UNITY_EDITOR
-            //UnityEditor.EditorApplication.isPlaying = false;
-#else
-            //Application.Quit();
-#endif
+            EventManager.instance.onGameTerminate();
+            /*#if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+            #else
+                Application.Quit();
+            #endif*/
         }
 
         void LoadImage(AsyncOperationHandle<Sprite> handle)
         {
-            if (handle.Status == AsyncOperationStatus.Succeeded)
+            try
             {
-                Sprite loadedSprite = handle.Result;
-                _imgGrade.sprite = loadedSprite;
+                if (handle.Status == AsyncOperationStatus.Succeeded)
+                {
+                    Sprite loadedSprite = handle.Result;
+                    _imgGrade.sprite = loadedSprite;
+                }
+                else
+                {
+                    Debug.LogError($"이미지 로드 실패 - {handle.OperationException}");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Debug.LogError("이미지 로드 실패");
+                Debug.LogError($"예외 발생 - {ex}");
             }
         }
     }

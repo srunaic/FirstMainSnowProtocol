@@ -10,13 +10,20 @@ namespace Howon.RhythmGame
 
         private ShareDataManager() { }
 
-        private string title = string.Empty;
-        private ResultData resultData;
+        private string title = string.Empty; // 노래 타이틀
+        private int noteSpeedTimes = 1; // 노트 배속
+        private ResultData resultData;  // 게임 결과 데이터
 
         public string Title
         {
             get { return title; }
             set { title = value; }
+        }
+
+        public int NoteSpeedTimes
+        {
+            get { return noteSpeedTimes; }
+            set { noteSpeedTimes = value; }
         }
 
         public ResultData RetData { get { return resultData; } }
@@ -61,5 +68,6 @@ namespace Howon.RhythmGame
             get { return resultData.numMiss; }
             set { resultData.numMiss = value; }
         }
+
     }
 }

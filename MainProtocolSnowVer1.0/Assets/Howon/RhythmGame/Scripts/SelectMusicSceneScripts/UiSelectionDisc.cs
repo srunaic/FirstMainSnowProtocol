@@ -10,8 +10,11 @@ namespace Howon.RhythmGame
     {
         private Image _discImage;
         private Button _selectDisc;
+        private Button _noteSpeedTimes;
 
         private string _title = string.Empty;
+        private readonly int _numSpeedTimes = 3;
+        private int _curNumSpeedTimes = 0;
 
         public string Title
         {
@@ -25,8 +28,7 @@ namespace Howon.RhythmGame
                 _selectDisc.onClick.AddListener(() =>
                 {
                     ShareDataManager.instance.Title = _title;
-                    EventManager.instance.onReleaseAsset();
-                    SceneManager.LoadScene("MainScene");
+                    EventManager.instance.onCloseMusicList();
                 });
             }
         }
@@ -35,6 +37,31 @@ namespace Howon.RhythmGame
         {
             _discImage = GetComponent<Image>();
             _selectDisc = transform.Find("SelectButton").GetComponent<Button>();
+            _noteSpeedTimes = transform.Find("NoteSpeedTimes").GetComponent<Button>();
+
+
+            _noteSpeedTimes.onClick.AddListener(() =>
+            {
+                _curNumSpeedTimes++;
+                _curNumSpeedTimes = _curNumSpeedTimes % _numSpeedTimes;
+                Text txtSpeedTimes = _noteSpeedTimes.transform.Find("Text").GetComponent<Text>();
+                if (_curNumSpeedTimes == 0)
+                {
+                    txtSpeedTimes.text = "X1";
+                }
+                else if (_curNumSpeedTimes == 1)
+                {
+                    txtSpeedTimes.text = "X2";
+                }
+                else if (_curNumSpeedTimes == 2)
+                {
+                    txtSpeedTimes.text = "X3";
+                }
+
+                ShareDataManager.instance.NoteSpeedTimes = _curNumSpeedTimes + 1;
+            });
         }
+
+
     }
 }

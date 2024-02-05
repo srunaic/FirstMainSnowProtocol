@@ -121,7 +121,14 @@ namespace Howon.RhythmGame
 
         public void ReleaseAsset(AsyncOperationHandle handle)
         {
-            Addressables.Release(handle);
+            if (handle.IsValid())
+            {
+                Addressables.Release(handle);
+            }
+            else
+            {
+                Debug.LogWarning("유효하지 않은 핸들을 Release하려고 시도하고 있습니다.");
+            }
         }
     }
 }

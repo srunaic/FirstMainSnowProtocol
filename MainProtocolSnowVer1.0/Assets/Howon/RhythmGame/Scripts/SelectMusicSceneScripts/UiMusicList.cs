@@ -36,8 +36,6 @@ namespace Howon.RhythmGame
                 item.playTime = sheet.playTime;
                 AddItem(item);
             }
-
-            EventManager.instance.onReleaseAsset = ReleaseAssets;
         }
 
         void AddItem(ItemInfo data)
@@ -46,8 +44,7 @@ namespace Howon.RhythmGame
             UiMusicListItem listItem = go.GetComponent<UiMusicListItem>();
             listItem.Init(data);
 
-            listItem._buttonList.onClick.AddListener(() =>
-            {
+            listItem._buttonList.onClick.AddListener(() => {
 
                 if (_fadeOutCoroutine != null)
                 {
@@ -55,7 +52,6 @@ namespace Howon.RhythmGame
                 }
 
                 _selectionDisc.Title = data.title;
-                _musicPlayer.ResetVolume();
                 _musicPlayer.Play(data.title);
                 _fadeOutCoroutine = StartCoroutine(FadeOut());
             });
@@ -80,9 +76,9 @@ namespace Howon.RhythmGame
             _fadeOutCoroutine = null;
         }
 
-        public void ReleaseAssets()
+        private void OnDisable()
         {
-            ResourceManager.instance.ReleaseAsset(_asyncItemView);
+            //ResourceManager.instance.ReleaseAsset(_asyncItemView);
             _musicPlayer.ReleaseMusic();
         }
     }

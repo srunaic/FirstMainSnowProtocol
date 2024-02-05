@@ -96,25 +96,39 @@ namespace Howon.RhythmGame
 
         private bool _isGameoverRoutine = false;
 
+        private bool _isStartGame = false;
+
         private void Awake()
         {
             _videoController = transform.Find("VideoPlayer").GetComponent<VideoController>();
             _musicPlayer = transform.Find("MusicPlayer").GetComponent<MusicPlayer>();
             _judgeTextSR = transform.Find("ImgJudgeText").GetComponent<SpriteRenderer>();
-            _asyncNoteHandle = ResourceManager.instance.LoadPrefab<GameObject>("Note");
-            _note = (GameObject)_asyncNoteHandle.Result;
+
+            //EventManager.instance.onLoadScriptableData = ScriptableDataLoaded;
 
             for (int i = 0; i < _keyButtons.Length; i++)
             {
                 _keyButtons[i].button.enabled = false;
                 _keyButtons[i].isJudge = false;
             }
-
-            EventManager.instance.onLoadScriptableData = ScriptableDataLoaded;
-            //ResourceManager.instance.LoadScriptableObject<SheetMusic>("HeroesTonight");
-            ResourceManager.instance.LoadScriptableObject<SheetMusic>(ShareDataManager.instance.Title);
         }
 
+        private void OnEnable()
+        {
+            if (!_isStartGame) return;
+
+            Init();
+        }
+
+        private void Start()
+        {
+            if (!_isStartGame) _isStartGame = true;
+
+            Init();
+        }
+
+
+        // 현재는 쓰지 않음 (타이밍이 살짝 안맞음)
         void ScriptableDataLoaded(AsyncOperationHandle handle)
         {
             if (handle.Result != null)
@@ -125,8 +139,9 @@ namespace Howon.RhythmGame
                 _videoController.Play("MoonBackground");
                 _musicPlayer.Play(_sheet.titleName);
 
+
                 EventManager.instance.onJudgement = JudgeNote;
-                EventManager.instance.onGameOver = GameOver;
+                EventManager.instance.onPreProcessGameOver = GameOver;
 
                 for (int i = 0; i < _keyButtons.Length; i++)
                 {
@@ -139,6 +154,27 @@ namespace Howon.RhythmGame
             {
                 // 로드에 실패한 경우의 처리
             }
+        }
+
+        void Init()
+        {
+            _asyncNoteHandle = ResourceManager.instance.LoadPrefab<GameObject>("Note");
+            _note = (GameObject)_asyncNoteHandle.Result;
+            _asyncScriptableHandle = ResourceManager.instance.LoadScriptableData<SheetMusic>(ShareDataManager.instance.Title);
+            _sheet = (SheetMusic)_asyncScriptableHandle.Result;
+            //_videoController.Play("GreenShining");
+            _videoController.Play("MoonBackground");
+            _musicPlayer.Play(_sheet.titleName);
+
+            EventManager.instance.onJudgement = JudgeNote;
+            EventManager.instance.onPreProcessGameOver = GameOver;
+
+            for (int i = 0; i < _keyButtons.Length; i++)
+            {
+                StartCoroutine(Input(i));
+            }
+
+            _coFlowNote = StartCoroutine(FlowNote());
         }
 
         void GameOver()
@@ -169,7 +205,7 @@ namespace Howon.RhythmGame
         {
             _isGameoverRoutine = true;
 
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(1f);
 
             float currentTime = 0;
             float startVolume = _musicPlayer.GetVolume();
@@ -182,19 +218,19 @@ namespace Howon.RhythmGame
             }
 
             _musicPlayer.Stop();
-            SceneManager.LoadScene("GameOverScene");
 
+            EventManager.instance.onCloseGameMain();
             _isGameoverRoutine = false;
         }
 
-        private void OnDestroy()
+        private void OnDisable()
         {
             ReleaseAssets();
         }
 
         private void ReleaseAssets()
         {
-            ResourceManager.instance.ReleaseAsset(_asyncNoteHandle);
+            //ResourceManager.instance.ReleaseAsset(_asyncNoteHandle);
             ResourceManager.instance.ReleaseAsset(_asyncScriptableHandle);
             _musicPlayer.ReleaseMusic();
             _videoController.ReleaseVideo();
@@ -211,17 +247,11 @@ namespace Howon.RhythmGame
                 _keyButtons[(int)eKey].button.enabled) // 롱타입의 노트면 키버튼의 enabled로 눌렀는지 판단
             {
                 Destroy(obj);
-                StartCoroutine(ShowJudgeText(eJudgeTiming));
+                StartCoroutine(ShowJudgeText(EJudgeTiming.Great));
                 PlayParticle(eKey);
 
-                if (eJudgeTiming == EJudgeTiming.Good)
-                {
-                    ShareDataManager.instance.TotalScore += _scoreGood;
-                    ShareDataManager.instance.StageScore += _scoreGood;
-                    ShareDataManager.instance.NumGood++;
-                    EventManager.instance.onRecover(_recoverGood);
-                }
-                else if (eJudgeTiming == EJudgeTiming.Great)
+                if (eJudgeTiming == EJudgeTiming.Good || // 롱타입이면 good과 great를 같은 판정으로 함.
+                    eJudgeTiming == EJudgeTiming.Great)
                 {
                     ShareDataManager.instance.TotalScore += _scoreGreat;
                     ShareDataManager.instance.StageScore += _scoreGreat;
@@ -233,7 +263,7 @@ namespace Howon.RhythmGame
                     ShareDataManager.instance.TotalScore += _scoreBad;
                     ShareDataManager.instance.StageScore += _scoreBad;
                     ShareDataManager.instance.NumBad++;
-                    EventManager.instance.onRecover(_recoverBad);
+                    //EventManager.instance.onRecover(_recoverBad);
                 }
             }
             else if (eNoteType == ENoteType.Normal &&
@@ -249,7 +279,7 @@ namespace Howon.RhythmGame
                     ShareDataManager.instance.TotalScore += _scoreGood;
                     ShareDataManager.instance.StageScore += _scoreGood;
                     ShareDataManager.instance.NumGood++;
-                    EventManager.instance.onRecover(_recoverGood);
+                    //EventManager.instance.onRecover(_recoverGood);
                 }
                 else if (eJudgeTiming == EJudgeTiming.Great)
                 {
@@ -263,7 +293,7 @@ namespace Howon.RhythmGame
                     ShareDataManager.instance.TotalScore += _scoreBad;
                     ShareDataManager.instance.StageScore += _scoreBad;
                     ShareDataManager.instance.NumBad++;
-                    EventManager.instance.onRecover(_recoverBad);
+                    //EventManager.instance.onRecover(_recoverBad);
                 }
             }
         }
@@ -277,6 +307,7 @@ namespace Howon.RhythmGame
             float prevTime = 0f;
             EKey eKey = EKey.Space;
             ENoteType eNoteType = ENoteType.Normal;
+            float noteSpeed = _sheet.noteSpeed * ShareDataManager.instance.NoteSpeedTimes;
 
             GameObject newNote = null;
             Note note;
@@ -305,7 +336,7 @@ namespace Howon.RhythmGame
 
                 newNote = Instantiate(_note, this.transform);
                 note = newNote.GetComponent<Note>();
-                note.InitAndGo(eKey, eNoteType, _sheet.noteSpeed);
+                note.InitAndGo(eKey, eNoteType, noteSpeed);
 
                 prevTime = arrivalTime;
                 i++;
@@ -324,7 +355,7 @@ namespace Howon.RhythmGame
             _judgeTextSR.sprite = _spriteJudgeText[(int)eJudgeTiming];
             _judgeTextSR.enabled = true;
 
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.5f);
             _judgeTextSR.enabled = false;
         }
 
