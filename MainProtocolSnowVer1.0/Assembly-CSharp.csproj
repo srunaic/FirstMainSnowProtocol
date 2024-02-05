@@ -66,6 +66,7 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\Item\InterActiveInterface.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Enemy\BossMove.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
+    <Compile Include="Assets\Howon\RhythmGame\Scripts\SelectMusic.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
     <Compile Include="Assets\Howon\RhythmGame\Scripts\MusicPlayer.cs" />
     <Compile Include="Assets\Howon\RhythmGame\Scripts\GameOverPanel.cs" />
@@ -131,6 +132,7 @@
     <Compile Include="Assets\Jinsol\Scripts\IgnoreMouse.cs" />
     <Compile Include="Assets\Melanchall\DryWetMIDI\Demo\DemoScript.cs" />
     <Compile Include="Assets\Howon\RhythmGame\Scripts\UiScore.cs" />
+    <Compile Include="Assets\Howon\RhythmGame\Scripts\GameOverCanvas.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\RunaCharacter\RunaPrefabs\Resources\Inventory\TextInvenManager.cs" />
     <Compile Include="Assets\Howon\RhythmGame\Scripts\Note.cs" />
@@ -204,6 +206,7 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\LoadingScene\LoadingScene.cs" />
+    <Compile Include="Assets\Howon\RhythmGame\Scripts\GameMain.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\DitheringComponent.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\FbsControler.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Item\ItemRotation.cs" />
@@ -225,6 +228,7 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\AudioManager.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
     <Compile Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Runtime\Components\FogComponent.cs" />
+    <Compile Include="Assets\Howon\RhythmGame\Scripts\MainCanvas.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\LoadingScene\ManagerStarter.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
     <Compile Include="Assets\Howon\RhythmGame\Scripts\CSVReader.cs" />
@@ -249,10 +253,6 @@
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\ShootingPrefabs\ShootingScripts\Bullet\Bullet.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\PhotonMultiplay\UserCamTransparent.cs" />
     <Compile Include="Assets\RunaCharacter\RunaScript\CamVersion.cs" />
-    <Compile Include="Assets\Howon\RhythmGame\Scripts\GameOverCanvas.cs" />
-    <Compile Include="Assets\Howon\RhythmGame\Scripts\MainCanvas.cs" />
-    <Compile Include="Assets\Howon\RhythmGame\Scripts\SelectMusic.cs" />
-    <Compile Include="Assets\Howon\RhythmGame\Scripts\GameMain.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Terrain Map\#NVJOB Water Shaders V2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />

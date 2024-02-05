@@ -7,32 +7,31 @@ using Howon.RhythmGame;
 
     public class RhythmInteractive : MonoBehaviour
     {
-        [Header("리듬게임 관리")]
-        [SerializeField]
-        private GameObject RhythmGameInstance;
-
         [Header("리듬게임 접속 플레이어 관리")]
         [SerializeField]
         private MultiPlayer _player1;
         [SerializeField]
         private HwaYeonMove _player2;
 
-        #region 리듬게임 시작시 플레이어 상태관리.
-        private void Update()
-        {
+    private void Start()
+    { 
+        _player1.onMoveable = true;
+    }
+
+    GameObject gameInstance;
+         #region 리듬게임 시작시 플레이어 상태관리.
+         private void Update()
+         {
             if(Input.GetKeyDown(KeyCode.Z) && _player1._checkstate == CheckState.RyhthmGame
                 && _player2._checkstate == CheckHwaYeonState.RyhthmGame)
             {
                 CreateRhythmGame();
-                _player1.onMoveable = false;
-                _player2.onMoveable = false;
             }
 
             if(Input.GetKeyDown(KeyCode.C))
             {
                 _player1.onMoveable = true;
                 _player2.onMoveable = true;
-
             }
             if(Input.GetKeyDown(KeyCode.V))
             {
@@ -41,15 +40,27 @@ using Howon.RhythmGame;
         }
         public void CreateRhythmGame()
         {
-            RhythmGameInstance = Instantiate(RhythmGameInstance ,Vector3.zero,Quaternion.identity);
-        }
-        public void DestroyRhythmGame()
+            string prefabPath = "RhythmGame";
+            GameObject prefab = Resources.Load(prefabPath) as GameObject;
+
+
+            if (prefab != null)
         {
-            if(RhythmGameInstance != null)
-            {
-                Destroy(RhythmGameInstance);
-            }
+            gameInstance = Instantiate(prefab, transform.position, Quaternion.identity);
         }
+        else
+        {
+            Debug.LogError("프리팹을 찾을 수 없습니다. 경로를 확인해주세요: " + prefabPath);
+        }
+
+        }
+       public void DestroyRhythmGame()
+       {
+            EventManager.instance.onGameTerminate = () =>
+            {
+            Destroy(gameInstance);
+            };
+       }
         public void OnTriggerEnter(Collider col)
         {
             if(col.CompareTag("Player"))
