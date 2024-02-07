@@ -25,7 +25,6 @@
 - 3DMAX 2022 , Blender2019
 - SubStance Painter 9.1
 
-## 📌 영상 및 링크 설명
-<h4>영상링크: </h4><a href =""></a>
+## 📌링크 설명
 
-<h4>게임 기술서:</h4><a href=""></a>
+<h4>게임 기술서:</h4><a href="https://docs.google.com/presentation/d/1O3_g2LfOOITibycRPjDucFoRL9hvnQUO/edit?usp=sharing&ouid=103861342224711194393&rtpof=true&sd=true "></a>
