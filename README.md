@@ -27,4 +27,6 @@
 
 ## 📌링크 설명
 
-<h4>게임 기술서:</h4><a href="https://docs.google.com/presentation/d/1O3_g2LfOOITibycRPjDucFoRL9hvnQUO/edit?usp=sharing&ouid=103861342224711194393&rtpof=true&sd=true "></a>
+<h4>게임 기술서:</h4><a href="https://docs.google.com/presentation/d/1O3_g2LfOOITibycRPjDucFoRL9hvnQUO/edit?usp=sharing&ouid=103861342224711194393&rtpof=true&sd=true ">
+ snowProtocol 개발 기술서
+</a>
