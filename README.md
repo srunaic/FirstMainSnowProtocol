@@ -33,6 +33,6 @@
 
 ## 📌링크 설명
 
-<h4>게임 기술서:</h4><a href="https://drive.google.com/file/d/1JepHNhof95uh1-KW23zbyIYzyT34KOTN/view?usp=sharing ">
+<h4>게임 기능 디자인</h4><a href="https://drive.google.com/file/d/1twqAtXcjM3gKPvKFPSw3tZ7kmxRgJ7Mt/view?usp=sharing">
  snowProtocol 개발 기술서
 </a>
