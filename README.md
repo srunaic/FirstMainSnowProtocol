@@ -30,9 +30,3 @@
 - 'VisualStudio 2022'
 - 3DMAX 2022 , Blender2019
 - SubStance Painter 9.1
-
-## 📌링크 설명
-
-<h4>게임 기능 디자인</h4><a href="https://drive.google.com/file/d/1twqAtXcjM3gKPvKFPSw3tZ7kmxRgJ7Mt/view?usp=sharing">
- snowProtocol 개발 기술서
-</a>
